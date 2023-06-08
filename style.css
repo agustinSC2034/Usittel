@@ -19,6 +19,7 @@
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
+	overflow-y: hidden;
   }
   
   .dropdown-content a {
@@ -35,8 +36,22 @@
   .dropdown:hover .dropdown-content {
 	display: block;
   }
-  
 
+  .estiloContainerMayor{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+  }
+
+  .estiloContainer{
+	justify-content: center;
+	margin: auto;
+	width: auto;
+  }
+
+  .footerContainer{
+	width: 150%;
+  }
 /*-----------------------------------------------------------------------------------
 
 	Theme Name: Canvas
