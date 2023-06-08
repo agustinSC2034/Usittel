@@ -1,9 +1,15 @@
 window.addEventListener('DOMContentLoaded', function() {
   var currentPageLabel = document.getElementById('currentPageLabel');
-  var currentPage = location.pathname.split('/').slice(-1)[0]; // Obtiene el nombre del archivo actual sin la ruta completa
-  
-  // Elimina la extensión ".html" del nombre del archivo
-  var pageName = currentPage.replace('.html', '');
+  var currentPage = location.pathname.split('/').slice(-1)[0]; // Obtiene el nombre del archivo actual
 
-  currentPageLabel.textContent += pageName;
+  var dropdownOptions = Array.from(document.querySelectorAll('.dropdown-content a'));
+
+  dropdownOptions.forEach(function(option) {
+    option.addEventListener('click', function(event) {
+      event.preventDefault(); // Evita la redirección predeterminada
+      
+      var selectedOption = this.getAttribute('data-value');
+      currentPageLabel.textContent = "Estás en la página: " + selectedOption;
+    });
+  });
 });
