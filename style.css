@@ -64,11 +64,22 @@
 	justify-content: center;
 	width: 45%;
   }
-  .font-bodyLogo img{
-  }
   .font-body{
 	display: flex;
 	justify-content: center;
+  }
+  .tituloBigContainer{
+	width: 100%;
+  }
+  .tituloBig{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  }
+  .tituloBig h1{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
   }
 
 
