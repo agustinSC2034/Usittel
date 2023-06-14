@@ -91,6 +91,11 @@
   animation-duration: 2s; /* don't forget to set a duration! */
   }
 
+  .estiloContainer{
+
+	margin-top: -6%;
+  }
+
   /*FORM */
  /* Contact Section
 --------------------------------*/
@@ -206,7 +211,10 @@
 	justify-content: center;
 	margin-bottom: -5%;
 	margin-top: -6%;
+	border-top: 1px solid lightgrey;
   }
+
+  
 
 
   .contactoForm2{
@@ -217,7 +225,8 @@
   }
 
   .conteinerInfoFinal{
-	margin-top: -4%;
+	margin-top: -1%;
+	border-top: 1px solid lightgrey;
   }
 
   /* Fin codigo nuevo */
