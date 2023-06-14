@@ -62,7 +62,7 @@
   .font-bodyLogo{
 	display: flex;
 	justify-content: center;
-	width: 45%;
+	width: 70%;
   }
   .font-body{
 	display: flex;
@@ -191,21 +191,10 @@
   }
   
   #contact .form button[type="submit"]:hover {
-	background: darkgreen;
+	background: green;
   }
-/*-----------------------------------------------------------------------------------
-
-	Theme Name: Canvas
-	Theme URI: http://themes.semicolonweb.com/html/canvas
-	Description: The Multi-Purpose Template
-	Author: SemiColonWeb
-	Author URI: http://themeforest.net/user/semicolonweb
-	Version: 6.1.4
-
------------------------------------------------------------------------------------*/
 
 /* ----------------------------------------------------------------
-
 	- Basic
 	- Typography
 	- Basic Layout Styles
@@ -284,16 +273,13 @@
 
 ---------------------------------------------------------------- */
 
-
 /* ----------------------------------------------------------------
 	Bootstrap Adjustments
 -----------------------------------------------------------------*/
 
-
 @media (min-width: 1440px) {
 	.container { max-width: 1320px; }
 }
-
 
 /* ----------------------------------------------------------------
 	Basic

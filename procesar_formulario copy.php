@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $subject = $_POST["subject"];
   $message = $_POST["message"];
 
-  // Validar los datos (opcional) 
+  // Validar los datos (opcional)
 
   // Procesar los datos (por ejemplo, enviar un correo electrónico)
   $to = "contacto@usittel.com";
@@ -17,8 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $body .= "Mensaje: " . $message . "\n";
 
   if (mail($to, $subject, $body)) {
-    echo "<script>alert("¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.")</script>";
-    echo "<script>setTimeout(\"location.href='index.html'\",1000)</script>";
+    echo "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.";
   } else {
     echo "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.";
   }
