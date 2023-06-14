@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Procesar los datos (por ejemplo, enviar un correo electrónico)
   $to = "contacto@usittel.com";
-  $subject = "Nuevo mensaje de contacto";
+  $subject = "Nuevo mensaje de contacto"; // Probar borrar esta linea
   $body = "Nombre: " . $name . "\n";
   $body .= "Correo electrónico: " . $email . "\n";
   $body .= "Asunto: " . $subject . "\n";
