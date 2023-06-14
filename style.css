@@ -88,7 +88,10 @@
   .imagenUsina{
 	opacity: 70%;
 	animation: fadeInUpBig; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
+  	animation-duration: 2s; /* don't forget to set a duration! */
+	background-color: red;
+	width: 70%;
+	height: 70%;
   }
 
   .estiloContainer{
