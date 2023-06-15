@@ -95,8 +95,6 @@
   }
 
   .estiloContainer{
-
-	margin-top: -6%;
   }
 
   /*FORM */
@@ -217,9 +215,6 @@
 	border-top: 1px solid lightgrey;
   }
 
-  
-
-
   .contactoForm2{
 	display: flex;
 	flex-direction: column;
@@ -230,6 +225,53 @@
   .conteinerInfoFinal{
 	margin-top: -1%;
 	border-top: 1px solid lightgrey;
+  }
+
+  .conteinerInfoFinal{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .conteinerInfoFinal2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .contactoContainerIconos{
+	display: flex;
+	flex-direction: row;
+	width: 85%;
+  }
+
+  .containerChicoContact{
+  }
+
+
+  /*Mobile code nuevo*/
+
+  @media (max-width: 800px) {
+	.estiloContainer{
+		margin-bottom: 0%;
+	  }
+
+	.contactoForm1{
+		margin-top: -20%;
+	  }
+  }
+
+  @media (max-width: 450px) {
+	.estiloContainer{
+		margin-bottom: 0%;
+	  }
+
+	.contactoForm1{
+		margin-top: -40%;
+		display: flex;
+	  }
   }
 
   /* Fin codigo nuevo */
@@ -3604,7 +3646,6 @@ html[xmlns] .slider-wrap {
 
 	.full-header #logo {
 		padding-right: 30px;
-		border-right: 1px solid #EEE;
 	}
 
 	#header.transparent-header.full-header #logo { border-right-color: rgba(0,0,0,0.1); }
@@ -4006,7 +4047,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	.full-header .primary-menu .menu-container {
 		padding-right: 0.5rem;
 		margin-right: 0.5rem;
-		border-right: 1px solid #EEE;
+		/*border-right: 1px solid #EEE;*/
 	}
 
 	.transparent-header.full-header .primary-menu .menu-container { border-right-color: rgba(0,0,0,0.1); }
