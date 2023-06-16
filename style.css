@@ -244,7 +244,9 @@
   .contactoContainerIconos{
 	display: flex;
 	flex-direction: row;
-	width: 85%;
+	width: 80%;  /*Borrar*/
+	justify-items: center;
+	justify-content: space-around;
   }
 
   .containerChicoContact{
