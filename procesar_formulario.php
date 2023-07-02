@@ -6,10 +6,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $subject = $_POST["subject"];
   $message = $_POST["message"];
 
-  // Validar los datos (opcional)
+    // Validar los datos (opcional)
+  if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+    echo "Por favor, completa todos los campos del formulario.";
+    exit;
+  }
 
   // Procesar los datos (por ejemplo, enviar un correo electrónico)
-  $to = "usittel.fibra@gmail.com";
+  $to = "formulariousittel@gmail.com";
   $subject = "Nuevo mensaje de contacto";
   $body = "Nombre: " . $name . "\n";
   $body .= "Correo electrónico: " . $email . "\n";
