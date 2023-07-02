@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function() {
       event.preventDefault(); // Evita la redirección predeterminada
       
       var selectedOption = this.getAttribute('data-value');
-      currentPageLabel.textContent = "Estás en la página: " + selectedOption;
+      currentPageLabel.textContent = "Web: " + selectedOption;
     });
   });
 });
