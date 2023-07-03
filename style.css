@@ -1,75 +1,73 @@
-    /* Estilos para el botón */
-    .dropbtn {
-		background-color: transparent;
-		color: white;
-		font-size: 16px;
-		border: none;
-		cursor: pointer;
-		padding: 10px;
-	  }
-  
-	  /* Estilos para el contenedor del dropdown */
-	  .dropdown {
-		position: relative;
-	  }
-  
-	  /* Estilos para la línea a la izquierda */
-	  .dropdown:before {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 0;
-		bottom: 0;
-		width: 1px;
-		background-color: white;
-	  }
-  
-	  /* Estilos para el ícono de flecha */
-	  .dropdown-icon {
-		margin-left: 5px; /* Ajusta el espaciado entre el texto y el ícono */
-	  }
-	  
-	  /* Estilos para la lista desplegable */
-	  .dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: white; /* Cambia el fondo a blanco */
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-		margin-left: 1px; /* Ajusta el margen para la línea a la izquierda */
-	  }
-  
-	  /* Estilos para los enlaces de la lista desplegable */
-	  .dropdown-content a {
-		color: darkgreen; /* Cambia el color del texto a verde oscuro */
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-		font-family: Arial, sans-serif; /* Cambia la fuente del texto */
-		font-size: 16px; /* Ajusta el tamaño de la fuente */
-		font-weight: normal; /* Quita la negrita del texto */
-	  }
-  
-	  /* Estilos para los enlaces de la lista desplegable al pasar el cursor sobre ellos */
-	  .dropdown-content a:hover {
-		background-color: #f1f1f1;
-		color: darkgreen; /* Cambia el color del texto a verde oscuro */
-	  }
-  
-	  /* Estilos para mostrar la lista desplegable al pasar el cursor sobre el botón */
-	  .dropdown:hover .dropdown-content {
-		display: block;
-	  }
-  
-	  /* Estilos para el formato móvil */
-	  @media screen and (max-width: 600px) {
-		.dropdown:before {
-		  display: none; /* Oculta la línea en formato móvil */
-		}
-	  }
-  /*Fin codigo lista desplegable*/
+ /* Estilos para el botón */
+ .dropbtn {
+	background-color: transparent;
+	color: white;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+  }
 
+  /* Estilos para el contenedor del dropdown */
+  .dropdown {
+	position: relative;
+  }
+
+  /* Estilos para la línea a la izquierda */
+  .dropdown:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	background-color: white;
+  }
+
+  /* Estilos para el ícono de flecha */
+  .dropdown-icon {
+	margin-left: 5px; /* Ajusta el espaciado entre el texto y el ícono */
+  }
+  
+  /* Estilos para la lista desplegable */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white; /* Cambia el fondo a blanco */
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	margin-left: 1px; /* Ajusta el margen para la línea a la izquierda */
+  }
+
+  /* Estilos para los enlaces de la lista desplegable */
+  .dropdown-content a {
+	color: darkgreen; /* Cambia el color del texto a verde oscuro */
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+	font-size: 16px; /* Ajusta el tamaño de la fuente */
+	font-weight: normal; /* Quita la negrita del texto */
+  }
+
+  /* Estilos para mostrar la lista desplegable al pasar el cursor sobre el botón */
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+  /* Estilos para el formato móvil */
+  @media screen and (max-width: 600px) {
+	.dropdown:before {
+	  display: none; /* Oculta la línea en formato móvil */
+	}
+  }
+
+  /* Estilos para ajustar el ancho de la página y ocultar la barra de desplazamiento horizontal */
+  body {
+	overflow-x: hidden;
+  }
+  /*Fin codigo lista desplegable*/
 
   .estiloContainerMayor{
 	margin: auto;
