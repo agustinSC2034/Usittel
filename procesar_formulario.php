@@ -1,14 +1,36 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Obtener los datos del formulario
-  $name = $_POST["name"];
-  $email = $_POST["email"];
-  $subject = $_POST["subject"];
-  $message = $_POST["message"];
+  // Obtener los datos del formulario y limpiarlos
+  $name = htmlspecialchars($_POST["name"]);
+  $email = htmlspecialchars($_POST["email"]);
+  $subject = htmlspecialchars($_POST["subject"]);
+  $message = htmlspecialchars($_POST["message"]);
 
-    // Validar los datos (opcional)
+  // Verificar si hay campos vacíos
   if (empty($name) || empty($email) || empty($subject) || empty($message)) {
-    echo "Por favor, completa todos los campos del formulario.";
+    echo '<script>alert("Por favor, completa todos los campos del formulario.");</script>';
+    echo '<script>setTimeout(function() { window.location.href = "index.html"; }, 1000);</script>';
+    exit;
+  }
+
+  // Validar el correo electrónico
+  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo '<script>alert("El correo electrónico ingresado no es válido.");</script>';
+    echo '<script>setTimeout(function() { window.location.href = "index.html"; }, 1000);</script>';
+    exit;
+  }
+
+  // Validar el nombre (por ejemplo, debe tener al menos 4 caracteres)
+  if (strlen($name) < 4) {
+    echo '<script>alert("El nombre debe tener al menos 4 caracteres.");</script>';
+    echo '<script>setTimeout(function() { window.location.href = "index.html"; }, 1000);</script>';
+    exit;
+  }
+
+  // Validar el asunto (por ejemplo, debe tener al menos 4 caracteres)
+  if (strlen($subject) < 4) {
+    echo '<script>alert("El asunto debe tener al menos 4 caracteres.");</script>';
+    echo '<script>setTimeout(function() { window.location.href = "index.html"; }, 1000);</script>';
     exit;
   }
 
