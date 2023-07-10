@@ -14340,7 +14340,6 @@ button.toast-close-button {
 	Footer
 -----------------------------------------------------------------*/
 
-
 #footer {
 	position: relative;
 	background-color: #EEE;
@@ -14371,9 +14370,10 @@ button.toast-close-button {
 	background-color: #DDD;
 	font-size: 0.875rem;
 	line-height: 1.8;
+	font-weight: normal; /* Elimina la negrita */
 }
 
-#copyrights i.footer-icon {
+#footer .footer-icon {
 	position: relative;
 	top: 1px;
 	font-size: 0.875rem;
@@ -14382,29 +14382,27 @@ button.toast-close-button {
 	margin-right: 3px;
 }
 
-.copyright-links a {
+.footer-links a {
 	display: inline-block;
 	margin: 0 3px;
 	color: #333;
 	border-bottom: 1px dotted #444;
+	font-weight: normal; /* Elimina la negrita */
 }
 
-.copyright-links a:hover {
+.footer-links a:hover {
 	color: #555;
 	border-bottom: 1px solid #666;
 }
 
-.copyrights-menu { margin-bottom: 10px; }
+.footer-menu { margin-bottom: 10px; }
 
-.copyrights-menu a {
+.footer-menu a {
 	font-size: 0.875rem;
 	margin: 0 10px;
 	border-bottom: 0 !important;
+	font-weight: normal; /* Elimina la negrita */
 }
-
-#copyrights a:first-child { margin-left: 0; }
-
-#copyrights.text-right a:last-child { margin-right: 0; }
 
 .footer-logo {
 	display: block;
