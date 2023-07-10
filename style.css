@@ -128,9 +128,6 @@
 	height: 70%;
   }
 
-  .estiloContainer{
-  }
-
   /*FORM */
  /* Contact Section
 --------------------------------*/
@@ -283,7 +280,9 @@
 	justify-content: space-around;
   }
 
-  .containerChicoContact{
+  /* Footer */
+  .linked-text {
+	text-decoration: underline;
   }
 
 
