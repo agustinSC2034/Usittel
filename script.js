@@ -23,10 +23,10 @@ function verificarCobertura() {
   const numeroIngresado = document.getElementById('inputNumero').value;
 
   if (numeroIngresado === '111111' || numeroIngresado === '222222' || numeroIngresado === '333333') {
-    titulo.innerText = '¡Felicitaciones! Estás en la zona de cobertura.',
+    titulo.innerText = '¡Buenas Noticias! Estás en Zona Usittel',
     parrafo.innerText = 'Puedes dejarnos tus datos en el formulario que se encuentra al final de la pagina o escribirnos al mail: contacto@usittel.com.ar y un operador se contactará contigo. Tambien puedes llamaranos al 0800-199-4545';
   } else {
-    titulo.innerText = 'No estás en la zona de cobertura.',
+    titulo.innerText = 'Por el momento no contamos con cobertura en la dirección indicada.',
     parrafo.innerText = 'Seguimos ampliandonos, pronto llegaremos a tu hogar';
   }
 
