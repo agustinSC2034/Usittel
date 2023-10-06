@@ -74,38 +74,87 @@
   /*Fin codigo lista desplegable*/
 
   .estiloContainerMayor{
+	display: flex;
 	margin: auto;
 	justify-content: center;
 	width: 100%;
+	height: 70vh;
   }
 
   .estiloContainer{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	justify-items: center;
+	align-items: center;
 	margin: auto;
 	width: 100%;
+	height: 100%;
   }
 
   .conteiner-mapa-cobertura{
 	display: flex;
 	flex-direction: row;
 	margin: auto;
+	height: 100%;
 	width: 100%;
+	justify-content: center;
+	justify-items: center;
   }
 
   .mapa-container{
+	display: flex;
 	justify-content: center;
+	justify-items: center;
+	align-items: center;
 	margin: auto;
 	width: 100%;
-	background-color: cyan;
+	height: 100%;
   }
 
-  .cobertura-container{
+  .mapa-container img{
+	width: 95%;
+	height: 95%;
+	border-radius: 0%;
+  }
+
+  /*Area de cobertura*/
+  .cobertura-box {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
 	justify-content: center;
-	margin: auto;
+	gap: 5%;
+	background-color: #f0f0f0;
+	border-radius: 40px;
+	padding: 20px;
 	width: 100%;
-	background-color: brown;
+	text-align: center;
+	margin: 0 auto;
+	align-items: center;
+  }
+
+  .inputContainerCoberturaBox{
+	width: 100%;
+  }
+
+  input[type="number"],
+  input[type="text"],
+  select {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 30px; /* Redondeamos las esquinas */
+	transition: border-color 0.3s; /* Agregamos una transición para el color del borde */
+  }
+
+  /* Estilo para el campo de entrada de texto al hacer clic */
+	input[type="number"]:focus {
+	border-color: rgb(6, 162, 149); /* Cambiamos el color del borde a verde al hacer clic */
+  }
+
+  .botonVerificarCobertura{
+	border-radius: 30px; /* Redondeamos las esquinas */
   }
 
   .footerContainer{
@@ -189,7 +238,6 @@
   .divIconoBeneficios{
 	width: 20%;
   }
-
   /*FORM */
  /* Contact Section
 --------------------------------*/
@@ -287,7 +335,7 @@
   }
   
   #contact .form button[type="submit"] {
-	background: lightgreen;
+	background:  rgb(6, 162, 149);
 	border: 0;
 	padding: 10px 30px;
 	color: #fff;
@@ -296,7 +344,7 @@
   }
   
   #contact .form button[type="submit"]:hover {
-	background: green;
+	background:  rgb(6, 108, 100);
   }
 
   .contactoForm1{
