@@ -75,14 +75,37 @@
 
   .estiloContainerMayor{
 	margin: auto;
-	display: flex;
 	justify-content: center;
+	width: 100%;
   }
 
   .estiloContainer{
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	margin: auto;
-	width: auto;
+	width: 100%;
+  }
+
+  .conteiner-mapa-cobertura{
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	width: 100%;
+  }
+
+  .mapa-container{
+	justify-content: center;
+	margin: auto;
+	width: 100%;
+	background-color: cyan;
+  }
+
+  .cobertura-container{
+	justify-content: center;
+	margin: auto;
+	width: 100%;
+	background-color: brown;
   }
 
   .footerContainer{
@@ -126,6 +149,27 @@
 	background-color: red;
 	width: 70%;
 	height: 70%;
+  }
+
+  .tituloPlanes{
+	background-color: yellow;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  }
+
+  .tituloPreciosDiv{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+  }
+
+  .tituloPrecios{
+	align-items: center;
+	text-align: center;
+	width: 60%;
   }
 
   /*FORM */
