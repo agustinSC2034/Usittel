@@ -419,6 +419,12 @@
 	  }
   }
 
+  /*Colores de fondo*/
+  .contenedorUsittelFibra{
+	background-color: rgb(242, 241, 241);
+	width: 100%;
+  }
+
   /* Fin codigo nuevo */
 
 /* ----------------------------------------------------------------
