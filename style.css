@@ -124,10 +124,13 @@
 	flex-direction: column;
 	justify-items: center;
 	justify-content: center;
-	gap: 5%;
+	gap: 0%;
 	background-color: #f0f0f0;
 	border-radius: 40px;
-	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
@@ -136,6 +139,18 @@
 
   .inputContainerCoberturaBox{
 	width: 100%;
+  }
+
+  .numClienteHelp{
+	margin-top: 10px;
+  }
+
+  .botonVerificar{
+	margin-top: 50px;
+  }
+
+  .contactanosWP{
+	display: none;
   }
 
   input[type="number"],
@@ -212,6 +227,7 @@
 	display: flex;
 	justify-content: center;
 	justify-items: center;
+	height: 60px;
   }
 
   .tituloPrecios{
@@ -238,6 +254,17 @@
   .divIconoBeneficios{
 	width: 20%;
   }
+
+  .bloquePrecio1{
+	display: flex;
+	flex-direction: column;
+	gap: -20px;
+  }
+
+  .contenedorPrecio1{
+  }
+
+  
   /*FORM */
  /* Contact Section
 --------------------------------*/
