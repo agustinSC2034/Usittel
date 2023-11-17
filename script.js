@@ -28,7 +28,7 @@ function verificarCobertura() {
     titulo.innerText = '¡Buenas Noticias! Estás en Zona Usittel',
     parrafo.innerText = 'Puedes dejarnos tus datos en el formulario que se encuentra al final de la pagina o escribirnos al mail: contacto@usittel.com.ar y un operador se contactará contigo.',
     numHelp.innerText = '';
-    textoWP.innerText = 'Tambien puedes escribirnos al whatsapp'
+    textoWP.innerText = 'Tambien podés escribirnos al whatsapp'
     numWP.innerText = '54 9 249 406-0345';
     
  
@@ -65,3 +65,27 @@ function volverAtras() {
   textoWP.innerText = '';
   numWP.innerText = '';
 }
+
+// script pop-up:
+function openPopup() {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'block';
+}
+
+function closePopup() {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'none';
+}
+
+document.getElementById('popupLink1').addEventListener('click', function(e) {
+  e.preventDefault();
+  openPopup();
+});
+document.getElementById('popupLink2').addEventListener('click', function(e) {
+  e.preventDefault();
+  openPopup();
+});
+document.getElementById('popupLink3').addEventListener('click', function(e) {
+  e.preventDefault();
+  openPopup();
+});

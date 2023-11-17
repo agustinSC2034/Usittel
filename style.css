@@ -264,6 +264,29 @@
   .contenedorPrecio1{
   }
 
+  /*POPUP*/
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    z-index: 9999;
+	border-radius: 25px;
+}
+
+  .popup-content {
+    font-size: 12px;
+	animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 1s; /* don't forget to set a duration! */
+}
+
   
   /*FORM */
  /* Contact Section
