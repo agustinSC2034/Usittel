@@ -447,6 +447,21 @@
 
 
   /*Mobile code nuevo*/
+  @media (max-width: 985px) {
+	.estiloContainerMayor{
+		height: 100%;
+	}
+	.conteiner-mapa-cobertura{
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		height: 100%;
+		width: 100%;
+		justify-content: center;
+		justify-items: center;
+		gap: 50px;
+	  }
+  }
 
   @media (max-width: 800px) {
 	.estiloContainer{
