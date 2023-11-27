@@ -67,25 +67,41 @@ function volverAtras() {
 }
 
 // script pop-up:
-function openPopup() {
-  var popup = document.getElementById('popup');
+function openPopup1() {
+  var popup = document.getElementById('popup1');
+  popup.style.display = 'block';
+}
+function openPopup2() {
+  var popup = document.getElementById('popup2');
+  popup.style.display = 'block';
+}
+function openPopup3() {
+  var popup = document.getElementById('popup3');
   popup.style.display = 'block';
 }
 
-function closePopup() {
-  var popup = document.getElementById('popup');
+function closePopup1() {
+  var popup = document.getElementById('popup1');
+  popup.style.display = 'none';
+}
+function closePopup2() {
+  var popup = document.getElementById('popup2');
+  popup.style.display = 'none';
+}
+function closePopup3() {
+  var popup = document.getElementById('popup3');
   popup.style.display = 'none';
 }
 
 document.getElementById('popupLink1').addEventListener('click', function(e) {
   e.preventDefault();
-  openPopup();
+  openPopup1();
 });
 document.getElementById('popupLink2').addEventListener('click', function(e) {
   e.preventDefault();
-  openPopup();
+  openPopup2();
 });
 document.getElementById('popupLink3').addEventListener('click', function(e) {
   e.preventDefault();
-  openPopup();
+  openPopup3();
 });
