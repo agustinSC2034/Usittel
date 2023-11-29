@@ -100,6 +100,7 @@
 	width: 100%;
 	justify-content: center;
 	justify-items: center;
+	gap: 1%;
   }
 
   .mapa-container{
@@ -113,8 +114,8 @@
   }
 
   .mapa-container img{
-	width: 97%;
-	height: 90%;
+	width: 100%;
+	height: 93%;
 	border-radius: 0%;
   }
 
