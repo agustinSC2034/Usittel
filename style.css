@@ -113,8 +113,8 @@
   }
 
   .mapa-container img{
-	width: 95%;
-	height: 95%;
+	width: 97%;
+	height: 90%;
 	border-radius: 0%;
   }
 
@@ -448,6 +448,14 @@
 	justify-items: center;
 	justify-content: space-around;
   }
+
+  .emailClass{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  /* estilos gpt*/
 
   /* Footer */
   .linked-text {
