@@ -297,6 +297,11 @@
 	animation-duration: 1.3s; /* don't forget to set a duration! */
 }
 
+/*Preguntas frecuentes*/
+	.textoPreguntas{
+		text-align: center;
+	}
+
   
   /*FORM */
  /* Contact Section
