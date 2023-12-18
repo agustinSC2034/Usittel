@@ -189,3 +189,26 @@ document.getElementById('popupLink3').addEventListener('click', function(e) {
   e.preventDefault();
   openPopup3();
 });
+
+// Correo fuera de cobertura
+function enviarCorreoFueraCobertura(numeroCliente) {
+  fetch('enviarCorreoFueraCobertura.php', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ numeroCliente: numeroCliente })
+  })
+  .then(response => {
+      if (!response.ok) {
+          throw new Error('Hubo un problema al enviar el correo.');
+      }
+      return response.json();
+  })
+  .then(data => {
+      console.log(data.message); // Mensaje de éxito del servidor
+  })
+  .catch(error => {
+      console.error('Error:', error);
+  });
+}
