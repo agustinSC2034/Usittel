@@ -131,9 +131,9 @@ function volverAtras() {
   const inputContainer = document.getElementById('inputContainer');
   const titulo = document.getElementById('titulo');
   const parrafo = document.getElementById('textoAbajoTitulo');
-  const numHelp = document.getElementById('numHelp');
   const textoWP = document.getElementById('textoWP');
   const numWP = document.getElementById('numWP');
+  const numHelp = document.getElementById('numHelp');
   const botonVerificar = document.getElementById('botonVerificar');
   // Restablecer el borde a su estado original (si fuera necesario)
   document.getElementById('inputNumero').style.border = ''; // Establece el borde a su estado original
@@ -142,10 +142,10 @@ function volverAtras() {
   // Muestra nuevamente el contenedor del input y restaura el contenido original
   inputContainer.style.display = 'block';
   titulo.innerText = 'Validá si estás en zona ingresando el número de Cliente de la USINA:';
+  numHelp.innerHTML = '<a target="_blank" href="img/FACTURA USINA DETALLE.png" id="numHelp">¿Cómo encuentro el número de Cliente?</a>'
   botonVerificar.innerHTML = '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="verificarCobertura()">Verificar</button>'
   document.getElementById('inputNumero').value = ''; // Borra el contenido del input
   parrafo.innerText = '';
-  numHelp.innerText = '';
   textoWP.innerText = '';
   numWP.innerText = '';
 }
