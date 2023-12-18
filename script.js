@@ -14,40 +14,6 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-/*
-function verificarCobertura() {
-  const inputContainer = document.getElementById('inputContainer');
-  const titulo = document.getElementById('titulo');
-  const parrafo = document.getElementById('textoAbajoTitulo');
-  const numHelp = document.getElementById('numHelp');
-  const textoWP = document.getElementById('textoWP');
-  const numWP = document.getElementById('numWP');
-  const botonVerificar = document.getElementById('botonVerificar');
-  const numeroIngresado = document.getElementById('inputNumero').value;
-
-  if (numeroIngresado === '111111' || numeroIngresado === '222222' || numeroIngresado === '333333') {
-    titulo.innerText = '¡Buenas Noticias! Estás en Zona Usittel',
-    parrafo.innerText = 'Puedes dejarnos tus datos en el formulario que se encuentra al final de la pagina o escribirnos al mail: contacto@usittel.com.ar y un operador se contactará contigo.',
-    numHelp.innerText = '';
-    textoWP.innerText = 'Tambien podés escribirnos al whatsapp'
-    numWP.innerText = '54 9 249 406-0345';
-    
- 
-  } else {
-    titulo.innerText = 'Por el momento no contamos con cobertura en la dirección indicada.',
-    parrafo.innerText = 'Seguimos ampliandonos, pronto llegaremos a tu hogar';
-    numHelp.innerText = '';
-    textoWP.innerText = '';
-    numWP.innerText = '';
-  }
-
-  // Oculta el contenedor del input y muestra el botón de volver
-  inputContainer.style.display = 'none';
-  contactanosWP.style.display = ''
-  botonVerificar.innerHTML = '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="volverAtras()">Volver</button>';
-  }
-  */
-
 
   function verificarCobertura() {
     const inputContainer = document.getElementById('inputContainer');
@@ -189,26 +155,3 @@ document.getElementById('popupLink3').addEventListener('click', function(e) {
   e.preventDefault();
   openPopup3();
 });
-
-// Correo fuera de cobertura
-function enviarCorreoFueraCobertura(numeroCliente) {
-  fetch('enviarCorreoFueraCobertura.php', {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ numeroCliente: numeroCliente })
-  })
-  .then(response => {
-      if (!response.ok) {
-          throw new Error('Hubo un problema al enviar el correo.');
-      }
-      return response.json();
-  })
-  .then(data => {
-      console.log(data.message); // Mensaje de éxito del servidor
-  })
-  .catch(error => {
-      console.error('Error:', error);
-  });
-}
