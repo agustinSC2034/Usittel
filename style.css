@@ -154,6 +154,10 @@
 	display: none;
   }
 
+  .contact{
+	display: none;
+  }
+
   input[type="number"],
   input[type="text"],
   select {

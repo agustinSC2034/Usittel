@@ -19,9 +19,13 @@ function verificarCobertura() {
   const inputContainer = document.getElementById('inputContainer');
   const titulo = document.getElementById('titulo');
   const parrafo = document.getElementById('textoAbajoTitulo');
+  const parrafo2 = document.getElementById('textoAbajoTitulo2');
+  const parrafo3 = document.getElementById('textoAbajoTitulo3');
   const numHelp = document.getElementById('numHelp');
+  const contact = document.getElementById('contact');
   const textoWP = document.getElementById('textoWP');
   const numWP = document.getElementById('numWP');
+  const numWP2 = document.getElementById('numWP2');
   const botonVerificar = document.getElementById('botonVerificar');
   const numeroIngresado = document.getElementById('inputNumero').value;
 
@@ -550,16 +554,20 @@ function verificarCobertura() {
 
   if (numerosValidos.includes(numeroIngresado)) {
     titulo.innerText = '¡Buenas Noticias! Estás en Zona Usittel';
-    parrafo.innerText = 'Puedes dejarnos tus datos en el formulario que se encuentra al final de la pagina o escribirnos al mail: contacto@usittel.com.ar y un operador se contactará contigo.',
-      numHelp.innerText = '';
-    textoWP.innerText = 'Tambien podés escribirnos al whatsapp'
-    numWP.innerText = '54 9 249 406-0345';
+    parrafo.innerHTML = 'Contactate ahora al siguiente Whatsapp <a style="font-size: 18px" target="_blank" href="https://wa.me/5492494060345" id="numWP">5492494060345</a>, o hace click en el número y chatea ahora con nosotros!';
+    parrafo2.innerHTML = 'También, podes dejarnos tus datos en el <a target="" href="#contacto" id="contact">formulario</a> o escribirnos al mail <a href="mailto:contacto@usittel.com.ar"><u>contacto@usittel.com.ar</u></a> y un operador se contactará contigo.';
+    parrafo3.innerText = 'Muchas gracias!';
+    numHelp.innerText = '';
+    textoWP.innerText = ''
+    numWP.innerText = '';
   } else {
     titulo.innerText = 'Por el momento no contamos con cobertura en la dirección indicada.';
     parrafo.innerText = 'Seguimos ampliandonos, pronto llegaremos a tu hogar';
+    parrafo2.innerHTML = 'Déjanos un mensaje en el siguiente <a target="" href="#contacto" id="contact">formulario</a> para contactarte cuando estemos en tu zona.';
+    numWP.innerText = '';
     numHelp.innerText = '';
     textoWP.innerText = '';
-    numWP.innerText = '';
+   
   }
 
   // Oculta el contenedor del input y muestra el botón de volver
@@ -572,6 +580,8 @@ function volverAtras() {
   const inputContainer = document.getElementById('inputContainer');
   const titulo = document.getElementById('titulo');
   const parrafo = document.getElementById('textoAbajoTitulo');
+  const parrafo2 = document.getElementById('textoAbajoTitulo2');
+  const parrafo3 = document.getElementById('textoAbajoTitulo3');
   const textoWP = document.getElementById('textoWP');
   const numWP = document.getElementById('numWP');
   const numHelp = document.getElementById('numHelp');
@@ -587,6 +597,8 @@ function volverAtras() {
   botonVerificar.innerHTML = '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="verificarCobertura()">Verificar</button>'
   document.getElementById('inputNumero').value = ''; // Borra el contenido del input
   parrafo.innerText = '';
+  parrafo2.innerText = '';
+  parrafo3.innerText = '';
   textoWP.innerText = '';
   numWP.innerText = '';
 }
