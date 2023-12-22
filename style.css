@@ -475,6 +475,12 @@
 
   /*Mobile code nuevo*/
   @media (max-width: 985px) {
+	.tituloBeneficios{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		font-size: medium;
+	}
 	.estiloContainerMayor{
 		height: 100%;
 	}
