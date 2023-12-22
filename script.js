@@ -554,7 +554,7 @@ function verificarCobertura() {
 
   if (numerosValidos.includes(numeroIngresado)) {
     titulo.innerText = '¡Buenas Noticias! Estás en Zona Usittel';
-    parrafo.innerHTML = 'Contactate ahora al siguiente Whatsapp <a style="font-size: 18px" target="_blank" href="https://wa.me/5492494060345" id="numWP">5492494060345</a>, o hace click en el número y chatea ahora con nosotros!';
+    parrafo.innerHTML = 'Contactate ahora al siguiente Whatsapp <i class="fab fa-whatsapp"></i> <a target="_blank" href="https://wa.me/5492494060345">+54 9 249406-0345</a>, o hace click en el número y chatea ahora con nosotros!';
     parrafo2.innerHTML = 'También, podes dejarnos tus datos en el <a target="" href="#contacto" id="contact">formulario</a> o escribirnos al mail <a href="mailto:contacto@usittel.com.ar"><u>contacto@usittel.com.ar</u></a> y un operador se contactará contigo.';
     parrafo3.innerText = 'Muchas gracias!';
     numHelp.innerText = '';
