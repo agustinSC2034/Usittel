@@ -547,6 +547,22 @@
 		margin-top: 0%;
 	  }
 
+	  .fuenteTituloBloque3{
+		display: flex;
+		padding-top: 20%;
+		padding-bottom: 10%;
+		justify-content: center;
+		text-align: center;
+	  }
+	  .parrafoEspecial1{
+		display: flex;
+		background-color: yellow;
+		justify-content: flex-start;
+		text-align: left;
+		padding: 2%;
+		margin-bottom: -15%;
+	  }
+
   }
 
   @media (max-width: 1500px) {
