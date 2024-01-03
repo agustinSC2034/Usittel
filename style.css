@@ -1,4 +1,28 @@
  /* Estilos para el botón */
+
+ /* Sticky button */
+	
+		/* Estilos generales del botón flotante */
+	.floating-button {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		width: 50px;
+		height: 50px;
+		background-image: url('img/whatsapp.png'); /* Ruta de tu imagen de WhatsApp */
+		background-size: cover;
+		border-radius: 50%;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+		transition: transform 0.3s, box-shadow 0.3s;
+	}
+	
+	.floating-button:hover {
+		box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+		transform: scale(1.1);
+	}
+  
+  
+
  .dropbtn {
 	background-color: transparent;
 	color: white;
