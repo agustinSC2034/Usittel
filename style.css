@@ -543,17 +543,16 @@
 	text-decoration: underline;
   }
 
+  .footer-Aclar{
+  }
+
   .footer-aclaraciones{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: start ;
 	text-align: start;
-  }
-  .footer-aclaraciones2{
-	display: flex;
-	justify-content: center;
-	font-size: small;
+	font-size: 13px;
   }
 
 
