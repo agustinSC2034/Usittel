@@ -546,6 +546,7 @@
   .footer-Aclar{
   }
 
+  /*
   .footer-aclaraciones{
 	display: flex;
 	flex-direction: row;
@@ -555,7 +556,7 @@
 	font-size: 13px;
 	padding-top: 3%;
   }
-
+  */
 
   /*Mobile code nuevo*/
   @media (max-width: 1250px) {
