@@ -53,6 +53,31 @@
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
+.buttonAutogestion2 {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	white-space: nowrap;
+	margin: 5px;
+	padding: 8px 22px;
+	font-size: 0.875rem;
+	line-height: 24px;
+	background-color: rgb(55, 138, 166);
+	color: #FFF;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: none;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.buttonAutogestion2:hover {
+	background-color: rgb(26, 79, 97);
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  }
+
   .buttonAutogestion:hover {
 	background-color: #0a6855;
 	color: #FFF;
