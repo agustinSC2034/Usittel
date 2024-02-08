@@ -258,9 +258,6 @@
 	border-radius: 30px; /* Redondeamos las esquinas */
   }
 
-  .footerContainer{
-	width: 150%;
-  }
    
   .containerTotal{
 	display: flex;
@@ -569,6 +566,23 @@
   }
 
   .footer-Aclar{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: start;
+	align-items: center;
+  }
+
+  .datosFooter{
+	width: 85%;
+	height: 25%;
+	text-align: center;
+  }
+  .datosFooter2{
+	text-align: center;
+	width: auto;
+	height: auto;
+	align-items: center;
   }
 
   /*
