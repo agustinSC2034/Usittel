@@ -154,7 +154,7 @@
 	margin: auto;
 	justify-content: center;
 	width: 100%;
-	height: 70vh;
+	height: auto;
   }
 
   .estiloContainer{
@@ -14910,6 +14910,10 @@ button.toast-close-button {
 	border-top: 5px solid rgba(0,0,0,0.2);
 }
 
+#footerNew{
+	font-size: 0.790rem;
+}
+
 @media (min-width: 992px) {
 	.sticky-footer #slider:not(.slider-parallax-invisible),
 	.sticky-footer #page-submenu,
@@ -14932,7 +14936,7 @@ button.toast-close-button {
 #copyrights {
 	padding: 40px 0;
 	background-color: #DDD;
-	font-size: 0.875rem;
+	font-size: 0.790rem;
 	line-height: 1.8;
 	font-weight: normal; /* Elimina la negrita */
 }
