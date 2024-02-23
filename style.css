@@ -639,7 +639,7 @@
 	margin-bottom: 7vh;
  }
 
- .separadorCorporativo{
+ .separadorComercio{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -655,27 +655,58 @@
 	margin-bottom: 7vh;
  }
 
+ .separadorCondiciones{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 50px;
+	width: 85%;
+	background-color: #FC6471;
+	font-size: large;
+	font-weight: bold;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	border-radius: 3%;
+	color: white;
+	margin-bottom: 1vh;
+ }
+
+ .separadorDedicado{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 50px;
+	width: 85%;
+	background-color: #7D5BA6;
+	font-size: large;
+	font-weight: bold;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	border-radius: 3%;
+	color: white;
+	margin-bottom: 7vh;
+ }
+
  .contenedorDeLinks{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	height: 40vh;
+	height: 30vh;
 	width: 85%;
-	margin-bottom: 10vh;
  }
 
  .subContenedorDeLinks1{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	width: 100%;
+	width: 95%;
  }
  .subContenedorDeLinks2{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	width: 100%;
+	width: 95%;
  }
 
  /*Mobile code nuevo*/
