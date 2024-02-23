@@ -830,11 +830,26 @@
  		display: flex;
  		width: 100%;
  	}
-
- 	.bloquePrecioAAA {}
  }
 
  @media (max-width: 600px) {
+	.containerChicoContact{
+		display: flex;
+		justify-content: center;
+		height: 35vh;
+	}
+
+	.contenedorDeTel{
+		display: flex;
+		flex-direction: column;
+		gap: 1.5vh;
+	}
+
+	.footer-Aclar{
+		display: flex;
+		gap: 5vh;
+	}
+
  	.tituloBeneficios {
  		display: flex;
  		justify-content: center;
