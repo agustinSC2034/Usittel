@@ -627,9 +627,29 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 30%;
+	text-align: center;
+	height: 50px;
 	width: 100%;
-	background-color: lightgreen;
+	background-color: rgb(55, 138, 166);
+	font-size: large;
+	font-weight: bold;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	border-radius: 3%;
+	color: white;
+ }
+ .separadorCorporativo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	background-color: #1ABC9C;
+	font-size: large;
+	font-weight: bold;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	border-radius: 3%;
+	color: white;
  }
 
  /*Mobile code nuevo*/
