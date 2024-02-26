@@ -692,7 +692,7 @@
  	flex-direction: row;
  	justify-content: center;
  	align-items: center;
- 	height: 30vh;
+ 	height: 25vh;
  	width: 85%;
  }
 
@@ -701,6 +701,7 @@
  	flex-direction: column;
  	height: 100%;
  	width: 95%;
+ 	gap: 6%;
  }
 
  .subContenedorDeLinks2 {
@@ -708,6 +709,7 @@
  	flex-direction: column;
  	height: 100%;
  	width: 95%;
+ 	gap: 6%;
  }
 
  /*Mobile code nuevo*/
@@ -855,27 +857,27 @@
  }
 
  @media (max-width: 600px) {
-	
-	.conteiner-mapa-cobertura {
-		display: flex;
-		flex-direction: column;
-		margin: auto;
-		height: 100%;
-		width: 100%;
-		justify-content: center;
-		justify-items: center;
-		gap: 50px;
-	}
 
-	.mapa-container {
-		display: flex;
-		justify-content: center;
-		justify-items: center;
-		align-items: center;
-		margin: auto;
-		width: auto;
-		height: auto;
-	}
+ 	.conteiner-mapa-cobertura {
+ 		display: flex;
+ 		flex-direction: column;
+ 		margin: auto;
+ 		height: 100%;
+ 		width: 100%;
+ 		justify-content: center;
+ 		justify-items: center;
+ 		gap: 50px;
+ 	}
+
+ 	.mapa-container {
+ 		display: flex;
+ 		justify-content: center;
+ 		justify-items: center;
+ 		align-items: center;
+ 		margin: auto;
+ 		width: auto;
+ 		height: auto;
+ 	}
 
  	.containerChicoContact {
  		display: flex;
