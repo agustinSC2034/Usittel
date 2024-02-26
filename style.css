@@ -394,10 +394,6 @@
 
  .popup-content {
  	font-size: 12px;
- 	animation: bounceIn;
- 	/* referring directly to the animation's @keyframe declaration */
- 	animation-duration: 1.3s;
- 	/* don't forget to set a duration! */
  }
 
  /*Sección beneficios FO*/
