@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^autogestionclientes\.usittel\.com\.ar$ [NC]
+RewriteRule ^(.*)$ http://200.69.223.67:5594/PHANTOM/Includes/CRM/CRM_APP/login.php [L,NC,P]
