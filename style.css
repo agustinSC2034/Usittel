@@ -424,6 +424,10 @@
  	text-align: center;
  }
 
+ .contactFormulario{
+	margin-bottom: -30px;
+ }
+
 
  /*FORM */
  /* Contact Section
@@ -710,6 +714,12 @@
  	height: 100%;
  	width: 95%;
  	gap: 6%;
+ }
+
+ /* FORM DE BAJA*/
+
+ .tituloForm{
+	margin-bottom: -80px;
  }
 
  /*Mobile code nuevo*/
