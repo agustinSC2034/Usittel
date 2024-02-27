@@ -180,7 +180,7 @@
  	display: flex;
  	flex-direction: row;
  	margin: auto;
- 	height: auto;
+ 	height: 100%;
  	width: 100%;
  	justify-content: center;
  	justify-items: center;
@@ -194,12 +194,12 @@
  	align-items: center;
  	margin: auto;
  	width: 200%;
- 	height: auto;
+ 	height: 100%;
  }
 
  .mapa-container img {
  	width: 100%;
- 	height: 93%;
+ 	height: 100%;
  	border-radius: 0%;
  }
 
@@ -210,13 +210,14 @@
  	justify-items: center;
  	justify-content: center;
  	gap: 0%;
- 	background-color: #f0f0f0;
+ 	background-color: rgb(237, 233, 233);
  	border-radius: 40px;
  	padding-left: 20px;
  	padding-right: 20px;
  	padding-top: 70px;
  	padding-bottom: 70px;
- 	width: 100%;
+ 	width: auto;
+	height: 100%;
  	text-align: center;
  	margin: 0 auto;
  	align-items: center;
