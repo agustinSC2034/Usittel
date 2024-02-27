@@ -161,9 +161,9 @@
  	display: flex;
  	margin: auto;
  	justify-content: center;
- 	width: 100%;
- 	height: auto;
-	margin-bottom: -15vh;
+ 	width: 80%;
+ 	height: 80%;
+	margin-bottom: -45vh;
  }
 
  .estiloContainer {
@@ -181,8 +181,8 @@
  	display: flex;
  	flex-direction: row;
  	margin: auto;
- 	height: 80%;
- 	width: 85%;
+ 	height: 70%;
+ 	width: 100%;
  	justify-content: center;
  	justify-items: center;
  	gap: 1%;
@@ -215,8 +215,8 @@
  	border-radius: 40px;
  	padding-left: 20px;
  	padding-right: 20px;
- 	padding-top: 70px;
- 	padding-bottom: 70px;
+ 	padding-top: 100px;
+ 	padding-bottom: 130px;
  	width: auto;
 	height: 100%;
  	text-align: center;
@@ -225,8 +225,9 @@
  }
 
  .leadTitulo1 {
- 	font-size: 30px;
- 	font-weight: 100
+ 	font-size: 25px;
+ 	font-weight: 100;
+	padding-top: 30px;
  }
 
  .inputContainerCoberturaBox {
