@@ -722,7 +722,7 @@
  @media (max-width: 1250px) {
  	.conteiner-mapa-cobertura {
  		display: flex;
- 		flex-direction: column;
+ 		flex-direction: row;
  		margin: auto;
  		height: 100%;
  		width: 100%;
@@ -765,10 +765,10 @@
  	}
  }
 
- @media (max-width: 1000px) {
+ @media (max-width: 1150px) {
  	.conteiner-mapa-cobertura {
  		display: flex;
- 		flex-direction: row;
+ 		flex-direction: column;
  		margin: auto;
  		height: 100%;
  		width: 100%;
@@ -776,6 +776,19 @@
  		justify-items: center;
  		gap: 30px;
  	}
+}
+
+	 @media (max-width: 1000px) {
+		.conteiner-mapa-cobertura {
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+			height: 100%;
+			width: 100%;
+			justify-content: center;
+			justify-items: center;
+			gap: 30px;
+		}
 
  	.cobertura-box {
  		display: flex;
