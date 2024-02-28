@@ -162,8 +162,8 @@
  	margin: auto;
  	justify-content: center;
  	width: 80%;
- 	height: 80%;
-	margin-bottom: -45vh;
+ 	height: 100%;
+	margin-bottom: -5%;
  }
 
  .estiloContainer {
@@ -172,7 +172,6 @@
  	justify-content: center;
  	justify-items: center;
  	align-items: center;
- 	margin: auto;
  	width: 100%;
  	height: 100%;
  }
@@ -180,12 +179,10 @@
  .conteiner-mapa-cobertura {
  	display: flex;
  	flex-direction: row;
- 	margin: auto;
- 	height: 70%;
+ 	height: 100%;
  	width: 100%;
  	justify-content: center;
- 	justify-items: center;
- 	gap: 1%;
+	align-items: center;
  }
 
  .mapa-container {
@@ -193,13 +190,13 @@
  	justify-content: center;
  	justify-items: center;
  	align-items: center;
- 	margin: auto;
- 	width: 200%;
+ 	width: 100%;
  	height: 100%;
  }
 
  .mapa-container img {
- 	width: 100%;
+	display: flex;
+ 	width: 350vh;
  	height: 100%;
  	border-radius: 0%;
  }
@@ -210,37 +207,30 @@
  	flex-direction: column;
  	justify-items: center;
  	justify-content: center;
- 	gap: 0%;
  	background-color: rgb(237, 233, 233);
  	border-radius: 40px;
- 	padding-left: 20px;
- 	padding-right: 20px;
- 	padding-top: 100px;
- 	padding-bottom: 130px;
- 	width: auto;
-	height: 100%;
+ 	width: 10%;
+ 	height: 100%;
  	text-align: center;
- 	margin: 0 auto;
  	align-items: center;
+ 	padding: 20px;
  }
 
  .leadTitulo1 {
- 	font-size: 25px;
+ 	font-size: 20px;
  	font-weight: 100;
-	padding-top: 30px;
  }
 
  .inputContainerCoberturaBox {
  	width: 100%;
+	font-size: small;
  }
 
  .numClienteHelp {
- 	margin-top: 10px;
+	font-size: 14px;
  }
 
- .botonVerificar {
- 	margin-top: 50px;
- }
+ .botonVerificar {}
 
  .contactanosWP {
  	display: none;
@@ -421,8 +411,8 @@
  	text-align: center;
  }
 
- .contactFormulario{
-	margin-bottom: -30px;
+ .contactFormulario {
+ 	margin-bottom: -30px;
  }
 
 
@@ -715,12 +705,12 @@
 
  /* FORM DE BAJA*/
 
- .tituloForm{
-	margin-bottom: -80px;
+ .tituloForm {
+ 	margin-bottom: -80px;
  }
 
  /*Mobile code nuevo*/
- @media (max-width: 1250px) {
+ @media (max-width: 1800px) {
  	.conteiner-mapa-cobertura {
  		display: flex;
  		flex-direction: row;
@@ -749,20 +739,14 @@
  		justify-content: center;
  		gap: 0%;
  		background-color: #f0f0f0;
- 		border-radius: 40px;
- 		padding-left: 20px;
- 		padding-right: 20px;
- 		padding-top: 0px;
  		width: 100%;
  		text-align: center;
- 		margin: 0 auto;
  		align-items: center;
  	}
 
  	.leadTitulo1 {
- 		margin-top: 30%;
- 		margin-bottom: -10%;
- 		font-size: 30px;
+ 		margin-top: 5%;
+ 		font-size: 20px;
  	}
  }
 
@@ -777,19 +761,18 @@
  		justify-items: center;
  		gap: 30px;
  	}
-}
+ }
 
-	 @media (max-width: 1000px) {
-		.conteiner-mapa-cobertura {
-			display: flex;
-			flex-direction: column;
-			margin: auto;
-			height: 100%;
-			width: 100%;
-			justify-content: center;
-			justify-items: center;
-			gap: 30px;
-		}
+ @media (max-width: 1000px) {
+ 	.conteiner-mapa-cobertura {
+ 		display: flex;
+ 		flex-direction: column;
+ 		margin: auto;
+ 		height: 100%;
+ 		width: 100%;
+ 		justify-content: center;
+ 		justify-items: center;
+ 	}
 
  	.cobertura-box {
  		display: flex;
@@ -798,20 +781,14 @@
  		justify-content: center;
  		gap: 0%;
  		background-color: #f0f0f0;
- 		border-radius: 40px;
- 		padding-left: 20px;
- 		padding-right: 20px;
- 		padding-top: 0px;
  		width: 100%;
  		text-align: center;
- 		margin: 0 auto;
  		align-items: center;
  	}
 
  	.leadTitulo1 {
- 		margin-top: 30%;
- 		margin-bottom: -30%;
- 		font-size: 25px;
+ 		margin-top: 5%;
+ 		font-size: 15px;
  	}
  }
 
@@ -824,24 +801,22 @@
  		height: 1000px;
  	}
 
- 	.cobertura-box {
- 		display: flex;
- 		flex-direction: column;
- 		justify-items: center;
- 		justify-content: center;
- 		gap: 0%;
- 		background-color: #f0f0f0;
- 		border-radius: 40px;
- 		padding-left: 20px;
- 		padding-right: 20px;
- 		padding-top: 0px;
- 		margin-top: 0px;
- 		width: 100%;
- 		height: auto;
- 		text-align: center;
- 		margin: 0 auto;
- 		align-items: center;
- 	}
+	 .cobertura-box {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		justify-content: center;
+		gap: 0%;
+		background-color: #f0f0f0;
+		width: 100%;
+		text-align: center;
+		align-items: center;
+	}
+
+	.leadTitulo1 {
+		margin-top: 5%;
+		font-size: 20px;
+	}
 
  	.conteiner-mapa-cobertura {
  		display: flex;
@@ -862,12 +837,6 @@
  		margin: auto;
  		width: auto;
  		height: auto;
- 	}
-
- 	.leadTitulo1 {
- 		margin-top: 10%;
- 		margin-bottom: -10%;
- 		font-size: 25px;
  	}
 
  	.preciosContenedor2 {
@@ -925,6 +894,7 @@
 
  	.estiloContainerMayor {
  		height: 100%;
+		margin-bottom: -160%;
  	}
 
  	.tituloBigContainer {
