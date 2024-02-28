@@ -748,7 +748,32 @@
  		margin-top: 5%;
  		font-size: 20px;
  	}
+
+	/*alcance de servicios*/
+	.contenedorDeLinks {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 40vh;
+		width: 85%;
+		margin: auto;
+	}
+	.subContenedorDeLinks1{
+		display: flex;
+		gap: 15%;
+	}
+	.subContenedorDeLinks2{
+		display: flex;
+		gap: 15%;
+	}
+
+	.retina-logo{
+		display: none;
+	}
  }
+
+
 
  @media (max-width: 1150px) {
  	.conteiner-mapa-cobertura {
