@@ -4,10 +4,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = htmlspecialchars($_POST["name"]);
   $email = htmlspecialchars($_POST["email"]);
   $subject = htmlspecialchars($_POST["subject"]);
+  $client = htmlspecialchars($_POST["client"]);
   $message = htmlspecialchars($_POST["message"]);
 
   // Verificar si hay campos vacíos
-  if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+  if (empty($name) || empty($email) || empty($subject) || empty($client) || empty($message)) {
     echo '<script>alert("Por favor, completa todos los campos del formulario.");</script>';
     echo '<script>setTimeout(function() { window.location.href = "baja.html"; }, 1000);</script>';
     exit;
@@ -40,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $body = "Nombre: " . $name . "\n";
   $body .= "Correo electrónico: " . $email . "\n";
   $body .= "Asunto: " . $subject . "\n";
+  $body .= "Numero de cliente: " . $client . "\n";
   $body .= "Mensaje: " . $message . "\n";
 
   if (mail($to, $subject, $body)) {
