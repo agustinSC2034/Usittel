@@ -7,6 +7,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $client = htmlspecialchars($_POST["client"]);
   $message = htmlspecialchars($_POST["message"]);
 
+  // CAPTCHA GOOGLE
+  $ip = $_SERVER['REMOTE_ADDR'];
+  $captcha = $_POST['g-recaptcha-response'];
+  $secretkey = "6LeX74spAAAAAApSGnvOXALpuyaLvLkcrqtkY6_7";
+
+  $respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$captcha&remoteip=$ip");
+
+  $atributos = json_decode($respuesta, TRUE);
+
+  if (!$atributos['success']) {
+    echo '<script>alert("El captcha no fue validado.");</script>';
+    echo '<script>setTimeout(function() { window.location.href = "index.html"; }, 1000);</script>';
+    exit;
+  }
+
   // Verificar si hay campos vacíos
   if (empty($name) || empty($email) || empty($subject) || empty($client) || empty($message)) {
     echo '<script>alert("Por favor, completa todos los campos del formulario.");</script>';
@@ -36,7 +51,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
   // Procesar los datos (por ejemplo, enviar un correo electrónico)
-  $to = "formulariousittel@gmail.com";
+  //$to = "formulariousittel@gmail.com";
+  $to = "aguustinn18@gmail.com";
   $subject = "Nuevo mensaje de contacto";
   $body = "Nombre: " . $name . "\n";
   $body .= "Correo electrónico: " . $email . "\n";
