@@ -8520,99 +8520,92 @@ function verificarCobertura() {
   ];
 
   if (numerosValidos.includes(numeroIngresado)) {
-    titulo.innerText = "¡Buenas Noticias! Estás en Zona Usittel";
-    parrafo.innerHTML =
-      'Contactate ahora al siguiente Whatsapp <i class="fab fa-whatsapp"></i> <a target="_blank" href="https://wa.me/5492494060345">+54 9 249406-0345</a>, o hace click en el número y chatea ahora con nosotros!';
-    parrafo2.innerHTML =
-      'También, podes dejarnos tus datos en el <a target="" href="consultaForm.html">formulario</a> o escribirnos al mail <a href="mailto:contacto@usittel.com.ar"><u>contacto@usittel.com.ar</u></a> y un operador se contactará contigo.';
-    parrafo3.innerText = "Muchas gracias!";
-    numHelp.innerText = "";
-    textoWP.innerText = "";
-    numWP.innerText = "";
+    titulo.innerText = '¡Buenas Noticias! Estás en Zona Usittel';
+    parrafo.innerHTML = 'Contactate ahora al siguiente Whatsapp <i class="fab fa-whatsapp"></i> <a target="_blank" href="https://wa.me/5492494060345">+54 9 249406-0345</a>, o hace click en el número y chatea ahora con nosotros!';
+    parrafo2.innerHTML = 'También, podes dejarnos tus datos en el siguiente <a target="" href="#contacto" id="contact">formulario</a> y un operador se contactará contigo.';
+    parrafo3.innerText = 'Muchas gracias!';
+    numHelp.innerText = '';
+    textoWP.innerText = ''
+    numWP.innerText = '';
   } else {
-    titulo.innerText =
-      "Por el momento no contamos con cobertura en la dirección indicada.";
-    parrafo.innerText = "Seguimos ampliandonos, pronto llegaremos a tu hogar";
-    parrafo2.innerHTML =
-      'Déjanos un mensaje en el siguiente <a target="" href="consultaForm2.html">formulario</a> para contactarte cuando estemos en tu zona.';
-    numWP.innerText = "";
-    numHelp.innerText = "";
-    textoWP.innerText = "";
+    titulo.innerText = 'Por el momento no contamos con cobertura en la dirección indicada.';
+    parrafo.innerText = 'Seguimos ampliandonos, pronto llegaremos a tu hogar';
+    parrafo2.innerHTML = 'Déjanos un mensaje en el siguiente <a target="" href="#contacto" id="contact">formulario</a> para contactarte cuando estemos en tu zona.';
+    numWP.innerText = '';
+    numHelp.innerText = '';
+    textoWP.innerText = '';
+   
   }
 
   // Oculta el contenedor del input y muestra el botón de volver
-  inputContainer.style.display = "none";
-  contactanosWP.style.display = "";
-  botonVerificar.innerHTML =
-    '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="volverAtras()">Volver</button>';
+  inputContainer.style.display = 'none';
+  contactanosWP.style.display = ''
+  botonVerificar.innerHTML = '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="volverAtras()">Volver</button>';
 }
 
 function volverAtras() {
-  const inputContainer = document.getElementById("inputContainer");
-  const titulo = document.getElementById("titulo");
-  const parrafo = document.getElementById("textoAbajoTitulo");
-  const parrafo2 = document.getElementById("textoAbajoTitulo2");
-  const parrafo3 = document.getElementById("textoAbajoTitulo3");
-  const textoWP = document.getElementById("textoWP");
-  const numWP = document.getElementById("numWP");
-  const numHelp = document.getElementById("numHelp");
-  const botonVerificar = document.getElementById("botonVerificar");
+  const inputContainer = document.getElementById('inputContainer');
+  const titulo = document.getElementById('titulo');
+  const parrafo = document.getElementById('textoAbajoTitulo');
+  const parrafo2 = document.getElementById('textoAbajoTitulo2');
+  const parrafo3 = document.getElementById('textoAbajoTitulo3');
+  const textoWP = document.getElementById('textoWP');
+  const numWP = document.getElementById('numWP');
+  const numHelp = document.getElementById('numHelp');
+  const botonVerificar = document.getElementById('botonVerificar');
   // Restablecer el borde a su estado original (si fuera necesario)
-  document.getElementById("inputNumero").style.border = ""; // Establece el borde a su estado original
+  document.getElementById('inputNumero').style.border = ''; // Establece el borde a su estado original
   // Resto de tu lógica al volver
 
   // Muestra nuevamente el contenedor del input y restaura el contenido original
-  inputContainer.style.display = "block";
-  titulo.innerText =
-    "Validá si estás en zona ingresando el número de Cliente de la USINA:";
-  numHelp.innerHTML =
-    '<a target="_blank" href="img/FACTURA USINA DETALLE.png" id="numHelp">¿Cómo encuentro el número de Cliente?</a>';
-  botonVerificar.innerHTML =
-    '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="verificarCobertura()">Verificar</button>';
-  document.getElementById("inputNumero").value = ""; // Borra el contenido del input
-  parrafo.innerText = "";
-  parrafo2.innerText = "";
-  parrafo3.innerText = "";
-  textoWP.innerText = "";
-  numWP.innerText = "";
+  inputContainer.style.display = 'block';
+  titulo.innerText = 'Validá si estás en zona ingresando el número de Cliente de la USINA:';
+  numHelp.innerHTML = '<a target="_blank" href="img/FACTURA USINA DETALLE.png" id="numHelp">¿Cómo encuentro el número de Cliente?</a>'
+  botonVerificar.innerHTML = '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="verificarCobertura()">Verificar</button>'
+  document.getElementById('inputNumero').value = ''; // Borra el contenido del input
+  parrafo.innerText = '';
+  parrafo2.innerText = '';
+  parrafo3.innerText = '';
+  textoWP.innerText = '';
+  numWP.innerText = '';
 }
 
 // script pop-up:
 function openPopup1() {
-  var popup = document.getElementById("popup1");
-  popup.style.display = "block";
+  var popup = document.getElementById('popup1');
+  popup.style.display = 'block';
 }
 function openPopup2() {
-  var popup = document.getElementById("popup2");
-  popup.style.display = "block";
+  var popup = document.getElementById('popup2');
+  popup.style.display = 'block';
 }
 function openPopup3() {
-  var popup = document.getElementById("popup3");
-  popup.style.display = "block";
+  var popup = document.getElementById('popup3');
+  popup.style.display = 'block';
 }
 
 function closePopup1() {
-  var popup = document.getElementById("popup1");
-  popup.style.display = "none";
+  var popup = document.getElementById('popup1');
+  popup.style.display = 'none';
 }
 function closePopup2() {
-  var popup = document.getElementById("popup2");
-  popup.style.display = "none";
+  var popup = document.getElementById('popup2');
+  popup.style.display = 'none';
 }
 function closePopup3() {
-  var popup = document.getElementById("popup3");
-  popup.style.display = "none";
+  var popup = document.getElementById('popup3');
+  popup.style.display = 'none';
 }
 
-document.getElementById("popupLink1").addEventListener("click", function (e) {
+document.getElementById('popupLink1').addEventListener('click', function (e) {
   e.preventDefault();
   openPopup1();
 });
-document.getElementById("popupLink2").addEventListener("click", function (e) {
+document.getElementById('popupLink2').addEventListener('click', function (e) {
   e.preventDefault();
   openPopup2();
 });
-document.getElementById("popupLink3").addEventListener("click", function (e) {
+document.getElementById('popupLink3').addEventListener('click', function (e) {
   e.preventDefault();
   openPopup3();
 });
