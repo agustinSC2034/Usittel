@@ -1,6 +1,18 @@
- /* Estilos para el botón */
-
- /* Sticky button */
+/* Estilos personalizados para las alertas predeterminadas del navegador */
+/* Cambiar el fondo y el color del texto */
+::cue {
+	background-color: #f8d7da;
+	color: #721c24;
+	border-radius: 4px;
+	padding: 10px;
+  }
+  
+  /* Cambiar el estilo del borde */
+  ::cue::before {
+	content: "ℹ️ ";
+	font-weight: bold;
+	margin-right: 5px;
+  }
 
  /* Estilos generales del botón flotante */
  .floating-button {
@@ -15,12 +27,11 @@
  	border-radius: 0%;
  	transition: transform 0.3s, box-shadow 0.3s;
  }
+ 
 
  .floating-button:hover {
  	transform: scale(1.1);
  }
-
-
 
  .dropbtn {
  	background-color: transparent;
@@ -30,7 +41,6 @@
  	cursor: pointer;
  	padding: 10px;
  }
-
 
  /*Estilos boton autogestión*/
  .buttonAutogestion {
