@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo '<script>setTimeout(function() { window.location.href = "index.html"; }, 1000);</script>';
     exit;
   }
+  // FIN CODIGO CAPTCHA
 
   // Verificar si hay campos vacíos
   if (empty($name) || empty($email) || empty($subject) || empty($client) || empty($message)) {
