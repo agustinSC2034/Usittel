@@ -8,5 +8,5 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^/]+)/?$ $1.html [L]
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-RewriteRule ^index\.html$ http://usittel.com.ar/ [R=301,L]
+RewriteRule ^index\.html$ https://usittel.com.ar/ [R=301,L]
 
