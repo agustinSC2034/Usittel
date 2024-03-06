@@ -13,6 +13,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo '<script>setTimeout(function() { window.location.href = "consultaForm2.html"; }, 1000);</script>';
     exit;
   }
+  
+  // CAPTCHA GOOGLE
+  $ip = $_SERVER['REMOTE_ADDR'];
+  $captcha = $_POST['g-recaptcha-response'];
+  $secretkey = "6LfO_IspAAAAAB7_TWqlgCd5Bc3ZheWTbFGO2GtX";
+
+  // Validar el captcha utilizando cURL
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+  curl_setopt($ch, CURLOPT_POST, 1);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array(
+    'secret' => $secretkey,
+    'response' => $captcha,
+    'remoteip' => $ip
+  )));
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  $response = curl_exec($ch);
+  curl_close($ch);
+
+  $atributos = json_decode($response, TRUE);
+
+  if (!$atributos['success']) {
+    echo '<script>alert("El captcha no fue validado.");</script>';
+    echo '<script>setTimeout(function() { window.location.href = "consultaForm2.html"; }, 1000);</script>';
+    exit;
+  }
+  // FIN CODIGO CAPTCHA
 
   // Validar el correo electrónico
   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -35,8 +62,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit;
   }
 
-  // Procesar los datos (por ejemplo, enviar un correo electrónico).
-  $to = "formulariousittel@gmail.com";
+  // Procesar los datos (por ejemplo, enviar un correo electrónico)
+  //$to = "formulariousittel@gmail.com";
+  $to = "aguustinn18@gmail.com";
   $subject = "Consulta de cliente fuera de zona de cobertura";
   $body = "Nombre: " . $name . "\n";
   $body .= "Correo electrónico: " . $email . "\n";
@@ -51,5 +79,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.";
   }
 }
-
 ?>
+
