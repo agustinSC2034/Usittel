@@ -7,12 +7,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $client = htmlspecialchars($_POST["client"]);
   $message = htmlspecialchars($_POST["message"]);
 
-  // Verificar si hay campos vacíos
-  if (empty($name) || empty($email) || empty($subject) || empty($client) || empty($message)) {
-    echo '<script>alert("Por favor, completa todos los campos del formulario.");</script>';
-    echo '<script>setTimeout(function() { window.location.href = "consultaForm.html"; }, 1000);</script>';
-    exit;
-  }
+// Verificar si hay campos vacíos
+if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+  echo '<script>alert("Por favor, completa todos los campos del formulario.");</script>';
+  echo '<script>setTimeout(function() { window.location.href = "consultaForm2.html"; }, 1000);</script>';
+  exit;
+}
   
   // CAPTCHA GOOGLE
   $ip = $_SERVER['REMOTE_ADDR'];
