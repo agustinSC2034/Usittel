@@ -1,4 +1,61 @@
-/* Estilos personalizados para las alertas predeterminadas del navegador */
+/*Empresas*/
+
+.menu-item {
+	position: relative;
+  }
+  
+  .menu-link {
+	display: flex; /* Cambiado a flex para alinear el texto y la flecha */
+	align-items: center; /* Centrar verticalmente el texto y la flecha */
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #333;
+  }
+
+  .lista{
+	display: flex;
+  }
+  
+  .arrow-down {
+	font-size: 1.2em; /* Ajustar el tamaño de la flecha */
+	margin-left: 5px;
+	color: #555; /* Color gris oscuro para la flecha */
+  }
+  
+  .dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #fff;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-menu li {
+	width: 200px;
+  }
+  
+  .dropdown-menu li a {
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #333;
+  }
+  
+  .dropdown-menu li a:hover {
+	background-color: #ddd;
+  }
+  
+  .menu-item:hover .dropdown-menu {
+	display: block;
+  }
+  
+
 /* Cambiar el fondo y el color del texto */
 ::cue {
 	background-color: #f8d7da;

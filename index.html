@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
   <!-- Document Title
 	============================================= -->
   <title>Usittel</title>
@@ -41,7 +42,7 @@
   <div id="wrapper" class="clearfix">
     <!-- Header
 		============================================= -->
-    <header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark"
+    <header id="header" class="full-header" data-sticky-class="not-dark"
       data-responsive-class="not-dark">
       <div id="header-wrap">
         <div class="container">
@@ -85,9 +86,20 @@
 
             <!-- Primary Navigation
 						============================================= -->
+              <!-- Primary Navigation
+						============================================= -->
             <nav class="primary-menu not-dark with-arrows">
               <ul class="menu-container not-dark">
-                <li class="menu-item current">
+                <li class="menu-item current dropdown">
+                  <a class="menu-link listaDesp" href="#">
+                    <div class="lista">Usittel residenciales<div class="arrow-down">&#9660;</div></div>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="mayoristas.html">Mayoristas</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
                   <a class="menu-link" href="#">
                     <div>Home</div>
                   </a>
@@ -113,17 +125,10 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a target="_blank" href="faqs.html"
-                    class="buttonAutogestion2 button-large button-rounded text-capitalize ls0"
-                    style="border-radius: 23px">Centro de ayuda</a>
-
+                  <a target="_blank" href="faqs.html" class="buttonAutogestion2 button-large button-rounded text-capitalize ls0">Centro de ayuda</a>
                 </li>
                 <li class="menu-item">
-
-                  <a target="_blank" href="https://www.clientes.usittel.com.ar/"
-                    class="buttonAutogestion button-large button-rounded text-capitalize ls0"
-                    style="border-radius: 23px">Autogestión clientes</a>
-
+                  <a target="_blank" href="https://www.clientes.usittel.com.ar/" class="buttonAutogestion button-large button-rounded text-capitalize ls0">Autogestión clientes</a>
                 </li>
               </ul>
             </nav>

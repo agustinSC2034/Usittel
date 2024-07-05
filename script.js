@@ -16,6 +16,7 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 function verificarCobertura() {
   const inputContainer = document.getElementById("inputContainer");
   const titulo = document.getElementById("titulo");
