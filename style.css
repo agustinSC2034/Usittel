@@ -460,6 +460,17 @@
  	width: 90%;
  }
 
+ .contenedorPrecioAempresas{
+	display: flex;
+ }
+
+ .preciosEmpresas{
+	display: flex;
+	width: 90%;
+	height: 100%;
+	justify-content: center;
+ }
+
  /*POPUP*/
 
  .popup {
