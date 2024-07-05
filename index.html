@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
+
   <!-- Document Title
 	============================================= -->
   <title>Usittel</title>
@@ -42,8 +42,7 @@
   <div id="wrapper" class="clearfix">
     <!-- Header
 		============================================= -->
-    <header id="header" class="full-header" data-sticky-class="not-dark"
-      data-responsive-class="not-dark">
+    <header id="header" class="full-header" data-sticky-class="not-dark" data-responsive-class="not-dark">
       <div id="header-wrap">
         <div class="container">
           <div class="header-row">
@@ -86,13 +85,14 @@
 
             <!-- Primary Navigation
 						============================================= -->
-              <!-- Primary Navigation
+            <!-- Primary Navigation
 						============================================= -->
             <nav class="primary-menu not-dark with-arrows">
               <ul class="menu-container not-dark">
                 <li class="menu-item current dropdown">
                   <a class="menu-link listaDesp" href="#">
-                    <div class="lista">Usittel residenciales<div class="arrow-down">&#9660;</div></div>
+                    <div class="lista">USITTEL residenciales<div class="arrow-down">&#9660;</div>
+                    </div>
                   </a>
                   <ul class="dropdown-menu">
                     <li><a href="empresas.html">Empresas</a></li>
@@ -125,10 +125,12 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a target="_blank" href="faqs.html" class="buttonAutogestion2 button-large button-rounded text-capitalize ls0">Centro de ayuda</a>
+                  <a target="_blank" href="faqs.html"
+                    class="buttonAutogestion2 button-large button-rounded text-capitalize ls0">Centro de ayuda</a>
                 </li>
                 <li class="menu-item">
-                  <a target="_blank" href="https://www.clientes.usittel.com.ar/" class="buttonAutogestion button-large button-rounded text-capitalize ls0">Autogestión clientes</a>
+                  <a target="_blank" href="https://www.clientes.usittel.com.ar/"
+                    class="buttonAutogestion button-large button-rounded text-capitalize ls0">Autogestión clientes</a>
                 </li>
               </ul>
             </nav>
@@ -672,6 +674,49 @@
   </section>
   <!-- #content end -->
 
+  <!-- sECTION map
+============================================= -->
+
+  <div id="section-map" class="page-section pt-0">
+
+    <div class="row mx-0 bottommargin-lg align-items-stretch">
+      <div class="col-lg-8 col-md-6 d-none d-md-block px-0">
+        <div class="gmapClass">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.3708844379425!2d-59.14144811011122!3d-37.310041500184184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95912026456142db%3A0x4211da708442e913!2sNigro%20575%2C%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1720190036467!5m2!1ses!2sar"
+            width="600" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" style="background-color: #F5F5F5;">
+        <div class="col-padding">
+          <br>
+          <h3 class="font-body font-weight-normal ls1">Contacto</h3>
+
+          <div style="font-size: 17px; line-height: 1.7;">
+            <address style="line-height: 1.7;">
+              <strong>Buenos Aires, Argentina</strong><br>
+              Nigro 585<br>
+              Tandil<br>
+            </address>
+
+            <div class="clear topmargin-sm"></div>
+
+            <abbr title="Phone Number"><strong>Telefono:</strong></abbr> <a class="a_hoverUBI"
+              href="tel:54 11 4250-0471">
+              11 4250 0471</a><br>
+            <abbr title="Phone Number"><strong>Whatsapp:</strong></abbr> <a target="_blank"
+              href="https://wa.me/5492494060345"><i class="fab fa-whatsapp"></i>+54 9 249
+              406-0345</a><br>
+
+            <abbr title="Email Address"><strong>Email:</strong></abbr> <a class="a_hoverUBI"
+              href="mailto:info@fiberquil.com.ar">contacto@usittel.com.ar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Contacto
 		=============================================  -->
   <section id="content">
@@ -701,11 +746,11 @@
               <div class="validation"></div>
             </div>
           </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto *"
-                data-rule="minlen:4" data-msg="El asunto debe ser mayor a 4 digitos" />
-              <div class="validation"></div>
-            </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto *"
+              data-rule="minlen:4" data-msg="El asunto debe ser mayor a 4 digitos" />
+            <div class="validation"></div>
+          </div>
           <div class="form-group">
             <textarea class="form-control" name="message" id="message" rows="5" data-rule="required"
               data-msg="Por favor, escriba su mensaje" placeholder="Ingrese su mensaje... *"></textarea>
@@ -724,7 +769,7 @@
     </div>
   </section>
 
-  <!-- #contact -->
+  <!-- #contact 
   <div class="content-wrap pb-0 conteinerInfoFinal">
     <div class="container mb-3 center conteinerInfoFinal2">
       <div class="row justify-content contactoContainerIconos">
@@ -774,6 +819,8 @@
     <div class="clear"></div>
   </div>
   <br><br><br>
+  -->
+
   <!-- Footer
 		============================================= -->
   <footer id="footer" class="dark">
@@ -791,7 +838,8 @@
                       <li><a target="_blank" href="https://www.clientes.usittel.com.ar/"
                           style="font-size: small">Autogestión Clientes</a></li>
                       <li><a target="_blank" href="faqs.html" style="font-size: small">Centro de Ayuda</a></li>
-                      <li><a href="Term_y_condiciones.html" style="font-size: small">Términos y Condiciones del uso del sitio web</a></li>
+                      <li><a href="Term_y_condiciones.html" style="font-size: small">Términos y Condiciones del uso del
+                          sitio web</a></li>
                     </ul>
                   </div>
 
@@ -813,9 +861,8 @@
                       <li><a target="_blank"
                           href="https://www.argentina.gob.ar/sites/default/files/11186_2012_anexo_i.pdf"
                           style="font-size: small">Reglamento servicios TIC</a></li>
-                      <li><a target="_blank"
-                          href="pdf/bases_y_condiciones.pdf"
-                          style="font-size: small">Bases y condiciones concurso conociendonos</a></li>
+                      <li><a target="_blank" href="pdf/bases_y_condiciones.pdf" style="font-size: small">Bases y
+                          condiciones concurso conociendonos</a></li>
                     </ul>
                   </div>
                 </div>
