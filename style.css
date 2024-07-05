@@ -54,8 +54,33 @@
   .menu-item:hover .dropdown-menu {
 	display: block;
   }
-  
 
+
+  @media screen and (min-width: 800px) {
+	/* Desactivar clientes movil en tamaño normal*/
+.clientesMovil{
+	display: none;
+}
+}
+
+@media screen and (max-width: 1000px) {
+	/* Desactivar clientes movil en tamaño normal*/
+.clientesWeb{
+	display: none;
+}
+}
+
+
+@media screen and (min-width: 1000px) {
+.clientesWeb{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+}
+  
+/*Residenciales*/
 /* Cambiar el fondo y el color del texto */
 ::cue {
 	background-color: #f8d7da;
