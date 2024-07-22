@@ -154,7 +154,7 @@
  	padding: 8px 22px;
  	font-size: 0.875rem;
  	line-height: 24px;
- 	background-color: rgb(8, 93, 241);
+ 	background-color: rgb(47, 115, 231);
  	color: #FFF;
  	font-weight: 700;
  	text-transform: uppercase;
@@ -164,7 +164,7 @@
  }
 
  .buttonAutogestion2:hover {
- 	background-color: rgb(26, 79, 97);
+ 	background-color: rgb(23, 46, 116);
  	color: #FFF;
  	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
  }
