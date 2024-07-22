@@ -56,9 +56,11 @@ const zonasDeCobertura = [
 
 
 
-function verificarCobertura() {
-  console.log("Verificar cobertura fue llamado."); // Línea de depuración
+document.getElementById("inputNumero").addEventListener("input", function () {
+  this.value = this.value.replace(/\D/g, '');
+});
 
+function verificarCobertura() {
   const inputContainer = document.getElementById("inputContainer");
   const titulo = document.getElementById("titulo");
   const parrafo = document.getElementById("textoAbajoTitulo");
@@ -68,13 +70,17 @@ function verificarCobertura() {
   const contact = document.getElementById("contact");
   const textoWP = document.getElementById("textoWP");
   const numWP = document.getElementById("numWP");
-  const botonVerificar = document.getElementById("botonVerificar");
-  const direccion = document.getElementById("inputNumero").value;
+  const inputDireccion = document.getElementById("inputDireccion").value;
+  const inputNumero = document.getElementById("inputNumero").value;
 
-  if (direccion === "") {
-      // Agregar un estilo para el borde rojo o algún mensaje de error
-      document.getElementById("inputNumero").style.border = "1px solid red";
-      return; // Sale de la función si el campo está vacío
+  if (inputDireccion === "" || inputNumero === "") {
+      if (inputDireccion === "") {
+          document.getElementById("inputDireccion").style.border = "1px solid red";
+      }
+      if (inputNumero === "") {
+          document.getElementById("inputNumero").style.border = "1px solid red";
+      }
+      return;
   }
 
   const zonasDeCobertura = [
@@ -119,11 +125,8 @@ function verificarCobertura() {
       hasta: zona.hasta
   }));
 
-  const direccionPartes = direccion.split(' ');
-  const calle = direccionPartes.slice(0, -1).join(' ');
-  const numero = direccionPartes[direccionPartes.length - 1];
-  const numeroInt = parseInt(numero, 10);
-  const calleNormalizada = normalizeString(calle);
+  const calleNormalizada = normalizeString(inputDireccion);
+  const numeroInt = parseInt(inputNumero, 10);
 
   let dentroDeCobertura = false;
   for (const zona of zonasDeCoberturaNormalizadas) {
@@ -151,7 +154,6 @@ function verificarCobertura() {
       numWP.innerText = "";
   }
 
-  // Ocultar el contenedor del input y mostrar el botón de volver
   inputContainer.style.display = "none";
   botonVerificar.innerHTML = '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="volverAtras()">Volver</button>';
 }
@@ -166,31 +168,30 @@ function volverAtras() {
   const numWP = document.getElementById("numWP");
   const numHelp = document.getElementById("numHelp");
   const botonVerificar = document.getElementById("botonVerificar");
-  
-  // Restablecer el borde a su estado original (si fuera necesario)
-  document.getElementById("inputNumero").style.border = ""; // Establece el borde a su estado original
-  document.getElementById("inputNumero").value = ""; // Borra el contenido del input
 
-  // Restaurar el contenido original
+  document.getElementById("inputDireccion").style.border = "";
+  document.getElementById("inputNumero").style.border = "";
+  document.getElementById("inputDireccion").value = "";
+  document.getElementById("inputNumero").value = "";
+
   titulo.innerText = "Validá si estás en zona ingresando tu dirección:";
   numHelp.innerHTML = '<a target="_blank" href="img/FACTURA USINA DETALLE.png">¿Cómo encuentro el número de Cliente?</a>';
   botonVerificar.innerHTML = '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="verificarCobertura()">Verificar</button>';
-  
-  // Limpiar párrafos
+
   parrafo.innerText = "";
   parrafo2.innerText = "";
   parrafo3.innerText = "";
   textoWP.innerText = "";
   numWP.innerText = "";
 
-  // Mostrar el contenedor del input nuevamente
   inputContainer.style.display = "block";
 }
 
-// Normalización de cadenas para comparar calles
 function normalizeString(str) {
-  return str.trim().toLowerCase().replace(/\s+/g, ' ');
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, ' ');
 }
+
+
 
 
 // script pop-up:
