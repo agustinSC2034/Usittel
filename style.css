@@ -154,7 +154,7 @@
  	padding: 8px 22px;
  	font-size: 0.875rem;
  	line-height: 24px;
- 	background-color: rgb(55, 138, 166);
+ 	background-color: rgb(8, 93, 241);
  	color: #FFF;
  	font-weight: 700;
  	text-transform: uppercase;
@@ -1069,6 +1069,7 @@
  	.botonVerificar {
  		display: flex;
  		margin-top: 0%;
+		background-color: rgb(55, 138, 166);
  	}
 
  	.fuenteTituloBloque3 {
