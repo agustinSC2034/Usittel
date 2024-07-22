@@ -96,6 +96,7 @@
 						============================================= -->
             <nav class="primary-menu not-dark with-arrows">
               <ul class="menu-container not-dark">
+                <!--
                 <li class="menu-item current dropdown">
                   <a class="menu-link listaDesp" href="#">
                     <div class="lista">USITTEL residenciales<div class="arrow-down">&#9660;</div>
@@ -106,6 +107,7 @@
                     <li><a href="mayoristas.html">Mayoristas</a></li>
                   </ul>
                 </li>
+                -->
                 <li class="menu-item">
                   <a class="menu-link" href="#">
                     <div>Home</div>
@@ -133,11 +135,11 @@
                 </li>
                 <li class="menu-item">
                   <a target="_blank" href="faqs.html"
-                    class="buttonAutogestion2 button-large button-rounded text-capitalize ls0">Centro de ayuda</a>
+                    class="buttonAutogestion2 button-large button-rounded text-capitalize ls0" style="border-radius: 23px">Centro de ayuda</a>
                 </li>
                 <li class="menu-item">
                   <a target="_blank" href="https://www.clientes.usittel.com.ar/"
-                    class="buttonAutogestion button-large button-rounded text-capitalize ls0">Autogestión clientes</a>
+                    class="buttonAutogestion button-large button-rounded text-capitalize ls0" style="border-radius: 23px">Autogestión clientes</a>
                 </li>
               </ul>
             </nav>
@@ -218,8 +220,7 @@
                 <div class="col-lg-12 ">
                   <div class="conteiner-mapa-cobertura">
                     <div class="cobertura-box">
-                      <h2 style="" class="leadTitulo1" id="titulo">Validá si estás en zona ingresando el número
-                        de Cliente de la USINA:</h2>
+                      <h2 style="" class="leadTitulo1" id="titulo">Validá si estás en zona ingresando tu dirección:</h2>
                       <p id="textoAbajoTitulo" style="font-size: 13px">
                       </p>
                       <p id="textoAbajoTitulo2" style="font-size: 13px">
@@ -227,10 +228,10 @@
                       <p id="textoAbajoTitulo3" style="font-size: 13px">
                       </p>
                       <div id="inputContainer" class="inputContainerCoberturaBox">
-                        <input type="number" inputmode="numeric" pattern="[0-9]*" placeholder="Numero de cliente Usina"
+                        <input type="text" placeholder="Ej: Avenida Santamarina 123"
                           id="inputNumero">
                       </div>
-                      <div class="numClienteHelp">
+                      <div class="numClienteHelp" style="display: none;">
                         <a target="_blank" href="img/FACTURA USINA DETALLE.png" id="numHelp">¿Cómo encuentro el número
                           de Cliente?</a>
                       </div>

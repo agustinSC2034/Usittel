@@ -322,14 +322,16 @@
 	font-size: 14px;
  }
 
- .botonVerificar {}
-
  .contactanosWP {
  	display: none;
  }
 
  .contact {
  	display: none;
+ }
+
+ #botonDeVerificacion{
+	display: flex;
  }
 
  input[type="number"],
