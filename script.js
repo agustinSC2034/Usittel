@@ -50,7 +50,22 @@ const zonasDeCobertura = [
   { calle: 'constitucion', desde: 1000, hasta: 1800 },
   { calle: 'avellaneda', desde: 1000, hasta: 1800 },
   { calle: 'avenida avellaneda', desde: 1000, hasta: 1800 },
-  { calle: 'av avellaneda', desde: 1000, hasta: 1800 }
+  { calle: 'av avellaneda', desde: 1000, hasta: 1800 },
+  { calle: '1 de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'uno de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'primero de mayo', desde: 1000, hasta: 1499 },
+  { calle: '1ero de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'pasaje primero de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'pasaje 1 de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'pasaje uno de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'pasaje 1ero de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'psje 1ero de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'pje 1ero de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'pasaje uno de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'pje 1 de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'psaje 1 de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'pje uno de mayo', desde: 1000, hasta: 1499 },
+  { calle: 'psaje uno de mayo', desde: 1000, hasta: 1499 },       
 ];
 
 
