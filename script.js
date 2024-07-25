@@ -17,58 +17,6 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const zonasDeCobertura = [
-  { calle: '4 de abril', desde: 1, hasta: 900 },
-  { calle: 'santamarina', desde: 1, hasta: 900 },
-  { calle: 'av Santamarina', desde: 1, hasta: 900 },
-  { calle: 'avenida Santamarina', desde: 1, hasta: 900 },
-  { calle: 'alsina', desde: 1, hasta: 900 },
-  { calle: 'gral roca', desde: 1, hasta: 900 },
-  { calle: 'general roca', desde: 1, hasta: 900 },
-  { calle: 'roca', desde: 1, hasta: 900 },
-  { calle: '11 de septiembre', desde: 1, hasta: 900 },
-  { calle: 'once de septiembre', desde: 1, hasta: 900 },
-  { calle: 'montiel', desde: 1, hasta: 900 },
-  { calle: 'moreno', desde: 1, hasta: 900 },
-  { calle: 'saavedra', desde: 1, hasta: 900 },
-  { calle: 'buzon', desde: 1, hasta: 900 },
-  { calle: 'av buzon', desde: 1, hasta: 900 },
-  { calle: 'avenida buzon', desde: 1, hasta: 900 },
-  { calle: 'avenida marconi', desde: 1000, hasta: 1800 },
-  { calle: 'av marconi', desde: 1000, hasta: 1800 },
-  { calle: 'marconi', desde: 1000, hasta: 1800 },
-  { calle: 'sarmiento', desde: 1000, hasta: 1800 },
-  { calle: 'mitre', desde: 1000, hasta: 1800 },
-  { calle: 'sanmartin', desde: 1000, hasta: 1800 },
-  { calle: 'san martin', desde: 1000, hasta: 1800 },
-  { calle: 'pinto', desde: 1000, hasta: 1800 },
-  { calle: 'belgrano', desde: 1000, hasta: 1800 },
-  { calle: 'maipu', desde: 1000, hasta: 1800 },
-  { calle: 'veinticinco de mayo', desde: 1000, hasta: 1800 },
-  { calle: '25demayo', desde: 1000, hasta: 1800 },
-  { calle: '25 de mayo', desde: 1000, hasta: 1800 },
-  { calle: 'constitucion', desde: 1000, hasta: 1800 },
-  { calle: 'avellaneda', desde: 1000, hasta: 1800 },
-  { calle: 'avenida avellaneda', desde: 1000, hasta: 1800 },
-  { calle: 'av avellaneda', desde: 1000, hasta: 1800 },
-  { calle: '1 de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'uno de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'primero de mayo', desde: 1000, hasta: 1499 },
-  { calle: '1ero de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'pasaje primero de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'pasaje 1 de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'pasaje uno de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'pasaje 1ero de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'psje 1ero de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'pje 1ero de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'pasaje uno de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'pje 1 de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'psaje 1 de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'pje uno de mayo', desde: 1000, hasta: 1499 },
-  { calle: 'psaje uno de mayo', desde: 1000, hasta: 1499 },       
-];
-
-
 
 
 document.getElementById("inputNumero").addEventListener("input", function () {
@@ -131,7 +79,22 @@ function verificarCobertura() {
     { calle: 'constitucion', desde: 1000, hasta: 1800 },
     { calle: 'avellaneda', desde: 1000, hasta: 1800 },
     { calle: 'avenida avellaneda', desde: 1000, hasta: 1800 },
-    { calle: 'av avellaneda', desde: 1000, hasta: 1800 }
+    { calle: 'av avellaneda', desde: 1000, hasta: 1800 },
+    { calle: '1 de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'uno de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'primero de mayo', desde: 1000, hasta: 1499 },
+    { calle: '1ero de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'pasaje primero de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'pasaje 1 de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'pasaje uno de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'pasaje 1ero de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'psje 1ero de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'pje 1ero de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'pasaje uno de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'pje 1 de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'psaje 1 de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'pje uno de mayo', desde: 1000, hasta: 1499 },
+    { calle: 'psaje uno de mayo', desde: 1000, hasta: 1499 },    
   ];
 
   const zonasDeCoberturaNormalizadas = zonasDeCobertura.map(zona => ({
