@@ -37,6 +37,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.min.css">
 
   <!-- Document Title
 	============================================= -->
@@ -44,6 +46,7 @@
 </head>
 
 <body class="stretched" style="width: 100%;">
+  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
   <!-- Document Wrapper
 	============================================= -->
   <div id="wrapper" class="clearfix">
@@ -225,7 +228,28 @@
                                         <p id="textoAbajoTitulo2" style="font-size: 13px"></p>
                                         <p id="textoAbajoTitulo3" style="font-size: 13px"></p>
                                         <div id="inputContainer" class="inputContainerCoberturaBox">
-                                            <input type="text" placeholder="Ingresá el nombre de tu calle" id="inputDireccion">
+                                            <input list="pruebaCobertura" type="text" placeholder="Ingresá el nombre de tu calle" id="inputDireccion">
+                                            <datalist id="pruebaCobertura">
+                                              <option value="1 de mayo"></option>
+                                              <option value="11 de septiembre"></option>
+                                              <option value="25 de mayo"></option>
+                                              <option value="Alsina"></option>
+                                              <option value="Avellaneda"></option>
+                                              <option value="Belgrano"></option>
+                                              <option value="Buzon"></option>
+                                              <option value="Constitucion"></option>
+                                              <option value="Marconi"></option>
+                                              <option value="Maipu"></option>
+                                              <option value="Mitre"></option>
+                                              <option value="Montiel"></option>
+                                              <option value="Moreno"></option>
+                                              <option value="Pinto"></option>
+                                              <option value="Roca"></option>
+                                              <option value="Saavedra"></option>
+                                              <option value="San martin"></option>
+                                              <option value="Sarmiento"></option>
+                                              <option value="Santamarina"></option>
+                                            </datalist>                                            
                                             <input type="text" placeholder="Ingresá el numero de tu calle" id="inputNumero">
                                         </div>
                                         <div class="numClienteHelp" style="display: none;">
@@ -429,7 +453,7 @@
 
 
   <!-- Sección MESH
-				============================================= -->
+				============================================= 
         <br><br><br>
 				<div class="container clearfix">
 
@@ -490,10 +514,13 @@
 						</div>
 					</div>
 
-				</div> <!-- Features Area End -->
+
 
         <div class="divider divider-sm divider-center"><i class="icon-circle"></i></div>
         <br>
+
+
+        -->
 
 
   <!-- Content section 1
