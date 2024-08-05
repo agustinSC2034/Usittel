@@ -180,7 +180,7 @@
  	position: relative;
  }
 
- /* Estilos para la línea a la izquierda */
+ /* Estilos para la línea a la izquierda 
  .dropdown:before {
  	content: "";
  	position: absolute;
@@ -189,7 +189,9 @@
  	bottom: 0;
  	width: 1px;
  	background-color: white;
+	
  }
+	*/
 
  /* Estilos para el ícono de flecha */
  .dropdown-icon {
