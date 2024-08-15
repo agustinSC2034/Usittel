@@ -399,7 +399,7 @@
 
  .imagenUsina {
  	opacity: 70%;
- 	animation: fadeInUpBig;
+ 	animation: fadeInRight;
  	/* referring directly to the animation's @keyframe declaration */
  	animation-duration: 2s;
  	/* don't forget to set a duration! */
@@ -513,6 +513,10 @@
  	box-sizing: border-box;
  	/* Para incluir el padding dentro del ancho del contenedor */
  }
+
+
+ /*Sección TV*/
+
 
 
  /*Preguntas frecuentes*/
