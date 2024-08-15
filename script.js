@@ -265,7 +265,7 @@ function verificarCobertura() {
 
   if (dentroDeCobertura) {
       titulo.innerText = "¡Buenas Noticias! Estás en Zona Usittel";
-      parrafo.innerHTML = 'Contactate ahora al siguiente Whatsapp <i class="fab fa-whatsapp"></i> <a target="_blank" href="https://wa.me/5492494060345/?text=Hola!%20vengo%20desde%20la%20web%20de%20Usittel%20y%20quer%C3%ADa%20consultarte%20por%20los%20diferentes%20planes%20y%20servicios">+54 9 249406-0345</a>, o hace click en el número y chatea ahora con nosotros!';
+      parrafo.innerHTML = 'Contactate al siguiente Whatsapp <i class="fab fa-whatsapp"></i> <a target="_blank" href="https://wa.me/5492494060345/?text=Hola!%20vengo%20desde%20la%20web%20de%20Usittel%20y%20quer%C3%ADa%20consultarte%20por%20los%20diferentes%20planes%20y%20servicios">+54 9 249406-0345</a>, o hace click en el número y chatea ahora con nosotros!';
       parrafo2.innerHTML = 'También, podes dejarnos tus datos en el siguiente formulario <a target="" href="consultaForm.html">formulario</a> y un operador se contactará contigo.';
       parrafo3.innerText = "¡Muchas gracias!";
       numHelp.innerText = "";
