@@ -8,11 +8,19 @@ window.addEventListener("DOMContentLoaded", function () {
 
   dropdownOptions.forEach(function (option) {
     option.addEventListener("click", function (event) {
-      event.preventDefault(); // Evita la redirección predeterminada
+    //  event.preventDefault();  Evita la redirección predeterminada
 
       var selectedOption = this.getAttribute("data-value");
       currentPageLabel.textContent = "Web: " + selectedOption;
     });
+  });
+});
+
+dropdownOptions.forEach(function (option) {
+  option.addEventListener("click", function (event) {
+    // No se llama a event.preventDefault(), por lo que el enlace seguirá funcionando
+    var selectedOption = this.getAttribute("data-value");
+    currentPageLabel.textContent = "Web: " + selectedOption;
   });
 });
 
