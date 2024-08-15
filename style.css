@@ -108,6 +108,8 @@
  	background-size: cover;
  	border-radius: 100%;
  	transition: transform 0.3s, box-shadow 0.3s;
+	animation: animate__backInRight; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 5s; /* don't forget to set a duration! */
  }
  
 
