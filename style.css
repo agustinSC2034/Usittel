@@ -1,5 +1,5 @@
 /*Fibra*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
 	.tituloFibraHTML {
 		background-color: rgb(239, 239, 239);
 		color: #000;
@@ -12,7 +12,70 @@
 	}
 }
 
+/*MESH*/
+.contenedorMESH{
+	margin-top: -70px;
+}
+
+@media screen and (max-width: 800px) {
+	.tituloMESH{
+		text-align: center;
+	}
+	.parrafoMESH{
+		text-align: center;
+	}
+	.tituloPreciosMEsh{
+		text-align: center;
+	}
+	.parrafoMeshPrecio{
+		text-align: center;
+	}
+	.contenedorPrecioMesh{
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/*CABLE TV*/
+.imgTV{
+	display: none;
+}
+.buttonTVcelu{
+	display: none;
+}
+@media screen and (max-width: 800px) {
+	.tvCABLE{
+		text-align: center;
+	}
+	.parrafoTV{
+		text-align: center;
+	}
+	.contenedorTV{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.imgTVCeluNo{
+		display: none;
+	}
+	.imgTV{
+		display: flex;
+	}
+}
+
+
+
 /*Empresas*/
+@media screen and (max-width: 800px) {
+	.imagenUsina{
+	}
+	.tituloContenedorEmpresas{
+		text-align: center;
+	}
+	.parraforEmpresasContenedor{
+		text-align: center;
+	}
+}
 
 .menu-item {
 	position: relative;
