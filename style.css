@@ -49,6 +49,7 @@
 	width: auto;
 	height: auto;
 	padding-left: 25%;
+	padding-right: 25%;
   }
   
   .prev, .next {
@@ -90,8 +91,15 @@
 	background-color: #717171;
   }
   
-
-
+ 
+@media screen and (max-width: 1000px) {
+	.imgMesh {
+		width: auto;
+		height: auto;
+		padding-left: 25%;
+		padding-right: 25%;
+	  }
+}
 
 
 @media screen and (max-width: 800px) {
@@ -110,6 +118,16 @@
 	.contenedorPrecioMesh{
 		display: flex;
 		justify-content: center;
+	}
+	.imgMesh {
+		width: auto;
+		height: auto;
+		padding-left: 25%;
+		padding-right: 25%;
+	  }
+	.parrafoMeshPrecio{
+		padding-left: 8%;
+		padding-right: 8%;
 	}
 }
 
