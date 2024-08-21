@@ -17,6 +17,7 @@
 	margin-top: -70px;
 }
 
+
 @media screen and (max-width: 800px) {
 	.tituloMESH{
 		text-align: center;
@@ -497,6 +498,9 @@ input[type="number"]:focus {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	height: auto;
+	margin-top: -50px;
+	margin-bottom: -50px;
 }
 
 .tituloPreciosDiv {
