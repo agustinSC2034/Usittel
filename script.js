@@ -1,3 +1,110 @@
+// carrousel logica
+
+let currentSlideIndex = 0;
+
+function showSlides(n) {
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
+
+    // Asegúrate de que el índice esté dentro de los límites
+    if (n >= slides.length) { currentSlideIndex = 0; }
+    if (n < 0) { currentSlideIndex = slides.length - 1; }
+
+    // Oculta todas las diapositivas
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+
+    // Desactiva todos los puntos
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    // Muestra la diapositiva actual
+    slides[currentSlideIndex].style.display = "block";  
+    dots[currentSlideIndex].className += " active";
+}
+
+function changeSlide(n) {
+    currentSlideIndex += n;
+
+    // Asegúrate de que los límites se controlen aquí también
+    if (currentSlideIndex >= document.getElementsByClassName("slide").length) {
+        currentSlideIndex = 0;
+    } else if (currentSlideIndex < 0) {
+        currentSlideIndex = document.getElementsByClassName("slide").length - 1;
+    }
+
+    showSlides(currentSlideIndex);
+}
+
+function currentSlide(n) {
+    currentSlideIndex = n - 1;
+    showSlides(currentSlideIndex);
+}
+
+// Inicializa la primera diapositiva al cargar la página
+window.onload = function() {
+    showSlides(currentSlideIndex);
+};
+
+
+// deslizamiento nav
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+
+// script pop-up:
+function openPopup1() {
+  var popup = document.getElementById("popup1");
+  popup.style.display = "block";
+}
+function openPopup2() {
+  var popup = document.getElementById("popup2");
+  popup.style.display = "block";
+}
+function openPopup3() {
+  var popup = document.getElementById("popup3");
+  popup.style.display = "block";
+}
+
+function closePopup1() {
+  var popup = document.getElementById("popup1");
+  popup.style.display = "none";
+}
+function closePopup2() {
+  var popup = document.getElementById("popup2");
+  popup.style.display = "none";
+}
+function closePopup3() {
+  var popup = document.getElementById("popup3");
+  popup.style.display = "none";
+}
+
+document.getElementById("popupLink1").addEventListener("click", function (e) {
+  e.preventDefault();
+  openPopup1();
+});
+document.getElementById("popupLink2").addEventListener("click", function (e) {
+  e.preventDefault();
+  openPopup2();
+});
+document.getElementById("popupLink3").addEventListener("click", function (e) {
+  e.preventDefault();
+  openPopup3();
+});
+
+
+
+
 window.addEventListener("DOMContentLoaded", function () {
   var currentPageLabel = document.getElementById("currentPageLabel");
   var currentPage = location.pathname.split("/").slice(-1)[0]; // Obtiene el nombre del archivo actual
@@ -328,42 +435,6 @@ function normalizeString(str) {
 
 
 
-// script pop-up:
-function openPopup1() {
-  var popup = document.getElementById("popup1");
-  popup.style.display = "block";
-}
-function openPopup2() {
-  var popup = document.getElementById("popup2");
-  popup.style.display = "block";
-}
-function openPopup3() {
-  var popup = document.getElementById("popup3");
-  popup.style.display = "block";
-}
 
-function closePopup1() {
-  var popup = document.getElementById("popup1");
-  popup.style.display = "none";
-}
-function closePopup2() {
-  var popup = document.getElementById("popup2");
-  popup.style.display = "none";
-}
-function closePopup3() {
-  var popup = document.getElementById("popup3");
-  popup.style.display = "none";
-}
 
-document.getElementById("popupLink1").addEventListener("click", function (e) {
-  e.preventDefault();
-  openPopup1();
-});
-document.getElementById("popupLink2").addEventListener("click", function (e) {
-  e.preventDefault();
-  openPopup2();
-});
-document.getElementById("popupLink3").addEventListener("click", function (e) {
-  e.preventDefault();
-  openPopup3();
-});
+

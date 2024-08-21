@@ -17,6 +17,82 @@
 	margin-top: -70px;
 }
 
+.carousel-container {
+	position: relative;
+	max-width: auto;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .carousel {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	justify-content: center;
+	justify-items: center;
+	width: 100%;
+	align-self: center;
+	align-content: center;
+  }
+  
+  
+  .slide {
+	min-width: 100%;
+	transition: transform 0.5s ease-in-out;
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+  }
+  
+  .imgMesh {
+	width: auto;
+	height: auto;
+	padding-left: 25%;
+  }
+  
+  .prev, .next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+  }
+  
+  .prev {
+	left: 10px;
+  }
+  
+  .next {
+	right: 10px;
+  }
+  
+  .dots-container {
+	text-align: center;
+	padding: 10px;
+  }
+  
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.3s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+
+
+
 
 @media screen and (max-width: 800px) {
 	.tituloMESH{

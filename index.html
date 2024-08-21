@@ -105,7 +105,7 @@
                  -->
 
                 <li class="menu-item">
-                  <a class="menu-link" href="#">
+                  <a class="menu-link" href="#slider">
                     <div>Home</div>
                   </a>
                 </li>
@@ -511,22 +511,23 @@
   <div class="section m-0" id="meshId"
     style="background: url('demos/seo/images/sections/4.png') no-repeat center top; background-size: cover; padding: 50px 0 0;">
     <div class="contenedorPadreMesh">
-    <div class="contenedorHijoMesh">
-      <div class="row justify-content-center contenedorNietoMesh">
-        <div class="col-lg-5 mt-2">
-          <div class="heading-block border-bottom-0 bottommargin-sm">
-            <div class="badge badge-pill badge-default">Precios</div>
-            <h3 class="nott ls0 tituloPreciosMEsh">USITTEL MESH<br></h3>
-          </div>
-          <p class="parrafoMeshPrecio">
-            <B>USITTEL WI-FI MESH.</B> INTERNET hasta en el último rincón de tu hogar. <br><br>
-            Esto no es un repetidor de señal más... Tené una única red WiFi en todo tu hogar, para permanecer conectado
-            hasta en el último rincón, sin la necesidad de cambiarte de red. <br><br>
-            Adiciona la cantidad de USITTEL MESH que requieras*. USITTEL MESH se adapta a tu hogar, armando una única
-            red mallada, para lograr la mayor cobertura posible con una mejor conexión en todo momento.
-          </p>
-          <p class="parrafoMeshPrecio">*Máximo soportado hasta <b>4 USITTEL MESH.</b></p>
-          <!-- BOTON PARA CAMBIAR DE MÉS A ANUAL
+      <div class="contenedorHijoMesh">
+        <div class="row justify-content-center contenedorNietoMesh">
+          <div class="col-lg-5 mt-2">
+            <div class="heading-block border-bottom-0 bottommargin-sm">
+              <div class="badge badge-pill badge-default">Precios</div>
+              <h3 class="nott ls0 tituloPreciosMEsh">USITTEL MESH<br></h3>
+            </div>
+            <p class="parrafoMeshPrecio">
+              <B>USITTEL WI-FI MESH.</B> INTERNET hasta en el último rincón de tu hogar. <br><br>
+              Esto no es un repetidor de señal más... Tené una única red WiFi en todo tu hogar, para permanecer
+              conectado
+              hasta en el último rincón, sin la necesidad de cambiarte de red. <br><br>
+              Adiciona la cantidad de USITTEL MESH que requieras*. USITTEL MESH se adapta a tu hogar, armando una única
+              red mallada, para lograr la mayor cobertura posible con una mejor conexión en todo momento.
+            </p>
+            <p class="parrafoMeshPrecio">*Máximo soportado hasta <b>4 USITTEL MESH.</b></p>
+            <!-- BOTON PARA CAMBIAR DE MÉS A ANUAL
                   <div class="pricing-tenure-switcher d-flex align-items-center mb-4 position-relative" data-container="#pricing-switch">
                     <span class="pts-left font-weight-bold text-muted">Monthly</span>
                     <div class="pts-switcher mx-3">
@@ -539,49 +540,74 @@
                     <div class="price-discount"></div>
                   </div>
                   -->
-        </div>
-        
 
-        <div class="col-lg-4 contenedorPrecioMesh">
-          <div id="section-pricing" class="page-section p-0 m-0">
+            <!-- CARROUSEL CONTEINER -->
+            <div class="carousel-container">
+              <div class="carousel">
+                <div class="slide">
+                  <img class="imgMesh" src="img/huawei-mesh.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                  <img class="imgMesh" src="img/huawei-mesh-2.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                  <img class="imgMesh" src="img/huawei-mesh-3.png" alt="Image 3">
+                </div>
+              </div>
+              <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+              <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <div class="dots-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
 
-            <div id="pricing-switch" class="pricing row align-items-end no-gutters col-mb-50 mb-4">
 
-              <div class="col-md-10">
 
-                <div class="pricing-box">
-                  <div class="pricing-title">
-                    <img class="mb-2 bg-transparent rounded-0" src="img/mesh/meshMalla.png" alt="Pricing Icon"
-                      width="50">
-                    <h3 style="font-size: larger;">USITTEL MESH</h3>
-                    <span style="font-size: small;">Incluido en tu factura, precio por dispositivo</span>
-                  </div>
-                  <div class="pricing-price">
-                    <div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>5000<span
-                        class="price-tenure">(impuestos incluidos) por mes. </span></div>
-                    <!--<div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>48<span class="price-tenure">Per Year</span></div>-->
-                  </div>
-                  <div class="pricing-features border-0 bg-transparent">
-                    <ul>
-                      <li><i class="icon-check-circle color mr-2"></i><strong>Flexibilidad</strong> Se adapta a todos
-                        los hogares según la cobertura que quieras.</li>
-                      <li class="pts-switch-content-right"><i
-                          class="icon-check-circle color mr-2"></i><strong>Innovación</strong> Utiliza la última
-                        tecnología MESH para una mejor experiencia de usuario.</li>
-                      <li><i class="icon-check-circle color mr-2"></i><strong>Conexión confiable. </strong> Perfecta
-                        para entornos con muchos dispositivos conectados.</li>
-                    </ul>
-                  </div>
-                  <div class="pricing-action">
-                    <div class="pricing-action">
-                      <a target="_blank" href="https://wa.me/5492494060345"
-                        class="button button-large button-rounded btn-block text-capitalize m-0 ls0"
-                        style="border-radius: 23px; text-align: center;">Contactanos</a>
+
+          <div class="col-lg-4 contenedorPrecioMesh">
+            <div id="section-pricing" class="page-section p-0 m-0">
+
+              <div id="pricing-switch" class="pricing row align-items-end no-gutters col-mb-50 mb-4">
+
+                <div class="col-md-10">
+
+                  <div class="pricing-box">
+                    <div class="pricing-title">
+                      <img class="mb-2 bg-transparent rounded-0" src="img/mesh/meshMalla.png" alt="Pricing Icon"
+                        width="50">
+                      <h3 style="font-size: larger;">USITTEL MESH</h3>
+                      <span style="font-size: small;">Incluido en tu factura, precio por dispositivo</span>
                     </div>
-                    <a target="_blank" href="mesh.html"
-                      class="button button-large button-rounded btn-block text-capitalize m-0 ls0"
-                      style="border-radius: 23px; text-align: center;">Más
-                      información</a>
+                    <div class="pricing-price">
+                      <div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>5000<span
+                          class="price-tenure">(impuestos incluidos) por mes. </span></div>
+                      <!--<div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>48<span class="price-tenure">Per Year</span></div>-->
+                    </div>
+                    <div class="pricing-features border-0 bg-transparent">
+                      <ul>
+                        <li><i class="icon-check-circle color mr-2"></i><strong>Flexibilidad</strong> Se adapta a todos
+                          los hogares según la cobertura que quieras.</li>
+                        <li class="pts-switch-content-right"><i
+                            class="icon-check-circle color mr-2"></i><strong>Innovación</strong> Utiliza la última
+                          tecnología MESH para una mejor experiencia de usuario.</li>
+                        <li><i class="icon-check-circle color mr-2"></i><strong>Conexión confiable. </strong> Perfecta
+                          para entornos con muchos dispositivos conectados.</li>
+                      </ul>
+                    </div>
+                    <div class="pricing-action">
+                      <div class="pricing-action">
+                        <a target="_blank" href="https://wa.me/5492494060345"
+                          class="button button-large button-rounded btn-block text-capitalize m-0 ls0"
+                          style="border-radius: 23px; text-align: center;">Contactanos</a>
+                      </div>
+                      <a target="_blank" href="mesh.html"
+                        class="button button-large button-rounded btn-block text-capitalize m-0 ls0"
+                        style="border-radius: 23px; text-align: center;">Más
+                        información</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -591,7 +617,12 @@
       </div>
     </div>
   </div>
-  </div>
+
+
+
+
+
+
 
 
   <!-- TV USITTEL
