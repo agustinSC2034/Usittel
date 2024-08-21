@@ -410,7 +410,7 @@
 }
 
 .dropdown-content a:hover {
-	background-color: lightseagreen;
+	background-color: rgb(99, 206, 174);
 }
 
 /* Estilos para mostrar la lista desplegable al pasar el cursor sobre el botón */
