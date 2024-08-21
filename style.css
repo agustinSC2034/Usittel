@@ -391,7 +391,7 @@ body {
 	background-color: rgb(237, 233, 233);
 	border-radius: 40px;
 	width: 30%;
-	height: 100%;
+	height: auto;
 	text-align: center;
 	align-items: center;
 	padding: 20px;
@@ -405,11 +405,9 @@ body {
 .inputContainerCoberturaBox {
 	width: 100%;
 	font-size: small;
+
 }
 
-.numClienteHelp {
-	font-size: 14px;
-}
 
 .contactanosWP {
 	display: none;

@@ -25,8 +25,6 @@ dropdownOptions.forEach(function (option) {
 });
 
 
-
-
 document.getElementById("inputNumero").addEventListener("input", function () {
   this.value = this.value.replace(/\D/g, '');
 });
@@ -264,6 +262,9 @@ function verificarCobertura() {
   }
 
   if (dentroDeCobertura) {
+        document.getElementById("textoAbajoTitulo").style.display = "block";
+      document.getElementById("textoAbajoTitulo2").style.display = "block";
+      document.getElementById("textoAbajoTitulo3").style.display = "block";
       titulo.innerText = "¡Buenas Noticias! Estás en Zona Usittel";
       parrafo.innerHTML = 'Contactate al siguiente Whatsapp <i class="fab fa-whatsapp"></i> <a target="_blank" href="https://wa.me/5492494060345/?text=Hola!%20vengo%20desde%20la%20web%20de%20Usittel%20y%20quer%C3%ADa%20consultarte%20por%20los%20diferentes%20planes%20y%20servicios">+54 9 249406-0345</a>, o hace click en el número y chatea ahora con nosotros!';
       parrafo2.innerHTML = 'También, podes dejarnos tus datos en el siguiente formulario <a target="" href="consultaForm.html">formulario</a> y un operador se contactará contigo.';
@@ -272,6 +273,9 @@ function verificarCobertura() {
       textoWP.innerText = "";
       numWP.innerText = "";
   } else {
+    document.getElementById("textoAbajoTitulo").style.display = "block";
+  document.getElementById("textoAbajoTitulo2").style.display = "block";
+  document.getElementById("textoAbajoTitulo3").style.display = "block";
       titulo.innerText = "Por el momento no contamos con cobertura en la dirección indicada.";
       parrafo.innerText = "Seguimos ampliándonos, pronto llegaremos a tu hogar.";
       parrafo2.innerHTML = '¡Déjanos tu consulta haciendo click en el siguiente enlace <a target="" href="consultaForm.html">Formulario</a>!';
@@ -286,6 +290,9 @@ function verificarCobertura() {
 }
 
 function volverAtras() {
+  document.getElementById("textoAbajoTitulo").style.display = "none";
+  document.getElementById("textoAbajoTitulo2").style.display = "none";
+  document.getElementById("textoAbajoTitulo3").style.display = "none";
   const inputContainer = document.getElementById("inputContainer");
   const titulo = document.getElementById("titulo");
   const parrafo = document.getElementById("textoAbajoTitulo");
