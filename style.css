@@ -91,6 +91,22 @@
 	background-color: #717171;
   }
   
+  .tituloPrecioFlex{
+	display: flex; 
+	justify-content: flex-start ; 
+	align-items: center; 
+	padding-left: 17%;
+  }
+
+  @media screen and (max-width: 1000px) {
+	.tituloPrecioFlex{
+		display: flex; 
+		justify-content: flex-start ; 
+		align-items: center;
+		padding-left: 0px;
+	  }
+}
+
  
 @media screen and (max-width: 1000px) {
 	.imgMesh {
