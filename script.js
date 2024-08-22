@@ -1,6 +1,7 @@
 // carrousel logica
 
 let currentSlideIndex = 0;
+let slideInterval;
 
 function showSlides(n) {
     const slides = document.getElementsByClassName("slide");
@@ -27,14 +28,6 @@ function showSlides(n) {
 
 function changeSlide(n) {
     currentSlideIndex += n;
-
-    // Asegúrate de que los límites se controlen aquí también
-    if (currentSlideIndex >= document.getElementsByClassName("slide").length) {
-        currentSlideIndex = 0;
-    } else if (currentSlideIndex < 0) {
-        currentSlideIndex = document.getElementsByClassName("slide").length - 1;
-    }
-
     showSlides(currentSlideIndex);
 }
 
@@ -43,10 +36,27 @@ function currentSlide(n) {
     showSlides(currentSlideIndex);
 }
 
+function startSlideShow() {
+    slideInterval = setInterval(() => {
+        currentSlideIndex++;
+        showSlides(currentSlideIndex);
+    }, 1800); // Cambia cada 3 segundos
+}
+
+function stopSlideShow() {
+    clearInterval(slideInterval);
+}
+
 // Inicializa la primera diapositiva al cargar la página
 window.onload = function() {
     showSlides(currentSlideIndex);
+    startSlideShow();
 };
+
+// Pausar el carrusel cuando el mouse esté sobre él
+document.querySelector('.carousel-container').addEventListener('mouseover', stopSlideShow);
+document.querySelector('.carousel-container').addEventListener('mouseout', startSlideShow);
+
 
 
 // deslizamiento nav
