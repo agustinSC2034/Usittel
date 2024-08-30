@@ -17,6 +17,20 @@
 	margin-top: -70px;
 }
 
+.queEsMeshModel{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	height: 70vh;
+	background-color: rgba(36, 77, 5, 0.274);
+	padding-left: 17%;
+	padding-right: 10%;
+	padding-top: 4%;
+}
+
 .meshModel{
 	display: flex;
 	flex-direction: row;
