@@ -39,42 +39,43 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-  <style>
-
-		.revo-slider-emphasis-text {
-			font-size: 64px;
-			font-weight: 700;
-			letter-spacing: -1px;
-			font-family: 'Poppins', sans-serif;
-			padding: 15px 20px;
-			border-top: 2px solid #FFF;
-			border-bottom: 2px solid #FFF;
-		}
-
-		.revo-slider-desc-text {
-			font-size: 20px;
-			font-family: 'Lato', sans-serif;
-			width: 650px;
-			text-align: center;
-			line-height: 1.5;
-		}
-
-		.revo-slider-caps-text {
-			font-size: 16px;
-			font-weight: 400;
-			letter-spacing: 3px;
-			font-family: 'Poppins', sans-serif;
-		}
-
-		.tp-video-play-button { display: none !important; }
-
-		.tp-caption { white-space: nowrap; }
-
-	</style>
-
   <!-- Document Title
 	============================================= -->
   <title>Usittel</title>
+  <style>
+    .revo-slider-emphasis-text {
+      font-size: 64px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      font-family: 'Poppins', sans-serif;
+      padding: 15px 20px;
+      border-top: 2px solid #FFF;
+      border-bottom: 2px solid #FFF;
+    }
+
+    .revo-slider-desc-text {
+      font-size: 20px;
+      font-family: 'Lato', sans-serif;
+      width: 650px;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .revo-slider-caps-text {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .tp-video-play-button {
+      display: none !important;
+    }
+
+    .tp-caption {
+      white-space: nowrap;
+    }
+  </style>
 </head>
 
 <body class="stretched" style="width: 100%">
@@ -149,27 +150,34 @@
       </div>
       <div class="header-wrap-clone"></div>
     </header>
-    <!-- #header end -->
-
-    <!-- Content
-		============================================= -->
-
-    <!--StickyButton 
-    ============================================= -->
-    <!--<div class="content">-->
-    <!--   Tu contenido aquí -->
-    <!-- </div>
-    <a target="_blank" href="https://wa.me/5492494060345" class="floating-button">+/a>-->
 
 
-      
+
+    <div style="position: relative; height: 70vh; width: 100%;">
+      <!-- Video de fondo -->
+      <video autoplay muted loop
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <source src="img/videoMESH.mp4" type="video/mp4">
+        <!-- Puedes agregar más fuentes para diferentes formatos de video -->
+        Tu navegador no soporta el elemento de video.
+      </video>
+
+      <!-- Título sobre el video con fondo semitransparente -->
+      <div
+        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.5); color: white; padding: 20px; border-radius: 10px; font-size: 2em; text-align: center;">
+        Usittel MESH <br>
+        La mejor conexión en cada rincón de tu hogar
+      </div>
+    </div>
+
+
 
 
     <!-- Que es MESH
 				============================================= -->
 
     <div class="section m-0" id="meshId"
-      style="background: url('demos/seo/images/sections/4.png') no-repeat center top; background-size: cover; padding: 50px 0 0;">
+      style="background: url('demos/seo/images/sections/4.png') no-repeat center top; background-size: cover; padding: 0px 0 0;">
       <div class="queEsMeshModel">
         <div class="">
           <div class="" style="padding-bottom: 20%;">
@@ -186,14 +194,14 @@
         <div class="col-lg-6 mb-6">
           <div class="flip-card text-center">
             <div class="flip-card-front dark" data-height-xl="600"
-              style="background-image: url('demos/ecommerce/images/catagories/1.jpg');">
+              style="background-image: url('img/49.png');">
               <div class="flip-card-inner">
                 <div class="card bg-transparent border-0 text-center">
                 </div>
               </div>
             </div>
             <div class="flip-card-back" data-height-xl="600"
-              style="background-image: url('demos/ecommerce/images/catagories/2.jpg');">
+              style="background-image: url('img/45.PNG');">
               <div class="flip-card-inner">
               </div>
             </div>
@@ -218,19 +226,19 @@
         <div class="row grid-container" data-layout="masonry" style="overflow: visible">
           <div class="col-lg-4 mb-4">
             <div class="flip-card text-center">
-              <div class="flip-card-front dark" data-height-xl="200">
+              <div class="flip-card-front bg-primary dark" data-height-xl="200">
                 <div class="flip-card-inner">
                   <div class="card bg-transparent border-0 text-center">
                     <div class="card-body">
-                      <i class="icon-line2-check h1"></i>
-                      <h3 class="card-title">Special title treatment</h3>
+                      <i class="icon-line2-check h1" style="color: white;"></i>
+                      <h3 class="card-title" style="color: white;">Seguridad</h3>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="flip-card-back bg-danger no-after">
                 <div class="flip-card-inner">
-                  <p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
+                  <p class="mb-2 text-white">Seguridad
                     repellat velit.</p>
                 </div>
               </div>
@@ -239,12 +247,12 @@
 
           <div class="col-lg-4 mb-4">
             <div class="flip-card text-center top-to-bottom">
-              <div class="flip-card-front dark" data-height-xl="200">
+              <div class="flip-card-front bg-primary dark" data-height-xl="200">
                 <div class="flip-card-inner">
                   <div class="card bg-transparent border-0 text-center">
                     <div class="card-body">
-                      <i class="icon-line2-check h1"></i>
-                      <h3 class="card-title">Special title treatment</h3>
+                      <i class="icon-line2-check h1" style="color: white;"></i>
+                      <h3 class="card-title" style="color: white;">Eficacia</h3>
                     </div>
                   </div>
                 </div>
@@ -261,12 +269,12 @@
 
           <div class="col-lg-4 mb-4">
             <div class="flip-card text-center top-to-bottom">
-              <div class="flip-card-front bg-info dark" data-height-xl="200">
+              <div class="flip-card-front bg-primary dark" data-height-xl="200">
                 <div class="flip-card-inner">
                   <div class="card bg-transparent border-0 text-center">
                     <div class="card-body">
-                      <i class="icon-line2-check h1"></i>
-                      <h3 class="card-title">Special title treatment</h3>
+                      <i class="icon-line2-check h1" style="color: white;"></i>
+                      <h3 class="card-title" style="color: white;">Facil instalación</h3>
                     </div>
                   </div>
                 </div>
@@ -292,73 +300,77 @@
   <!-- Sección MESH
 				============================================= -->
   <br><br><br><br>
-  <div class="container clearfix contenedorMESH">
+  <div class="superContenedorMeshHohgar">
 
-    <div class="row clearfix topmargin bottommargin">
 
-      <div class="col-lg-4 col-md-6 topmargin bottommargin-sm">
+    <div class="container clearfix contenedorMESH">
 
-        <div class="heading-block border-bottom-0">
-          <h2 class="nott ls0 tituloMESH" style="font-size: 44px; line-height: 1.2">La solución WIFI para tu hogar
-          </h2>
-        </div>
-        <span style="color: #464646;">
-          <p class="parrafoMESH">Sabemos que cada hogar tiene sus propias necesidades, y nuestra solución con la
-            tecnologia MESH se ajusta
-            perfectamente a cada uno, asegurando una señal óptima en todos los espacios.</p>
-        </span>
-        <span style="color: #464646;">
-          <p class="parrafoMESH">Trabaja, estudia y disfruta con
-            la única fibra óptica que cubre todo tu hogar.</p>
-        </span>
-        <div class="clear"></div>
-        <br>
-        <!--<a target="_blank" href="https://www.clientes.usittel.com.ar/"
+      <div class="row clearfix topmargin bottommargin">
+
+        <div class="col-lg-4 col-md-6 topmargin bottommargin-sm">
+
+          <div class="heading-block border-bottom-0">
+            <h2 class="nott ls0 tituloMESH" style="font-size: 44px; line-height: 1.2">La solución WIFI para tu hogar
+            </h2>
+          </div>
+          <span style="color: #464646;">
+            <p class="parrafoMESH">Sabemos que cada hogar tiene sus propias necesidades, y nuestra solución con la
+              tecnologia MESH se ajusta
+              perfectamente a cada uno, asegurando una señal óptima en todos los espacios.</p>
+          </span>
+          <span style="color: #464646;">
+            <p class="parrafoMESH">Trabaja, estudia y disfruta con
+              la única fibra óptica que cubre todo tu hogar.</p>
+          </span>
+          <div class="clear"></div>
+          <br>
+          <!--<a target="_blank" href="https://www.clientes.usittel.com.ar/"
                     class="buttonAutogestion button-large button-rounded text-capitalize ls0" style="border-radius: 23px">Más información sobre MESH</a>-->
-      </div>
-      <div class="col-lg-4 d-md-none d-lg-block center">
-        <img src="img/mesh_casa_remove.png" alt="Car">
-      </div>
-
-      <div class="col-lg-4 col-md-6 topmargin bottommargin-sm">
-        <div class="feature-box fbox-plain topmargin">
-          <div class="fbox-icon">
-            <a href="#"><img src="img/mesh/houseIcon.png" alt=""></a>
-          </div>
-          <div class="fbox-content">
-            <h3>MESH se adapta a tu hogar</h3>
-            <p style="color: #464646;">Gracias a la adaptabilidad de nuestro servicio, podemos proporcionar una
-              cobertura WiFi total,
-              independientemente de la distribución o el tamaño de tu hogar.</p>
-          </div>
+        </div>
+        <div class="col-lg-4 d-md-none d-lg-block center">
+          <img src="img/mesh_casa_remove.png" alt="Car">
         </div>
 
-        <div class="feature-box fbox-plain topmargin">
-          <div class="fbox-icon">
-            <a href="#"><img src="img/mesh/meshIcon.png" alt=""></a>
+        <div class="col-lg-4 col-md-6 topmargin bottommargin-sm">
+          <div class="feature-box fbox-plain topmargin">
+            <div class="fbox-icon">
+              <a href="#"><img src="img/mesh/houseIcon.png" alt=""></a>
+            </div>
+            <div class="fbox-content">
+              <h3>MESH se adapta a tu hogar</h3>
+              <p style="color: #464646;">Gracias a la adaptabilidad de nuestro servicio, podemos proporcionar una
+                cobertura WiFi total,
+                independientemente de la distribución o el tamaño de tu hogar.</p>
+            </div>
           </div>
-          <div class="fbox-content">
-            <h3>MESH te ofrece...</h3>
-            <p style="color: #464646;">Cobertura y movilidad, permitiéndote disfrutar del mejor WiFi en cada rincón de
-              tu hogar sin cortes.
-            </p>
-          </div>
-        </div>
 
-        <div class="feature-box fbox-plain topmargin">
-          <div class="fbox-icon">
-            <a href="#"><img src="img/mesh/configMesh.png" alt=""></a>
+          <div class="feature-box fbox-plain topmargin">
+            <div class="fbox-icon">
+              <a href="#"><img src="img/mesh/meshIcon.png" alt=""></a>
+            </div>
+            <div class="fbox-content">
+              <h3>MESH te ofrece...</h3>
+              <p style="color: #464646;">Cobertura y movilidad, permitiéndote disfrutar del mejor WiFi en cada rincón de
+                tu hogar sin cortes.
+              </p>
+            </div>
           </div>
-          <div class="fbox-content">
-            <h3>Instalación Sencilla</h3>
-            <p style="color: #464646;">Configuración rápida y fácil.
-              No requiere cables adicionales ni conocimientos técnicos avanzados.</p>
+
+          <div class="feature-box fbox-plain topmargin">
+            <div class="fbox-icon">
+              <a href="#"><img src="img/mesh/configMesh.png" alt=""></a>
+            </div>
+            <div class="fbox-content">
+              <h3>Instalación Sencilla</h3>
+              <p style="color: #464646;">Configuración rápida y fácil.
+                No requiere cables adicionales ni conocimientos técnicos avanzados.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-  </div> <!-- Features Area End -->
+    </div> <!-- Features Area End -->
+  </div>
 
 
 
@@ -494,10 +506,6 @@
                           class="button button-large button-rounded btn-block text-capitalize m-0 ls0"
                           style="border-radius: 23px; text-align: center;">Contactanos</a>
                       </div>
-                      <a target="_blank" href="mesh.html"
-                        class="button button-large button-rounded btn-block text-capitalize m-0 ls0"
-                        style="border-radius: 23px; text-align: center;">Más
-                        información</a>
                     </div>
                   </div>
                 </div>
@@ -614,7 +622,47 @@
       </div>
     </div>
     <br><br><br>
-  </section><!-- #content end -->
+  </section><!-- #contenido oend -->
+
+  <div id="section-map" class="page-section pt-0">
+
+    <div class="row mx-0 bottommargin-lg align-items-stretch" id="contactoID">
+      <div class="col-lg-8 col-md-6 d-none d-md-block px-0">
+        <div class="gmapClass">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.3708844379425!2d-59.14144811011122!3d-37.310041500184184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95912026456142db%3A0x4211da708442e913!2sNigro%20575%2C%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1720190036467!5m2!1ses!2sar"
+            width="600" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" style="background-color: #F5F5F5;">
+        <div class="col-padding">
+          <br>
+          <h3 class="font-body font-weight-normal ls1">Contacto</h3>
+
+          <div style="font-size: 17px; line-height: 1.7;">
+            <address style="line-height: 1.7;">
+              <strong>Buenos Aires, Argentina</strong><br>
+              Nigro 585<br>
+              Tandil<br>
+            </address>
+
+            <div class="clear topmargin-sm"></div>
+
+            <abbr title="Phone Number"><strong>Telefono:</strong></abbr> <a class="a_hoverUBI"
+              href="tel:54 11 4250-0471">
+              11 4250 0471</a><br>
+            <abbr title="Phone Number"><strong>Whatsapp:</strong></abbr> <a target="_blank"
+              href="https://wa.me/5492494060345"><i class="fab fa-whatsapp"></i>+54 9 249
+              406-0345</a><br>
+
+            <abbr title="Email Address"><strong>Email:</strong></abbr> <a class="a_hoverUBI"
+              href="mailto:info@fiberquil.com.ar">contacto@usittel.com.ar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Contacto
 		=============================================  -->

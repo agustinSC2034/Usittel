@@ -13,10 +13,6 @@
 }
 
 /*MESH*/
-.contenedorMESH{
-	margin-top: -70px;
-}
-
 .queEsMeshModel{
 	display: flex;
 	flex-direction: row;
@@ -31,6 +27,16 @@
 	padding-top: 4%;
 }
 
+.superContenedorMeshHohgar{
+	background-color: #03142711;
+	margin-bottom: -4.55%;
+}
+.contenedorMESH{
+	margin-top: -70px;
+}
+
+
+
 .meshModel{
 	display: flex;
 	flex-direction: row;
@@ -40,7 +46,7 @@
 	height: 70vh;
 	padding-left: 5%;
 	padding-right: 5%;
-	background-color: #3080db0a;
+	background-color: #03142711;
 }
 
 .carrouselMesh2{
