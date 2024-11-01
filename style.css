@@ -381,19 +381,15 @@
 /* Estilos generales del botón flotante */
 .floating-button {
 	position: fixed;
-	bottom: 100px;
-	right: 33px;
-	width: 55px;
-	height: 55px;
-	background-image: url('img/whatsapp_nuevo.png');
+	bottom: 20px;
+	right: 20px;
+	width: 220px;
+	height: 75px;
+	background-image: url('img/wp_help.png');
 	/* Ruta de tu imagen de WhatsApp */
 	background-size: cover;
-	border-radius: 100%;
+	border-radius: 0%;
 	transition: transform 0.3s, box-shadow 0.3s;
-	animation: backInRight;
-	/* referring directly to the animation's @keyframe declaration */
-	animation-duration: 2s;
-	/* don't forget to set a duration! */
 }
 
 
