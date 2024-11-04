@@ -6,7 +6,7 @@
   <meta name="author" content="SemiColonWeb" />
   <link rel="icon" href="img/usiFavIcon-removebg-preview.png" type="image/x-icon" />
 
-  <!-- Stylesheets
+    <!-- Stylesheets
 	============================================= -->
   <link
     href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Montserrat:400,700|Merriweather&display=swap"
@@ -17,6 +17,8 @@
   <!-- Media Agency Demo Specific Stylesheet -->
   <link rel="stylesheet" href="demos/app-landing/app-landing.css" type="text/css" />
   <!-- / -->
+    <!-- Business Demo Specific Stylesheet  -->
+    <link rel="stylesheet" href="demos/business/business.css" type="text/css" />
 
   <!-- Home Demo Specific Stylesheet -->
   <link rel="stylesheet" href="demos/interior-design/interior-design.css" type="text/css" />
@@ -35,8 +37,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/colors.php?color=267DF4" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <!-- Document Title
 	============================================= -->
   <title>Usittel</title>
@@ -62,18 +66,6 @@
               <a href="index.html" class="retina-logo" data-dark-logo="usittelNewRemove"><img
                   src="img/usittelNewRemove2.png" alt=""></a>
               <div class="primary-menu not-dark with-arrows" style="font-size: 5px;">
-                <li class="menu-item current dropdown">
-                  <a class="menu-link listaDesp" style="font-size: 15px;" href="#">
-                    <div class="lista"><b class="menu-container not-dark">EMPRESAS</b>
-                      <div class="arrow-down">&#9660;</div>
-                    </div>
-                  </a>
-
-                  <div class="dropdown-content">
-                    <a href="index.html" style="font-size: 14px; color: black;"><b>RESIDENCIAL</b></a>
-                    <!--<a>MAYORISTAS</a>-->
-                  </div>
-                </li>
               </div>
             </div>
             <div class="header-misc">
@@ -94,15 +86,24 @@
 						============================================= -->
             <nav class="primary-menu not-dark with-arrows">
               <ul class="menu-container not-dark" style="">   
-                <!--<a>MAYORISTAS</a></li>-->
+                <li class="menu-item current dropdown">
+                  <a class="menu-link listaDesp" style="font-size: 13px;" href="#">
+                    <div class="lista"><b class="menu-container not-dark">EMPRESA</b>
+                      <div class="arrow-down">&#9660;</div>
+                    </div>
+                  </a>
+                  <div class="dropdown-content">
+                    <a href="empresas.html" style="font-size: 12px; color: black;"><b>RESIDENCIAL</b></a>
+                  </div>
+                </li>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="#slider">
+                  <a style="font-size: 13px;" class="menu-link" href="#slider">
                     <div>Home</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="#cobertura">
+                  <a style="font-size: 13px;" class="menu-link" href="#cobertura">
                     <div>Nuestra red</div>
                   </a>
                 </li>
@@ -112,12 +113,7 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="#section-faqs">
-                    <div>FAQS</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a class="menu-link" href="#contactoID">
+                  <a style="font-size: 13px;" class="menu-link" href="#contactoID">
                     <div>Contacto</div>
                   </a>
                 </li>
@@ -313,7 +309,7 @@
 
         <div id="pricing-switch" class="pricing row col-mb-30 mb-5 preciosContenedor2">
           <div class="col-lg-4 col-md-6 contenedorPrecioA bloquePrecioAAA" id="fibra">
-            <div class="pricing-box text-center bloquePrecioAAA">
+            <div class="pricing-box text-center bloquePrecioAAA" style="border-radius: 30px;">
               <div class="bloquePrecio1">
                 <div class="pricing-title text-uppercase">
                   <div class="tituloPreciosDiv">
@@ -363,7 +359,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 contenedorPrecioA">
-            <div class="pricing-box text-center">
+            <div class="pricing-box text-center" style="border-radius: 30px;">
               <div class="bloquePrecio1">
                 <div class="pricing-title text-uppercase">
                   <div class="tituloPreciosDiv">
@@ -415,7 +411,7 @@
           </div>
 
           <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-3 contenedorPrecioA">
-            <div class="pricing-box text-center">
+            <div class="pricing-box text-center" style="border-radius: 30px;">
               <div class="bloquePrecio1">
                 <div class="pricing-title text-uppercase">
                   <div class="tituloPreciosDiv">
@@ -493,102 +489,54 @@
     <!-- planes
 		============================================= -->
 
-
-
-    <div class="divider divider-sm divider-center"><i class="icon-circle"></i></div>
-
-
-
-
-    <div class="container clearfix">
-      <div id="section-specs" class="heading-block text-center page-section">
-        <h2>Por que elegir USITTEL fibra para su empresa?</h2>
-        <span>Lista completa de especificaciones técnicas para su comprensión</span>
-      </div>
-
-      <div id="side-navigation" class="row col-mb-50" data-plugin="tabs">
-        <div class="col-md-5 col-lg-4">
-          <ul class="sidenav">
-            <li class="ui-tabs-active"><a href="#snav-content1">Conectividad Fiable<i
-                  class="icon-chevron-right"></i></a></li>
-            <li><a href="#snav-content2">Alta Velocidad<i class="icon-chevron-right"></i></a></li>
-            <li><a href="#snav-content3">Internet + IP Fija<i class="icon-chevron-right"></i></a></li>
-            <li><a href="#snav-content4">Soporte Técnico 24/7<i class="icon-chevron-right"></i></a></li>
-            <li><a href="#snav-content5">Soluciones Personalizadas<i class="icon-chevron-right"></i></a></li>
-          </ul>
+    <div class="container"
+    style="max-width: 100%; background-color: rgba(39, 38, 38, 0.911); color: whitesmoke; font-weight: bold; display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center;">
+    <div class="row col-mb-30 mt-5" style="width: 70%; text-align: center;">
+      <div class="col-md-4">
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="counter counter-xlarge text-dark font-weight-bolder">
+            <span style="color: white;" data-from="0" data-to="10" data-refresh-interval="2" data-speed="400"
+              data-comma="true"></span>
+          </div>
+          <span>+ Años de <br>experiencia.</span>
         </div>
-
-        <div class="col-md-7 col-lg-8">
-          <div id="snav-content1">
-            <h3>Conectividad Fiable</h3>
-
-            Nuestro servicio de internet por fibra óptica asegura una conectividad constante y sin interrupciones, ideal
-            para el funcionamiento diario de su empresa. Proporcionamos soluciones adaptadas a sus necesidades,
-            garantizando un rendimiento óptimo y una experiencia de usuario superior. Nuestros clientes disfrutan de una
-            red robusta y segura, diseñada para soportar las demandas más exigentes.
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="counter counter-xlarge text-dark font-weight-bolder">
+            <span style="color: white;" data-from="1" data-to="340" data-refresh-interval="50" data-speed="900"
+              data-comma="true"></span>
           </div>
-
-          <div id="snav-content2">
-            <h3>Alta Velocidad</h3>
-            Disfrute de velocidades de internet ultrarrápidas que permiten a su empresa operar de manera eficiente y sin
-            retrasos. Nuestra tecnología avanzada de fibra óptica asegura una transmisión de datos rápida y confiable,
-            ideal para videoconferencias, transferencias de archivos grandes y aplicaciones en la nube. Manténgase
-            conectado y productivo con nuestro servicio de alta velocidad.
+          <span>+ Proyectos <br>de éxito.</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="counter counter-xlarge text-dark font-weight-bolder">
+            <span style="color: white;" data-from="1" data-to="99.99" data-refresh-interval="30" data-speed="900"
+              data-comma="true" data-decimals="2"></span>
           </div>
-
-          <div id="snav-content3">
-            <h3>Internet + IP Fija</h3>
-            Podrás conectarte a tus dispositivos
-            y servicios de manera segura. Una Dirección IP Fija es esencial para acceder desde el exterior a servicios
-            propios alojados en tu red interna. Esto es particularmente útil para visualizar cámaras de seguridad,
-            administrar remotamente dispositivos, y asegurar una conexión continua y sin interrupciones a sistemas
-            críticos. La fibra óptica asegura una mayor velocidad y fiabilidad comparada con conexiones convencionales,
-            lo cual es vital para internet para empresas y pymes.
-          </div>
-
-          <div id="snav-content4">
-            <h3>Soporte Técnico 24/7</h3>
-            Nuestro equipo de soporte técnico está disponible las 24 horas del día, los 7 días de la semana, para
-            resolver cualquier problema que pueda surgir. Nos enorgullece ofrecer un servicio al cliente excepcional,
-            asegurando que su conexión a internet esté siempre en funcionamiento y que cualquier inconveniente se
-            resuelva de manera rápida y eficiente.
-          </div>
-
-          <div id="snav-content5">
-            <h3>Soluciones Personalizadas</h3>
-            Entendemos que cada empresa tiene necesidades únicas, por lo que ofrecemos soluciones personalizadas para
-            adaptarnos a sus requerimientos específicos. Trabajamos estrechamente con usted para diseñar un plan que
-            maximice la eficiencia y productividad de su empresa, proporcionándole una conectividad a internet que se
-            ajuste perfectamente a su operación.
-          </div>
+          <span>% de SLA<br>garantizado</span>
         </div>
       </div>
     </div>
+    <div class="line line-sm mb-0"></div>
   </div>
-  </section><!-- #content end -->
-  </div>
-  <br><br><br><br><br>
+
 
   <!-- Enterprise Fiber Optic Network Section
 ============================================= -->
-  <div class="section m-0 bg-light">
+  <div class="section m-0 bg-light" style="padding-left: 9%; padding-right: 9%;">
     <div class="container clearfix">
-      <div class="heading-block center mt-0 mx-auto border-bottom-0 clearfix" style="max-width: 700px">
-        <h2>Fibra Óptica para Empresas: Conectividad Superior para tu Negocio</h2><br>
-        <p>
-          Nuestra solución de fibra óptica está diseñada específicamente para satisfacer las necesidades de conectividad
-          de empresas que requieren velocidad, fiabilidad y rendimiento sin compromisos.
-        </p>
-      </div>
-      <div class="row">
+      <div class="row" style="align-items: center;">
         <div class="col-lg-5 col-md-6">
-          <div class="heading-block mt-md-3 mt-0">
+
             <div class="before-heading color"></div>
             <h3 class="nott ls0 tituloContenedorEmpresas">
               Velocidad de Conexión sin Igual
             </h3>
-          </div>
-          <p class="parraforEmpresasContenedor">
+
+          <p class="parraforEmpresasContenedor" style="">
             Las empresas necesitan una infraestructura de red que pueda manejar grandes volúmenes de datos y adaptarse a
             un entorno en constante cambio. Con nuestra red de fibra óptica, puedes estar seguro de que tu empresa
             cuenta con una solución escalable y fiable que respalda tus operaciones diarias, desde la comunicación
@@ -597,12 +545,41 @@
         </div>
         <div class="col-lg-7 col-md-6">
           <div id="hotspot-img" class="hotspot-img mt-2 responsive-hotspot-wrap">
-            <img src="img/Negocio.png" class="img-responsive" />
+            <img style="border-radius: 40px;" src="img/Negocio.png" class="img-responsive" />
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="section m-0 bg-light" style="padding-left: 9%; padding-right: 9%;">
+    <div class="container clearfix">
+      <div class="row" style="align-items: center;">
+        <div class="col-lg-5 col-md-6">
+
+            <div class="before-heading color"></div>
+            <h3 class="nott ls0 tituloContenedorEmpresas">
+              Velocidad de Conexión sin Igual
+            </h3>
+
+          <p class="parraforEmpresasContenedor" style="">
+            Las empresas necesitan una infraestructura de red que pueda manejar grandes volúmenes de datos y adaptarse a
+            un entorno en constante cambio. Con nuestra red de fibra óptica, puedes estar seguro de que tu empresa
+            cuenta con una solución escalable y fiable que respalda tus operaciones diarias, desde la comunicación
+            interna hasta el acceso a datos en la nube y el manejo de aplicaciones empresariales.
+          </p>
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <div id="hotspot-img" class="hotspot-img mt-2 responsive-hotspot-wrap">
+            <img style="border-radius: 40px;" src="img/Negocio.png" class="img-responsive" />
+            <div class="shine-effect"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
 
   <!-- IMG Empresa section
 ============================================= 
@@ -632,7 +609,7 @@
   <!-- FAQS
 		============================================= -->
   <section id="content section-faqs">
-    <div class="content-wrap clearfix" id="section-faqs">
+    <div class="content-wrap clearfix" id="section-faqs" style="padding-left: 7%; padding-right: 7%;">
       <div class="container">
         <div class="row clearfix">
           <div class="col-md-12">
@@ -863,7 +840,7 @@
     </div>
   </section>
   <section id="contact" class="section-bg wow fadeInUp">
-    <div class="container">
+    <div class="container" style="padding-left: 7%; padding-right: 7%;">
       <div class="form">
         <div id="sendmessage">Su mensaje fue enviado, muchas gracias!</div>
         <div id="errormessage"></div>
@@ -961,7 +938,7 @@
     <!-- Copyrights
 			============================================= -->
     <div id="copyrights">
-      <div class="container">
+      <div class="container" style="padding-left: 7%; padding-right: 7%;">
         <div class="row col-mb-30">
           <div class="col-md-6 text-center text-md-left footerNew">
             <div class="col-md-12 footerNew">
