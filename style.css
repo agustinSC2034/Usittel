@@ -217,7 +217,7 @@
 		text-align: center;
 	}
 	.parrafoMeshPrecio{
-		text-align: center;
+		text-align: justify;
 	}
 	.contenedorPrecioMesh{
 		display: flex;
@@ -714,6 +714,10 @@ input[type="number"]:focus {
 	display: flex;
 	justify-items: center;
 	justify-content: center;
+}
+
+.tPrecios{
+	text-align: justify;
 }
 
 .beneficioContainerPequeño {
