@@ -788,6 +788,7 @@ input[type="number"]:focus {
 
 .popup-content {
 	font-size: 12px;
+	text-align: justify;
 }
 
 /*Sección beneficios FO*/
