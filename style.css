@@ -265,6 +265,13 @@
 
 
 /*Empresas*/
+@media screen and (min-width: 800px) {
+	.parraforEmpresasContenedor{
+		width: 85%;
+	}
+}
+
+
 @media screen and (max-width: 800px) {
 	.imagenUsina{
 	}
