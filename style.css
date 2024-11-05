@@ -274,6 +274,24 @@
 	}
 }
 
+.dot-text {
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .dot-text::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 8px;
+	height: 8px;
+	background-color: #099866; /* Color verde claro */
+	border-radius: 50%;
+  }
+  
+
 
 @media screen and (max-width: 800px) {
 	.imagenUsina{
