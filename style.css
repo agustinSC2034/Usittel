@@ -10,6 +10,9 @@
 		background-color: rgb(246, 246, 246);
 		color: #000;
 	}
+	.imgFibra2{
+		display: none;
+	}
 }
 
 /*MESH*/
