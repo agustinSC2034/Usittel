@@ -746,9 +746,7 @@ input[type="number"]:focus {
 	justify-content: center;
 }
 
-.tPrecios{
-	text-align: justify;
-}
+
 
 .beneficioContainerPequeño {
 	display: flex;
@@ -1528,6 +1526,22 @@ input[type="number"]:focus {
 	background-color: rgba(223, 220, 220, 0.378);
 	width: 100%;
 }
+
+
+/*Empresas*/
+.tPreciosEmpresa{
+	min-height: 330px;
+	text-align: justify;
+}
+
+@media (max-width: 1000px) {
+	.tPreciosEmpresa{
+		height: auto;
+		text-align: justify;
+	}
+	
+}
+	
 
 /* Fin codigo nuevo */
 
