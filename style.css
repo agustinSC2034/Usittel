@@ -568,8 +568,7 @@ body {
 	margin: auto;
 	justify-content: center;
 	width: 90%;
-	height: 100%;
-	margin-bottom: -5%;
+	height: auto;
 }
 
 .estiloContainer {
@@ -1225,7 +1224,7 @@ input[type="number"]:focus {
 		display: flex;
 		flex-direction: column;
 		margin: auto;
-		height: 100%;
+		height: auto;
 		width: 100%;
 		justify-content: center;
 		justify-items: center;
@@ -1247,15 +1246,53 @@ input[type="number"]:focus {
 		margin-top: 5%;
 		font-size: 15px;
 	}
+
+}
+@media (max-width: 400px) {
+	.contenedorProximamente {
+		height: 700px;
+		margin: -5px;
+	}
+
+	.mapa-container{
+		display: none;
+	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
+	.contenedorProximamente {
+		height: 650px;
+		margin: -5px;
+	}
+
+	.mapa-container{
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.contenedorProximamente {
+		height: 600px;
+		margin: -5px;
+	}
+
+	.mapa-container{
+		display: none;
+	}
+}
+
+@media (max-width: 700px) {
 	.estiloContainer {
 		height: auto;
 	}
 
 	.contenedorProximamente {
-		height: 1000px;
+		height: 500px;
+		margin: -5px;
+	}
+
+	.mapa-container{
+		display: none;
 	}
 
 	.cobertura-box {
@@ -1283,17 +1320,6 @@ input[type="number"]:focus {
 		width: 100%;
 		justify-content: center;
 		justify-items: center;
-		gap: 50px;
-	}
-
-	.mapa-container {
-		display: flex;
-		justify-content: center;
-		justify-items: center;
-		align-items: center;
-		margin: auto;
-		width: auto;
-		height: auto;
 	}
 
 	.preciosContenedor2 {
@@ -1322,17 +1348,6 @@ input[type="number"]:focus {
 		width: 100%;
 		justify-content: center;
 		justify-items: center;
-		gap: 50px;
-	}
-
-	.mapa-container {
-		display: flex;
-		justify-content: center;
-		justify-items: center;
-		align-items: center;
-		margin: auto;
-		width: auto;
-		height: auto;
 	}
 
 	.containerChicoContact {
@@ -1360,8 +1375,7 @@ input[type="number"]:focus {
 	}
 
 	.estiloContainerMayor {
-		height: 100%;
-		margin-bottom: -160%;
+		height: auto;
 	}
 
 	.tituloBigContainer {
@@ -1530,12 +1544,13 @@ input[type="number"]:focus {
 
 /*Empresas*/
 .tPreciosEmpresa{
-	min-height: 330px;
+	min-height: 360px;
 	text-align: justify;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
 	.tPreciosEmpresa{
+		min-height: auto;
 		height: auto;
 		text-align: justify;
 	}
