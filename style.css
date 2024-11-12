@@ -615,7 +615,7 @@ body {
 	background-color: rgb(237, 233, 233);
 	border-radius: 40px;
 	width: 30%;
-	height: auto;
+	height: 100%;
 	text-align: center;
 	align-items: center;
 	padding: 20px;
@@ -710,9 +710,7 @@ input[type="number"]:focus {
 	/* referring directly to the animation's @keyframe declaration */
 	animation-duration: 2s;
 	/* don't forget to set a duration! */
-	background-color: red;
-	width: 70%;
-	height: 70%;
+
 }
 
 .tituloPlanes {
