@@ -4,73 +4,78 @@ let currentSlideIndex = 0;
 let slideInterval;
 
 function showSlides(n) {
-    const slides = document.getElementsByClassName("slide");
-    const dots = document.getElementsByClassName("dot");
+  const slides = document.getElementsByClassName("slide");
+  const dots = document.getElementsByClassName("dot");
 
-    // Asegúrate de que el índice esté dentro de los límites
-    if (n >= slides.length) { currentSlideIndex = 0; }
-    if (n < 0) { currentSlideIndex = slides.length - 1; }
+  // Asegúrate de que el índice esté dentro de los límites
+  if (n >= slides.length) {
+    currentSlideIndex = 0;
+  }
+  if (n < 0) {
+    currentSlideIndex = slides.length - 1;
+  }
 
-    // Oculta todas las diapositivas
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
+  // Oculta todas las diapositivas
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
 
-    // Desactiva todos los puntos
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
+  // Desactiva todos los puntos
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
 
-    // Muestra la diapositiva actual
-    slides[currentSlideIndex].style.display = "block";  
-    dots[currentSlideIndex].className += " active";
+  // Muestra la diapositiva actual
+  slides[currentSlideIndex].style.display = "block";
+  dots[currentSlideIndex].className += " active";
 }
 
 function changeSlide(n) {
-    currentSlideIndex += n;
-    showSlides(currentSlideIndex);
+  currentSlideIndex += n;
+  showSlides(currentSlideIndex);
 }
 
 function currentSlide(n) {
-    currentSlideIndex = n - 1;
-    showSlides(currentSlideIndex);
+  currentSlideIndex = n - 1;
+  showSlides(currentSlideIndex);
 }
 
 function startSlideShow() {
-    slideInterval = setInterval(() => {
-        currentSlideIndex++;
-        showSlides(currentSlideIndex);
-    }, 1800); // Cambia cada 3 segundos
+  slideInterval = setInterval(() => {
+    currentSlideIndex++;
+    showSlides(currentSlideIndex);
+  }, 1800); // Cambia cada 3 segundos
 }
 
 function stopSlideShow() {
-    clearInterval(slideInterval);
+  clearInterval(slideInterval);
 }
 
 // Inicializa la primera diapositiva al cargar la página
-window.onload = function() {
-    showSlides(currentSlideIndex);
-    startSlideShow();
+window.onload = function () {
+  showSlides(currentSlideIndex);
+  startSlideShow();
 };
 
 // Pausar el carrusel cuando el mouse esté sobre él
-document.querySelector('.carousel-container').addEventListener('mouseover', stopSlideShow);
-document.querySelector('.carousel-container').addEventListener('mouseout', startSlideShow);
-
-
+document
+  .querySelector(".carousel-container")
+  .addEventListener("mouseover", stopSlideShow);
+document
+  .querySelector(".carousel-container")
+  .addEventListener("mouseout", startSlideShow);
 
 // deslizamiento nav
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
   });
 });
-
 
 // script pop-up:
 function openPopup1() {
@@ -112,9 +117,6 @@ document.getElementById("popupLink3").addEventListener("click", function (e) {
   openPopup3();
 });
 
-
-
-
 window.addEventListener("DOMContentLoaded", function () {
   var currentPageLabel = document.getElementById("currentPageLabel");
   var currentPage = location.pathname.split("/").slice(-1)[0]; // Obtiene el nombre del archivo actual
@@ -125,7 +127,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   dropdownOptions.forEach(function (option) {
     option.addEventListener("click", function (event) {
-    //  event.preventDefault();  Evita la redirección predeterminada
+      //  event.preventDefault();  Evita la redirección predeterminada
 
       var selectedOption = this.getAttribute("data-value");
       currentPageLabel.textContent = "Web: " + selectedOption;
@@ -141,9 +143,8 @@ dropdownOptions.forEach(function (option) {
   });
 });
 
-
 document.getElementById("inputNumero").addEventListener("input", function () {
-  this.value = this.value.replace(/\D/g, '');
+  this.value = this.value.replace(/\D/g, "");
 });
 
 function verificarCobertura() {
@@ -160,211 +161,252 @@ function verificarCobertura() {
   const inputNumero = document.getElementById("inputNumero").value;
 
   if (inputDireccion === "" || inputNumero === "") {
-      if (inputDireccion === "") {
-          document.getElementById("inputDireccion").style.border = "1px solid red";
-      }
-      if (inputNumero === "") {
-          document.getElementById("inputNumero").style.border = "1px solid red";
-      }
-      return;
+    if (inputDireccion === "") {
+      document.getElementById("inputDireccion").style.border = "1px solid red";
+    }
+    if (inputNumero === "") {
+      document.getElementById("inputNumero").style.border = "1px solid red";
+    }
+    return;
   }
 
   const zonasDeCobertura = [
-    { calle: 'paz', desde: 1, hasta: 900 },
-    { calle: 'general paz', desde: 1, hasta: 900 },
-    { calle: 'gral paz', desde: 1, hasta: 900 },
-    { calle: 'gral. paz', desde: 1, hasta: 900 },
-    { calle: '4 de abril', desde: 1, hasta: 900 },
-    { calle: '4 abril', desde: 1, hasta: 900 },
-    { calle: 'cuatro de abril', desde: 1, hasta: 900 },
-    { calle: 'santamarina', desde: 1, hasta: 900 },
-    { calle: 'av Santamarina', desde: 1, hasta: 900 },
-    { calle: 'av Santa marina', desde: 1, hasta: 900 },
-    { calle: 'av. Santamarina', desde: 1, hasta: 900 },
-    { calle: 'av. Santa marina', desde: 1, hasta: 900 },
-    { calle: 'avenida Santa marina', desde: 1, hasta: 900 },
-    { calle: 'avenida Santamarina', desde: 1, hasta: 900 },
-    { calle: 'alsina', desde: 1, hasta: 900 },
-    { calle: 'alcina', desde: 1, hasta: 900 },
-    { calle: 'gral roca', desde: 1, hasta: 900 },
-    { calle: 'gral. roca', desde: 1, hasta: 900 },
-    { calle: 'general roca', desde: 1, hasta: 900 },
-    { calle: 'roca', desde: 1, hasta: 900 },
-    { calle: '11 de septiembre', desde: 1, hasta: 900 },
-    { calle: '11 de setiembre', desde: 1, hasta: 900 },
-    { calle: 'once de setiembre', desde: 1, hasta: 900 },
-    { calle: 'once de septiembre', desde: 1, hasta: 900 },
-    { calle: 'montiel', desde: 1, hasta: 900 },
-    { calle: 'moreno', desde: 1, hasta: 900 },
-    { calle: 'saavedra', desde: 1, hasta: 900 },
-    { calle: 'savedra', desde: 1, hasta: 900 },
-    { calle: 'saaveedra', desde: 1, hasta: 900 },
-    { calle: 'saaveedra', desde: 1, hasta: 900 },
-    { calle: 'buzon', desde: 1, hasta: 1100 },
-    { calle: 'av buzon', desde: 1, hasta: 1100 },
-    { calle: 'av buzón', desde: 1, hasta: 1100 },
-    { calle: 'avenida buzon', desde: 1, hasta: 1100 },
-    { calle: 'avenida marconi', desde: 1000, hasta: 1800 },
-    { calle: 'av marconi', desde: 1000, hasta: 1800 },
-    { calle: 'marconi', desde: 1000, hasta: 1800 },
-    { calle: 'avenida españa', desde: 900, hasta: 1000 },
-    { calle: 'av españa', desde: 900, hasta: 1000 },
-    { calle: 'av. españa', desde: 900, hasta: 1000 },
-    { calle: 'españa', desde: 900, hasta: 1000 },
-    { calle: 'sarmiento', desde: 900, hasta: 1800 },
-    { calle: 'mitre', desde: 900, hasta: 1800 },
-    { calle: 'sanmartin', desde: 900, hasta: 1800 },
-    { calle: 'san martin', desde: 900, hasta: 1800 },
-    { calle: 'san martín', desde: 900, hasta: 1800 },
-    { calle: 'pinto', desde: 900, hasta: 1800 },
-    { calle: 'belgrano', desde: 900, hasta: 1800 },
-    { calle: 'gral. belgrano', desde: 900, hasta: 1800 },
-    { calle: 'gral belgrano', desde: 900, hasta: 1800 },
-    { calle: 'general belgrano', desde: 900, hasta: 1800 },
-    { calle: 'maipu', desde: 900, hasta: 1800 },
-    { calle: 'maipú', desde: 900, hasta: 1800 },
-    { calle: 'veinticinco de mayo', desde: 900, hasta: 1800 },
-    { calle: '25demayo', desde: 900, hasta: 1800 },
-    { calle: '25 de mayo', desde: 900, hasta: 1800 },
-    { calle: 'constitucion', desde: 900, hasta: 1800 },
-    { calle: 'constitución', desde: 900, hasta: 1800 },
-    { calle: 'avellaneda', desde: 900, hasta: 1800 },
-    { calle: 'avenida avellaneda', desde: 900, hasta: 1800 },
-    { calle: 'av avellaneda', desde: 900, hasta: 1800 },
-    { calle: 'av. avellaneda', desde: 900, hasta: 1800 },
-    { calle: '1 de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'uno de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'primero de mayo', desde: 1000, hasta: 1499 },
-    { calle: '1ero de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'pasaje primero de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'pasaje 1 de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'pasaje uno de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'pasaje 1ero de mayo', desde: 1000, hasta: 1499 },
-     { calle: 'psje 1ero de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'pje 1ero de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'pje. 1ero de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'pasaje uno de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'pje 1 de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'psaje 1 de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'pje uno de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'psaje uno de mayo', desde: 1000, hasta: 1499 },
-    { calle: 'roser', desde: 1500, hasta: 1599 },
-    { calle: 'rosser', desde: 1500, hasta: 1599 },
-    { calle: 'cruz roja argentina', desde: 0, hasta: 1700 },
-    { calle: 'cruz roja', desde: 0, hasta: 1700 },
-    { calle: 'cruz roja arg.', desde: 0, hasta: 1700 },
-    { calle: 'cruz roja arg', desde: 0, hasta: 1700 },
-    { calle: 'pasaje cruz roja argentina', desde: 0, hasta: 1700 },
-    { calle: 'pje cruz roja argentina', desde: 0, hasta: 1700 },
-    { calle: 'pje. cruz roja argentina', desde: 0, hasta: 1700 },
-    { calle: 'cruz roja argentina casa', desde: 0, hasta: 1700 },
-    { calle: 'cruz roja casa', desde: 0, hasta: 1700 },
-    { calle: 'cruz roja arg. casa', desde: 0, hasta: 1700 },
-    { calle: 'cruz roja arg casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje cruz roja argentina casa', desde: 0, hasta: 1700 },
-    { calle: 'pje cruz roja argentina casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. duggan martignoni casa', desde: 0, hasta: 1700 },
-    { calle: 'duggan martignoni', desde: 0, hasta: 1700 },
-    { calle: 'dugan martinoni', desde: 0, hasta: 1700 },
-    { calle: 'dugan martignoni', desde: 0, hasta: 1700 },
-    { calle: 'pje. duggan martignoni ', desde: 0, hasta: 1700 },
-    { calle: 'duggan martignoni casa', desde: 0, hasta: 1700 },
-    { calle: 'dugan martinoni casa', desde: 0, hasta: 1700 },
-    { calle: 'dugan martignoni casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje agote casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje agote', desde: 0, hasta: 1700 },
-    { calle: 'pje. agote casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. agote', desde: 0, hasta: 1700 },
-    { calle: 'pasaje luis agote casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje luis agote', desde: 0, hasta: 1700 },
-    { calle: 'pje. luis agote casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. luis agote', desde: 0, hasta: 1700 },
-    { calle: 'pje. r. gutierrez casa', desde: 0, hasta: 1700 },
-    { calle: 'r. gutierrez', desde: 0, hasta: 1700 },
-    { calle: 'r gutierrez', desde: 0, hasta: 1700 },
-    { calle: 'r. gutierrez casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. r. gutierrez', desde: 0, hasta: 1700 },
-    { calle: 'r. gutierrez casa', desde: 0, hasta: 1700 },
-    { calle: 'r gutierrez casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. r gutierrez casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. mariano castex casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. mariano castex ', desde: 0, hasta: 1700 },
-    { calle: 'mariano castex', desde: 0, hasta: 1700 },
-    { calle: 'mariano castex casa', desde: 0, hasta: 1700 },
-    { calle: 'pje mariano castex', desde: 0, hasta: 1700 },
-    { calle: 'pje mariano castex casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje mariano castex casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje mariano castex ', desde: 0, hasta: 1700 },
-    { calle: 'pje. baldomero moreno casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. baldomero moreno', desde: 0, hasta: 1700 },
-    { calle: 'baldomero moreno', desde: 0, hasta: 1700 },
-    { calle: 'baldomero moreno casa', desde: 0, hasta: 1700 },
-    { calle: 'pje baldomero moreno', desde: 0, hasta: 1700 },
-    { calle: 'pje baldomero moreno casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje baldomero moreno casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje baldomero moreno ', desde: 0, hasta: 1700 },
-    { calle: 'pje. crucero gral belgrano casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. crucero gral belgrano', desde: 0, hasta: 1700 },
-    { calle: 'crucero gral belgrano', desde: 0, hasta: 1700 },
-    { calle: 'crucero gral belgrano casa', desde: 0, hasta: 1700 },
-    { calle: 'pje crucero gral belgrano', desde: 0, hasta: 1700 },
-    { calle: 'pje crucero gral belgrano casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje crucero gral belgrano casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje crucero gral belgrano ', desde: 0, hasta: 1700 },
-    { calle: 'pje. crucero general belgrano casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. crucero general belgrano', desde: 0, hasta: 1700 },
-    { calle: 'crucero general belgrano', desde: 0, hasta: 1700 },
-    { calle: 'crucero general belgrano casa', desde: 0, hasta: 1700 },
-    { calle: 'pje crucero general belgrano', desde: 0, hasta: 1700 },
-    { calle: 'pje crucero general belgrano casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje crucero general belgrano casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje crucero general belgrano ', desde: 0, hasta: 1700 },
-    { calle: 'pje. combate de obligado casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. combate de obligado', desde: 0, hasta: 1700 },
-    { calle: 'combate de obligado', desde: 0, hasta: 1700 },
-    { calle: 'combate de obligado casa', desde: 0, hasta: 1700 },
-    { calle: 'pje combate de obligado', desde: 0, hasta: 1700 },
-    { calle: 'pje combate de obligado casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje combate de obligado casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje combate de obligado', desde: 0, hasta: 1700 },
-    { calle: 'pje. puerto argentino casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. puerto argentino', desde: 0, hasta: 1700 },
-    { calle: 'puerto argentino', desde: 0, hasta: 1700 },
-    { calle: 'puerto argentino casa', desde: 0, hasta: 1700 },
-    { calle: 'pje puerto argentino', desde: 0, hasta: 1700 },
-    { calle: 'pje puerto argentino casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje puerto argentino casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje puerto argentino', desde: 0, hasta: 1700 },
-    { calle: 'pje. jose vernet casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. jose vernet', desde: 0, hasta: 1700 },
-    { calle: 'jose vernet', desde: 0, hasta: 1700 },
-    { calle: 'jose vernet casa', desde: 0, hasta: 1700 },
-    { calle: 'pje jose vernet', desde: 0, hasta: 1700 },
-    { calle: 'pje jose vernet casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje jose vernet casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje jose vernet', desde: 0, hasta: 1700 },
-    { calle: 'pje. c. posta de yatasto casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. c. posta de yatasto', desde: 0, hasta: 1700 },
-    { calle: 'c. posta de yatasto', desde: 0, hasta: 1700 },
-    { calle: 'c. posta de yatasto casa', desde: 0, hasta: 1700 },
-    { calle: 'pje c. posta de yatasto', desde: 0, hasta: 1700 },
-    { calle: 'pje c. posta de yatasto casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje c. posta de yatasto casa', desde: 0, hasta: 1700 },
-    { calle: 'pasaje c. posta de yatasto', desde: 0, hasta: 1700 },
-    { calle: 'pje. c. posta de yatasto casa', desde: 0, hasta: 1700 },
-    { calle: 'pje. posta de yatasto', desde: 0, hasta: 1700 },
-    { calle: 'posta de yatasto', desde: 0, hasta: 1700 },
-    { calle: 'posta de yatasto casa', desde: 0, hasta: 1700 },
-    { calle: 'posta de yatasto', desde: 0, hasta: 1700 },
-    { calle: 'posta de yatasto casa', desde: 0, hasta: 1700 },
-    { calle: 'posta de yatasto casa', desde: 0, hasta: 1700 },
-    { calle: 'posta de yatasto', desde: 0, hasta: 1700 },    
-      ]; 
+    { calle: "paz", desde: 1, hasta: 900 },
+    { calle: "general paz", desde: 1, hasta: 900 },
+    { calle: "gral paz", desde: 1, hasta: 900 },
+    { calle: "gral. paz", desde: 1, hasta: 900 },
+    { calle: "4 de abril", desde: 1, hasta: 1600 },
+    { calle: "4 abril", desde: 1, hasta: 1600 },
+    { calle: "cuatro de abril", desde: 1, hasta: 1600 },
+    { calle: "santamarina", desde: 1, hasta: 900 },
+    { calle: "av Santamarina", desde: 1, hasta: 900 },
+    { calle: "av Santa marina", desde: 1, hasta: 900 },
+    { calle: "av. Santamarina", desde: 1, hasta: 900 },
+    { calle: "av. Santa marina", desde: 1, hasta: 900 },
+    { calle: "avenida Santa marina", desde: 1, hasta: 900 },
+    { calle: "avenida Santamarina", desde: 1, hasta: 900 },
+    { calle: "alsina", desde: 1, hasta: 1600 },
+    { calle: "alcina", desde: 1, hasta: 1600 },
+    { calle: "gral roca", desde: 1, hasta: 1600 },
+    { calle: "gral. roca", desde: 1, hasta: 1600 },
+    { calle: "general roca", desde: 1, hasta: 1600 },
+    { calle: "roca", desde: 1, hasta: 1600 },
+    { calle: "11 de septiembre", desde: 1, hasta: 1600 },
+    { calle: "11 de setiembre", desde: 1, hasta: 1600 },
+    { calle: "once de setiembre", desde: 1, hasta: 1600 },
+    { calle: "once de septiembre", desde: 1, hasta: 1600 },
+    { calle: "montiel", desde: 1, hasta: 1600 },
+    { calle: "moreno", desde: 1, hasta: 1600 },
+    { calle: "saavedra", desde: 1, hasta: 1600 },
+    { calle: "savedra", desde: 1, hasta: 1600 },
+    { calle: "saaveedra", desde: 1, hasta: 1600 },
+    { calle: "saaveedra", desde: 1, hasta: 1600 },
+    { calle: "buzon", desde: 1, hasta: 1100 },
+    { calle: "av buzon", desde: 1, hasta: 1100 },
+    { calle: "av buzón", desde: 1, hasta: 1100 },
+    { calle: "avenida buzon", desde: 1, hasta: 1100 },
+    { calle: "avenida marconi", desde: 1000, hasta: 1800 },
+    { calle: "av marconi", desde: 1000, hasta: 1800 },
+    { calle: "marconi", desde: 1000, hasta: 1800 },
+    { calle: "avenida españa", desde: 900, hasta: 1000 },
+    { calle: "av españa", desde: 900, hasta: 1000 },
+    { calle: "av. españa", desde: 900, hasta: 1000 },
+    { calle: "españa", desde: 900, hasta: 1000 },
+    { calle: "sarmiento", desde: 900, hasta: 1800 },
+    { calle: "mitre", desde: 900, hasta: 1800 },
+    { calle: "sanmartin", desde: 900, hasta: 1800 },
+    { calle: "san martin", desde: 900, hasta: 1800 },
+    { calle: "san martín", desde: 900, hasta: 1800 },
+    { calle: "pinto", desde: 900, hasta: 1800 },
+    { calle: "belgrano", desde: 900, hasta: 1800 },
+    { calle: "gral. belgrano", desde: 900, hasta: 1800 },
+    { calle: "gral belgrano", desde: 900, hasta: 1800 },
+    { calle: "general belgrano", desde: 900, hasta: 1800 },
+    { calle: "maipu", desde: 900, hasta: 1800 },
+    { calle: "maipú", desde: 900, hasta: 1800 },
+    { calle: "veinticinco de mayo", desde: 900, hasta: 1800 },
+    { calle: "25demayo", desde: 900, hasta: 1800 },
+    { calle: "25 de mayo", desde: 900, hasta: 1800 },
+    { calle: "constitucion", desde: 900, hasta: 1800 },
+    { calle: "constitución", desde: 900, hasta: 1800 },
+    { calle: "avellaneda", desde: 900, hasta: 1800 },
+    { calle: "avenida avellaneda", desde: 900, hasta: 1800 },
+    { calle: "av avellaneda", desde: 900, hasta: 1800 },
+    { calle: "av. avellaneda", desde: 900, hasta: 1800 },
+    { calle: "1 de mayo", desde: 1000, hasta: 1499 },
+    { calle: "uno de mayo", desde: 1000, hasta: 1499 },
+    { calle: "primero de mayo", desde: 1000, hasta: 1499 },
+    { calle: "1ero de mayo", desde: 1000, hasta: 1499 },
+    { calle: "pasaje primero de mayo", desde: 1000, hasta: 1499 },
+    { calle: "pasaje 1 de mayo", desde: 1000, hasta: 1499 },
+    { calle: "pasaje uno de mayo", desde: 1000, hasta: 1499 },
+    { calle: "pasaje 1ero de mayo", desde: 1000, hasta: 1499 },
+    { calle: "psje 1ero de mayo", desde: 1000, hasta: 1499 },
+    { calle: "pje 1ero de mayo", desde: 1000, hasta: 1499 },
+    { calle: "pje. 1ero de mayo", desde: 1000, hasta: 1499 },
+    { calle: "pasaje uno de mayo", desde: 1000, hasta: 1499 },
+    { calle: "pje 1 de mayo", desde: 1000, hasta: 1499 },
+    { calle: "psaje 1 de mayo", desde: 1000, hasta: 1499 },
+    { calle: "pje uno de mayo", desde: 1000, hasta: 1499 },
+    { calle: "psaje uno de mayo", desde: 1000, hasta: 1499 },
+    { calle: "roser", desde: 1500, hasta: 1599 },
+    { calle: "rosser", desde: 1500, hasta: 1599 },
+    { calle: "cruz roja argentina", desde: 0, hasta: 1700 },
+    { calle: "cruz roja", desde: 0, hasta: 1700 },
+    { calle: "cruz roja arg.", desde: 0, hasta: 1700 },
+    { calle: "cruz roja arg", desde: 0, hasta: 1700 },
+    { calle: "pasaje cruz roja argentina", desde: 0, hasta: 1700 },
+    { calle: "pje cruz roja argentina", desde: 0, hasta: 1700 },
+    { calle: "pje. cruz roja argentina", desde: 0, hasta: 1700 },
+    { calle: "cruz roja argentina casa", desde: 0, hasta: 1700 },
+    { calle: "cruz roja casa", desde: 0, hasta: 1700 },
+    { calle: "cruz roja arg. casa", desde: 0, hasta: 1700 },
+    { calle: "cruz roja arg casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje cruz roja argentina casa", desde: 0, hasta: 1700 },
+    { calle: "pje cruz roja argentina casa", desde: 0, hasta: 1700 },
+    { calle: "pje. duggan martignoni casa", desde: 0, hasta: 1700 },
+    { calle: "duggan martignoni", desde: 0, hasta: 1700 },
+    { calle: "dugan martinoni", desde: 0, hasta: 1700 },
+    { calle: "dugan martignoni", desde: 0, hasta: 1700 },
+    { calle: "pje. duggan martignoni ", desde: 0, hasta: 1700 },
+    { calle: "duggan martignoni casa", desde: 0, hasta: 1700 },
+    { calle: "dugan martinoni casa", desde: 0, hasta: 1700 },
+    { calle: "dugan martignoni casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje agote casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje agote", desde: 0, hasta: 1700 },
+    { calle: "pje. agote casa", desde: 0, hasta: 1700 },
+    { calle: "pje. agote", desde: 0, hasta: 1700 },
+    { calle: "pasaje luis agote casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje luis agote", desde: 0, hasta: 1700 },
+    { calle: "pje. luis agote casa", desde: 0, hasta: 1700 },
+    { calle: "pje. luis agote", desde: 0, hasta: 1700 },
+    { calle: "pje. r. gutierrez casa", desde: 0, hasta: 1700 },
+    { calle: "r. gutierrez", desde: 0, hasta: 1700 },
+    { calle: "r gutierrez", desde: 0, hasta: 1700 },
+    { calle: "r. gutierrez casa", desde: 0, hasta: 1700 },
+    { calle: "pje. r. gutierrez", desde: 0, hasta: 1700 },
+    { calle: "r. gutierrez casa", desde: 0, hasta: 1700 },
+    { calle: "r gutierrez casa", desde: 0, hasta: 1700 },
+    { calle: "pje. r gutierrez casa", desde: 0, hasta: 1700 },
+    { calle: "pje. mariano castex casa", desde: 0, hasta: 1700 },
+    { calle: "pje. mariano castex ", desde: 0, hasta: 1700 },
+    { calle: "mariano castex", desde: 0, hasta: 1700 },
+    { calle: "mariano castex casa", desde: 0, hasta: 1700 },
+    { calle: "pje mariano castex", desde: 0, hasta: 1700 },
+    { calle: "pje mariano castex casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje mariano castex casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje mariano castex ", desde: 0, hasta: 1700 },
+    { calle: "pje. baldomero moreno casa", desde: 0, hasta: 1700 },
+    { calle: "pje. baldomero moreno", desde: 0, hasta: 1700 },
+    { calle: "baldomero moreno", desde: 0, hasta: 1700 },
+    { calle: "baldomero moreno casa", desde: 0, hasta: 1700 },
+    { calle: "pje baldomero moreno", desde: 0, hasta: 1700 },
+    { calle: "pje baldomero moreno casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje baldomero moreno casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje baldomero moreno ", desde: 0, hasta: 1700 },
+    { calle: "pje. crucero gral belgrano casa", desde: 0, hasta: 1700 },
+    { calle: "pje. crucero gral belgrano", desde: 0, hasta: 1700 },
+    { calle: "crucero gral belgrano", desde: 0, hasta: 1700 },
+    { calle: "crucero gral belgrano casa", desde: 0, hasta: 1700 },
+    { calle: "pje crucero gral belgrano", desde: 0, hasta: 1700 },
+    { calle: "pje crucero gral belgrano casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje crucero gral belgrano casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje crucero gral belgrano ", desde: 0, hasta: 1700 },
+    { calle: "pje. crucero general belgrano casa", desde: 0, hasta: 1700 },
+    { calle: "pje. crucero general belgrano", desde: 0, hasta: 1700 },
+    { calle: "crucero general belgrano", desde: 0, hasta: 1700 },
+    { calle: "crucero general belgrano casa", desde: 0, hasta: 1700 },
+    { calle: "pje crucero general belgrano", desde: 0, hasta: 1700 },
+    { calle: "pje crucero general belgrano casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje crucero general belgrano casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje crucero general belgrano ", desde: 0, hasta: 1700 },
+    { calle: "pje. combate de obligado casa", desde: 0, hasta: 1700 },
+    { calle: "pje. combate de obligado", desde: 0, hasta: 1700 },
+    { calle: "combate de obligado", desde: 0, hasta: 1700 },
+    { calle: "combate de obligado casa", desde: 0, hasta: 1700 },
+    { calle: "pje combate de obligado", desde: 0, hasta: 1700 },
+    { calle: "pje combate de obligado casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje combate de obligado casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje combate de obligado", desde: 0, hasta: 1700 },
+    { calle: "pje. puerto argentino casa", desde: 0, hasta: 1700 },
+    { calle: "pje. puerto argentino", desde: 0, hasta: 1700 },
+    { calle: "puerto argentino", desde: 0, hasta: 1700 },
+    { calle: "puerto argentino casa", desde: 0, hasta: 1700 },
+    { calle: "pje puerto argentino", desde: 0, hasta: 1700 },
+    { calle: "pje puerto argentino casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje puerto argentino casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje puerto argentino", desde: 0, hasta: 1700 },
+    { calle: "pje. jose vernet casa", desde: 0, hasta: 1700 },
+    { calle: "pje. jose vernet", desde: 0, hasta: 1700 },
+    { calle: "jose vernet", desde: 0, hasta: 1700 },
+    { calle: "jose vernet casa", desde: 0, hasta: 1700 },
+    { calle: "pje jose vernet", desde: 0, hasta: 1700 },
+    { calle: "pje jose vernet casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje jose vernet casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje jose vernet", desde: 0, hasta: 1700 },
+    { calle: "pje. c. posta de yatasto casa", desde: 0, hasta: 1700 },
+    { calle: "pje. c. posta de yatasto", desde: 0, hasta: 1700 },
+    { calle: "c. posta de yatasto", desde: 0, hasta: 1700 },
+    { calle: "c. posta de yatasto casa", desde: 0, hasta: 1700 },
+    { calle: "pje c. posta de yatasto", desde: 0, hasta: 1700 },
+    { calle: "pje c. posta de yatasto casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje c. posta de yatasto casa", desde: 0, hasta: 1700 },
+    { calle: "pasaje c. posta de yatasto", desde: 0, hasta: 1700 },
+    { calle: "pje. c. posta de yatasto casa", desde: 0, hasta: 1700 },
+    { calle: "pje. posta de yatasto", desde: 0, hasta: 1700 },
+    { calle: "posta de yatasto", desde: 0, hasta: 1700 },
+    { calle: "posta de yatasto casa", desde: 0, hasta: 1700 },
+    { calle: "posta de yatasto", desde: 0, hasta: 1700 },
+    { calle: "posta de yatasto casa", desde: 0, hasta: 1700 },
+    { calle: "posta de yatasto casa", desde: 0, hasta: 1700 },
+    { calle: "posta de yatasto", desde: 0, hasta: 1700 },
 
-  const zonasDeCoberturaNormalizadas = zonasDeCobertura.map(zona => ({
-      calle: normalizeString(zona.calle),
-      desde: zona.desde,
-      hasta: zona.hasta
+    { calle: "machado", desde: 1000, hasta: 1800 },
+    { calle: "arana", desde: 1000, hasta: 1800 },
+    { calle: "uriburu", desde: 1000, hasta: 1800 },
+    { calle: "pellegrini", desde: 1000, hasta: 1800 },
+    { calle: "montevideo", desde: 1000, hasta: 1800 },
+    { calle: "las heras", desde: 1000, hasta: 1800 },
+    { calle: "garibaldi", desde: 1000, hasta: 1800 },
+    { calle: "av balbin", desde: 900, hasta: 1600 },
+    { calle: "balbin", desde: 900, hasta: 1600 },
+    { calle: "avenida balbin", desde: 900, hasta: 1600 },
+    { calle: "av colon", desde: 900, hasta: 1600 },
+    { calle: "colon", desde: 900, hasta: 1600 },
+    { calle: "av espora", desde: 900, hasta: 1400 },
+    { calle: "espora", desde: 900, hasta: 1400 },
+    { calle: "avenida espora", desde: 900, hasta: 1400 },
+    { calle: "guatemala", desde: 1000, hasta: 1400 },
+    { calle: "mexico", desde: 1000, hasta: 1400 },
+    { calle: "gomez", desde: 1200, hasta: 1400 },
+    { calle: "colectora l macaya", desde: 1100, hasta: 1800 },
+    { calle: "colectora macaya", desde: 1100, hasta: 1800 },
+    { calle: "macaya", desde: 1100, hasta: 1800 },
+    { calle: "colectora pugliese", desde: 1100, hasta: 1400 },
+    { calle: "pugliese", desde: 1200, hasta: 1400 },
+    { calle: "piedrabuena", desde: 1200, hasta: 1400 },
+    { calle: "piñero", desde: 1200, hasta: 1600 },
+    { calle: "primera junta", desde: 1000, hasta: 1800 },
+    { calle: "franklin", desde: 1000, hasta: 1700 },
+    { calle: "colombia", desde: 1000, hasta: 1400 },
+    { calle: "newton", desde: 900, hasta: 1400 },
+    { calle: "edison", desde: 900, hasta: 1200 },
+    { calle: "cuba", desde: 900, hasta: 1500 },
+    { calle: "haiti", desde: 900, hasta: 1400 },
+    { calle: "jurado", desde: 1200, hasta: 1400 },
+    { calle: "rauch", desde: 1000, hasta: 1400 },
+    { calle: "peyrel", desde: 1200, hasta: 1400 },
+    { calle: "honduras", desde: 1100, hasta: 1400 },
+    { calle: "pioxii", desde: 1300, hasta: 1400 },
+    { calle: "pioXII", desde: 1300, hasta: 1400 },
+    { calle: "guemes", desde: 1300, hasta: 1400 },
+    { calle: "güemes", desde: 1300, hasta: 1400 },
+  ];
+
+  const zonasDeCoberturaNormalizadas = zonasDeCobertura.map((zona) => ({
+    calle: normalizeString(zona.calle),
+    desde: zona.desde,
+    hasta: zona.hasta,
   }));
 
   const calleNormalizada = normalizeString(inputDireccion);
@@ -372,38 +414,47 @@ function verificarCobertura() {
 
   let dentroDeCobertura = false;
   for (const zona of zonasDeCoberturaNormalizadas) {
-      if (calleNormalizada === zona.calle && numeroInt >= zona.desde && numeroInt <= zona.hasta) {
-          dentroDeCobertura = true;
-          break;
-      }
+    if (
+      calleNormalizada === zona.calle &&
+      numeroInt >= zona.desde &&
+      numeroInt <= zona.hasta
+    ) {
+      dentroDeCobertura = true;
+      break;
+    }
   }
 
   if (dentroDeCobertura) {
-        document.getElementById("textoAbajoTitulo").style.display = "block";
-      document.getElementById("textoAbajoTitulo2").style.display = "block";
-      document.getElementById("textoAbajoTitulo3").style.display = "block";
-      titulo.innerText = "¡Buenas Noticias! Estás en Zona Usittel";
-      parrafo.innerHTML = 'Contactate al siguiente Whatsapp <i class="fab fa-whatsapp"></i> <a target="_blank" href="https://wa.me/5492494060345/?text=Hola!%20vengo%20desde%20la%20web%20de%20Usittel%20y%20quer%C3%ADa%20consultarte%20por%20los%20diferentes%20planes%20y%20servicios">+54 9 249406-0345</a>, o hace click en el número y chatea ahora con nosotros!';
-      parrafo2.innerHTML = 'También, podes dejarnos tus datos en el siguiente formulario <a target="" href="consultaForm.html">formulario</a> y un operador se contactará contigo.';
-      parrafo3.innerText = "¡Muchas gracias!";
-      numHelp.innerText = "";
-      textoWP.innerText = "";
-      numWP.innerText = "";
+    document.getElementById("textoAbajoTitulo").style.display = "block";
+    document.getElementById("textoAbajoTitulo2").style.display = "block";
+    document.getElementById("textoAbajoTitulo3").style.display = "block";
+    titulo.innerText = "¡Buenas Noticias! Estás en Zona Usittel";
+    parrafo.innerHTML =
+      'Contactate al siguiente Whatsapp <i class="fab fa-whatsapp"></i> <a target="_blank" href="https://wa.me/5492494060345/?text=Hola!%20vengo%20desde%20la%20web%20de%20Usittel%20y%20quer%C3%ADa%20consultarte%20por%20los%20diferentes%20planes%20y%20servicios">+54 9 249406-0345</a>, o hace click en el número y chatea ahora con nosotros!';
+    parrafo2.innerHTML =
+      'También, podes dejarnos tus datos en el siguiente formulario <a target="" href="consultaForm.html">formulario</a> y un operador se contactará contigo.';
+    parrafo3.innerText = "¡Muchas gracias!";
+    numHelp.innerText = "";
+    textoWP.innerText = "";
+    numWP.innerText = "";
   } else {
     document.getElementById("textoAbajoTitulo").style.display = "block";
-  document.getElementById("textoAbajoTitulo2").style.display = "block";
-  document.getElementById("textoAbajoTitulo3").style.display = "block";
-      titulo.innerText = "Por el momento no contamos con cobertura en la dirección indicada.";
-      parrafo.innerText = "Seguimos ampliándonos, pronto llegaremos a tu hogar.";
-      parrafo2.innerHTML = '¡Déjanos tu consulta haciendo click en el siguiente enlace <a target="" href="consultaForm.html">Formulario</a>!';
-      parrafo3.innerText = "¡Muchas gracias!";
-      numHelp.innerText = "";
-      textoWP.innerText = "";
-      numWP.innerText = "";
+    document.getElementById("textoAbajoTitulo2").style.display = "block";
+    document.getElementById("textoAbajoTitulo3").style.display = "block";
+    titulo.innerText =
+      "Por el momento no contamos con cobertura en la dirección indicada.";
+    parrafo.innerText = "Seguimos ampliándonos, pronto llegaremos a tu hogar.";
+    parrafo2.innerHTML =
+      '¡Déjanos tu consulta haciendo click en el siguiente enlace <a target="" href="consultaForm.html">Formulario</a>!';
+    parrafo3.innerText = "¡Muchas gracias!";
+    numHelp.innerText = "";
+    textoWP.innerText = "";
+    numWP.innerText = "";
   }
 
   inputContainer.style.display = "none";
-  botonVerificar.innerHTML = '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="volverAtras()">Volver</button>';
+  botonVerificar.innerHTML =
+    '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="volverAtras()">Volver</button>';
 }
 
 function volverAtras() {
@@ -426,8 +477,10 @@ function volverAtras() {
   document.getElementById("inputNumero").value = "";
 
   titulo.innerText = "Validá si estás en zona ingresando tu dirección:";
-  numHelp.innerHTML = '<a target="_blank" href="img/FACTURA USINA DETALLE.png">¿Cómo encuentro el número de Cliente?</a>';
-  botonVerificar.innerHTML = '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="verificarCobertura()">Verificar</button>';
+  numHelp.innerHTML =
+    '<a target="_blank" href="img/FACTURA USINA DETALLE.png">¿Cómo encuentro el número de Cliente?</a>';
+  botonVerificar.innerHTML =
+    '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="verificarCobertura()">Verificar</button>';
 
   parrafo.innerText = "";
   parrafo2.innerText = "";
@@ -439,12 +492,9 @@ function volverAtras() {
 }
 
 function normalizeString(str) {
-  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, ' ');
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/\s+/g, " ");
 }
-
-
-
-
-
-
-
