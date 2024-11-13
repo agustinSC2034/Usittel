@@ -1248,7 +1248,7 @@ input[type="number"]:focus {
 }
 @media (max-width: 400px) {
 	.contenedorProximamente {
-		height: 700px;
+		height: auto;
 		margin: -5px;
 	}
 
@@ -1259,7 +1259,7 @@ input[type="number"]:focus {
 
 @media (max-width: 500px) {
 	.contenedorProximamente {
-		height: 650px;
+		height: auto;
 		margin: -5px;
 	}
 
@@ -1270,7 +1270,7 @@ input[type="number"]:focus {
 
 @media (max-width: 600px) {
 	.contenedorProximamente {
-		height: 600px;
+		height: auto;
 		margin: -5px;
 	}
 
@@ -1285,7 +1285,7 @@ input[type="number"]:focus {
 	}
 
 	.contenedorProximamente {
-		height: 500px;
+		height: auto;
 		margin: -5px;
 	}
 
