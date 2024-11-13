@@ -1535,8 +1535,9 @@ input[type="number"]:focus {
 
 /*Colores de fondo*/
 .contenedorUsittelFibra {
-	background-color: rgba(223, 220, 220, 0.378);
+	background-color: orange(223, 220, 220, 0.378);
 	width: 100%;
+	height: auto;
 }
 
 
