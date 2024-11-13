@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+
 /*Fibra*/
 @media screen and (max-width: 800px) {
 	.tituloFibraHTML {
