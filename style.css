@@ -732,8 +732,9 @@ input[type="number"]:focus {
 	align-items: center;
 	text-align: center;
 	height: auto;
-	margin-top: -50px;
-	margin-bottom: -50px;
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 .tituloPreciosDiv {
@@ -1547,7 +1548,7 @@ input[type="number"]:focus {
 
 /*Colores de fondo*/
 .contenedorUsittelFibra {
-	background-color: orange(223, 220, 220, 0.378);
+	background-color: rgba(214, 213, 213, 0.289);
 	width: 100%;
 	height: auto;
 }
