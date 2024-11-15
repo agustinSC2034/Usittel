@@ -250,6 +250,23 @@ html, body {
 		padding-left: 8%;
 		padding-right: 8%;
 	}
+	.meshModel{
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 5%;
+		margin-bottom: 15%;
+	}
+	.parrafoMeshPrecio2{
+		width: 100%;
+	}
+	.parrafoModelRight{
+		display: flex;
+		flex-direction: column;
+		padding-top: 0%;
+		padding-bottom: 0%;
+		padding-right: 0%;
+		text-align: justify;
+	}
 }
 
 /*CABLE TV*/
