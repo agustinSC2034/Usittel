@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenida - Usittel</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bienvenida.css">
 </head>
 <body>
+
+    <!-- Header con menú similar al de IPLAN -->
     <header>
         <div class="logo">
             <img src="logo-usittel.png" alt="Usittel">
@@ -20,34 +22,50 @@
         </nav>
     </header>
     
-    <main>
-        <section class="bienvenida">
-            <h1>¡Te damos la bienvenida a Usittel!</h1>
-            <p>Internet de fibra óptica de alta velocidad en Tandil.</p>
-        </section>
-        
-        <section class="wifi-power">
-            <h2>WiFi Power Mesh</h2>
-            <p>Mayor cobertura y estabilidad en tu hogar.</p>
-        </section>
-        
-        <section class="mi-cuenta" id="mi-cuenta">
-            <h2>Mi Usittel</h2>
-            <p>Gestión de tu cuenta, facturación y soporte técnico.</p>
-        </section>
-        
-        <section class="preguntas-frecuentes" id="ayuda">
-            <h2>Preguntas Frecuentes</h2>
-            <ul>
-                <li>¿Cómo mejorar la velocidad de mi internet?</li>
-                <li>¿Cómo cambiar la contraseña del WiFi?</li>
-                <li>¿Dónde puedo pagar mi factura?</li>
-            </ul>
-        </section>
-    </main>
+    <!-- Sección principal (Hero) con fondo degradado y botón -->
+    <section class="hero">
+        <h1>¡Bienvenido a Usittel!</h1>
+        <p>Internet de fibra óptica de alta velocidad en Tandil</p>
+        <a href="#mi-cuenta" class="btn">Acceder a Mi Cuenta</a>
+    </section>
     
+    <!-- Secciones con diseño de tarjetas y estilo IPLAN -->
+    <section class="section">
+        <div class="icon-container">
+            <img src="wifi-mesh.png" alt="WiFi Power Mesh">
+        </div>
+        <h2>WiFi Power Mesh</h2>
+        <p>Mayor cobertura y estabilidad en tu hogar.</p>
+    </section>
+    
+    <section class="section" id="mi-cuenta">
+        <div class="icon-container">
+            <img src="mi-cuenta.png" alt="Gestión de Cuenta">
+        </div>
+        <h2>Mi Usittel</h2>
+        <p>Gestión de tu cuenta, facturación y soporte técnico.</p>
+    </section>
+    
+    <section class="section" id="ayuda">
+        <div class="icon-container">
+            <img src="faq-icon.png" alt="Preguntas Frecuentes">
+        </div>
+        <h2>Preguntas Frecuentes</h2>
+        <ul>
+            <li>¿Cómo mejorar la velocidad de mi internet?</li>
+            <li>¿Cómo cambiar la contraseña del WiFi?</li>
+            <li>¿Dónde puedo pagar mi factura?</li>
+        </ul>
+    </section>
+
+    <!-- Botón de soporte flotante -->
+    <a href="https://wa.me/1123456789" class="soporte">💬 Soporte</a>
+    
+    <!-- Footer con el diseño de IPLAN -->
     <footer>
         <p>&copy; 2025 Usittel - Todos los derechos reservados</p>
     </footer>
+
 </body>
 </html>
+

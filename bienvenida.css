@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Encabezado similar al de IPLAN */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DB0046;
+    padding: 15px 50px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFEB3B;
+}
+
+/* Sección Hero con degradado similar */
+.hero {
+    background: linear-gradient(135deg, #DB0046 50%, #9B002C 100%);
+    color: white;
+    text-align: center;
+    padding: 140px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #FFEB3B;
+    color: #DB0046;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFD700;
+}
+
+/* Secciones con tarjetas y diseño de IPLAN */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.icon-container img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Botón de Soporte flotante */
+.soporte {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFEB3B;
+    color: #DB0046;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.soporte:hover {
+    background-color: #FFD700;
+}
+
+/* Footer con diseño IPLAN */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #DB0046;
+    color: white;
+    font-size: 14px;
+}
