@@ -90,6 +90,18 @@ function openPopup3() {
   var popup = document.getElementById("popup3");
   popup.style.display = "block";
 }
+function openPopup4() {
+  var popup = document.getElementById("popup4");
+  popup.style.display = "block";
+}
+function openPopup5() {
+  var popup = document.getElementById("popup5");
+  popup.style.display = "block";
+}
+function openPopup6() {
+  var popup = document.getElementById("popup6");
+  popup.style.display = "block";
+}
 
 function closePopup1() {
   var popup = document.getElementById("popup1");
@@ -104,6 +116,19 @@ function closePopup3() {
   popup.style.display = "none";
 }
 
+function closePopup4() {
+  var popup = document.getElementById("popup4");
+  popup.style.display = "none";
+}
+function closePopup5() {
+  var popup = document.getElementById("popup5");
+  popup.style.display = "none";
+}
+function closePopup6() {
+  var popup = document.getElementById("popup6");
+  popup.style.display = "none";
+}
+
 document.getElementById("popupLink1").addEventListener("click", function (e) {
   e.preventDefault();
   openPopup1();
@@ -115,6 +140,19 @@ document.getElementById("popupLink2").addEventListener("click", function (e) {
 document.getElementById("popupLink3").addEventListener("click", function (e) {
   e.preventDefault();
   openPopup3();
+});
+
+document.getElementById("popupLink4").addEventListener("click", function (e) {
+  e.preventDefault();
+  openPopup4();
+});
+document.getElementById("popupLink5").addEventListener("click", function (e) {
+  e.preventDefault();
+  openPopup5();
+});
+document.getElementById("popupLink6").addEventListener("click", function (e) {
+  e.preventDefault();
+  openPopup6();
 });
 
 window.addEventListener("DOMContentLoaded", function () {
