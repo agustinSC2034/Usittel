@@ -247,6 +247,57 @@ html, body {
 	transform: translateX(24px);
   }
 
+  .card-custom-rounded {
+	border-radius: 25px;
+	transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card-custom-rounded:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  }
+
+  .precio-dinamico {
+	transition: all 0.3s ease-in-out;
+  }
+  
+  /*TV RECOMENDADO*/
+  .badge-destacado {
+	background-color: #ff5722;
+	color: #fff;
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 8px;
+  }
+
+  .fade-in-section {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .fade-in-section.visible {
+	opacity: 1;
+	transform: translateY(0);
+  }
+
+  
+  /*resumen tv*/
+  .resumen-adicionales {
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	font-size: 14px;
+	text-align: left;
+  }
+  
+  
+  
+
 /*mesh home*/
 
 .carousel-container {

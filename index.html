@@ -634,7 +634,8 @@
           <!-- Plan 1 -->
           <div class="col-md-4 mb-4">
             <div class="card h-100 shadow card-custom-rounded text-center p-4">
-              <h3 class="plan-titulo mb-3">100 Mbps + Sensa TV</h3>
+              <div class="badge-destacado">RECOMENDADO</div>
+              <h3 class="plan-titulo mb-3">500 Mbps + Sensa TV</h3>
 
               <!-- Precio dinámico -->
               <div class="pricing-price contenedorPrecio1">
@@ -683,6 +684,7 @@
                 </li>
               </ul>
 
+              <div id="resumen-plan-1" class="resumen-adicionales"></div>
               <a href="#contacto" class="btn-tv">Contratar</a>
               <br>
               <a href="#" class="btn-tv">Más información</a>
@@ -694,7 +696,7 @@
           <!-- Plan 2 -->
           <div class="col-md-4 mb-4">
             <div class="card h-100 shadow card-custom-rounded text-center p-4">
-              <h3 class="plan-titulo mb-3">100 Mbps + Sensa TV</h3>
+              <h3 class="plan-titulo mb-3">300 Mbps + Sensa TV</h3>
 
               <!-- Precio dinámico -->
               <div class="pricing-price contenedorPrecio1">
@@ -741,7 +743,7 @@
                   </label>
                 </li>
               </ul>
-
+              <div id="resumen-plan-2" class="resumen-adicionales"></div>
               <a href="#contacto" class="btn-tv">Contratar</a>
               <br>
               <a href="#" class="btn-tv">Más información</a>
@@ -800,7 +802,7 @@
                   </label>
                 </li>
               </ul>
-
+              <div id="resumen-plan-3" class="resumen-adicionales"></div>
               <a href="#contacto" class="btn-tv">Contratar</a>
               <br>
               <a href="#" class="btn-tv">Más información</a>
@@ -1239,34 +1241,62 @@
   <a class="floating-button" href="https://wa.me/5492494060345" target="_blank" rel="noopener noreferrer"></a>
   <!-- JavaScripts
 	============================================= -->
+  <!-- TV -->
   <script>
-    const switches = document.querySelectorAll('.adicional');
+   const switches = document.querySelectorAll('.adicional');
 
-    const preciosBase = {
-      1: 20999,
-      2: 20999,
-      3: 20999
-    };
+const preciosBase = {
+  1: 20999,
+  2: 20999,
+  3: 20999
+};
 
-    switches.forEach((sw) => {
-      sw.addEventListener('change', () => {
-        const target = sw.dataset.target;
-        const all = document.querySelectorAll(`.adicional[data-target="${target}"]`);
-        let total = preciosBase[target];
+switches.forEach((sw) => {
+  sw.addEventListener('change', () => {
+    const target = sw.dataset.target;
+    const all = document.querySelectorAll(`.adicional[data-target="${target}"]`);
+    let total = preciosBase[target];
+    let adicionales = [];
 
-        all.forEach((el) => {
-          if (el.checked) {
-            total += parseInt(el.dataset.precio);
-          }
-        });
-
-        const precioElem = document.getElementById(`precio-base-${target}`);
-        if (precioElem) {
-          precioElem.textContent = total;
-        }
-      });
+    all.forEach((el) => {
+      if (el.checked) {
+        total += parseInt(el.dataset.precio);
+        adicionales.push(el.parentElement.previousElementSibling.textContent.trim());
+      }
     });
+
+    const precioElem = document.getElementById(`precio-base-${target}`);
+    if (precioElem) {
+      precioElem.textContent = total;
+    }
+
+    const resumen = document.getElementById(`resumen-plan-${target}`);
+    resumen.innerHTML = adicionales.length 
+      ? `<strong>Adicionales:</strong><br>${adicionales.join('<br>')}`
+      : '';
+  });
+});
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const faders = document.querySelectorAll(".fade-in-section");
+
+  const appearOptions = { threshold: 0.2 };
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+});
+
   </script>
+  <!-- FIN TV -->
 
 
   <script>
