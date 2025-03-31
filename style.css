@@ -157,25 +157,10 @@ html, body {
   color: #000;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-.pts-switch-content-left {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
   
   .price-unit {
 	font-size: 24px;
 	line-height: 1;
-  }
-  
-  .precio-dinamico {
-	font-size: 48px !important;
-	font-weight: 700;
-	line-height: 1;
-	color: #000;
-	font-family: inherit;
   }
   
   .price-tenure {
@@ -184,7 +169,7 @@ html, body {
 	margin-top: 5px;
   }
 
-  .pts-switch-content-left {
+  .pts-switch-content-left2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -205,7 +190,7 @@ html, body {
   }
   
   .precio-dinamico {
-	font-size: 48px !important;
+	font-size: 55px !important;
 	font-weight: 700;
 	color: #000;
   }
@@ -261,12 +246,6 @@ html, body {
   .switch input:checked + .slider:before {
 	transform: translateX(24px);
   }
-  
-  
-
-  
-  
-  
 
 /*mesh home*/
 
@@ -5537,7 +5516,6 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	color: #1ABC9C;
 }
 
-.menu-item.sub-menu>.menu-link>div {}
 
 .sub-menu-container,
 .mega-menu-content {

@@ -111,6 +111,7 @@
                   <div class="dropdown-content">
                     <a style="font-size: 14px;" href="#fibra">Internet</a>
                     <a style="font-size: 14px;" href="#meshId">Mesh</a>
+                    <a style="font-size: 14px;" href="#tvsensa">TV</a>
                     <!--<a href="#TV">TV</a>-->
                   </div>
                 </li>
@@ -620,75 +621,84 @@
     </div>
 
     <section id="planes-internet-tv" class="planes bg-light py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Planes Combinados de Internet y TV</h2>
-        <p class="text-center mb-5">Disfrutá de la mejor conexión y el mejor entretenimiento en un solo paquete.</p>
-    
+      <div class="container" id="tvsensa">
+        <div class="tituloPlanes">
+          <p class="center font-body bottommargin-lg" style="font-size: 34px;">
+            Planes combinados de Internet y TV
+          </p>
+          <p class="text-center mb-6">Disfrutá de la mejor conexión y el mejor entretenimiento en un solo paquete.</p>
+        </div>
+
+
         <div class="row">
           <!-- Plan 1 -->
-          <div class="card h-100 shadow card-custom-rounded text-center p-4">
-            <h3 class="plan-titulo mb-3">100 Mbps + Sensa TV</h3>
-          
-            <!-- Precio dinámico -->
-            <div class="pricing-price contenedorPrecio1">
-              <div class="pts-switch-content-left">
-                <div class="precio-contenedor">
-                  <span class="price-unit">$</span>
-                  <span id="precio-base-1" class="precio-dinamico">20999</span>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow card-custom-rounded text-center p-4">
+              <h3 class="plan-titulo mb-3">100 Mbps + Sensa TV</h3>
+
+              <!-- Precio dinámico -->
+              <div class="pricing-price contenedorPrecio1">
+                <div class="pts-switch-content-left pts-switch-content-left2">
+                  <div class="precio-contenedor">
+                    <span class="price-unit">$</span>
+                    <span id="precio-base-1" class="precio-dinamico">20999</span>
+                  </div>
+                  <span class="price-tenure">Por mes</span>
                 </div>
-                <span class="price-tenure">Por mes</span>
               </div>
+
+              <ul class="list-unstyled mb-4">
+
+                <!-- Adicionales con switches -->
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>+ de 1000 canales</span>
+                </li>
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>HBO +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
+                    <span class="slider"></span>
+                  </label>
+                </li>
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>Deportes en vivo +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
+                    <span class="slider"></span>
+                  </label>
+                </li>
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>Películas +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
+                    <span class="slider"></span>
+                  </label>
+                </li>
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>Series +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
+                    <span class="slider"></span>
+                  </label>
+                </li>
+              </ul>
+
+              <a href="#contacto" class="btn-tv">Contratar</a>
+              <br>
+              <a href="#" class="btn-tv">Más información</a>
             </div>
-          
-            <ul class="list-unstyled mb-4">
-              <li>✔ Fibra óptica</li>
-              <li>✔ 100 canales en HD</li>
-              <li>✔ Instalación sin cargo</li>
-          
-              <!-- Adicionales con switches -->
-              <li class="text-start d-flex justify-content-between align-items-center">
-                <span>✔ HBO +$3000</span>
-                <label class="switch">
-                  <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
-                  <span class="slider"></span>
-                </label>
-              </li>
-              <li class="text-start d-flex justify-content-between align-items-center">
-                <span>✔ Deportes en vivo +$3000</span>
-                <label class="switch">
-                  <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
-                  <span class="slider"></span>
-                </label>
-              </li>
-              <li class="text-start d-flex justify-content-between align-items-center">
-                <span>✔ Películas +$3000</span>
-                <label class="switch">
-                  <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
-                  <span class="slider"></span>
-                </label>
-              </li>
-              <li class="text-start d-flex justify-content-between align-items-center">
-                <span>✔ Series +$3000</span>
-                <label class="switch">
-                  <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
-                  <span class="slider"></span>
-                </label>
-              </li>
-            </ul>
-          
-            <a href="#contacto" class="btn-tv">Contratar</a>
           </div>
-          
-          
-    
+
+
+
           <!-- Plan 2 -->
           <div class="col-md-4 mb-4">
             <div class="card h-100 shadow card-custom-rounded text-center p-4">
               <h3 class="plan-titulo mb-3">100 Mbps + Sensa TV</h3>
-            
+
               <!-- Precio dinámico -->
               <div class="pricing-price contenedorPrecio1">
-                <div class="pts-switch-content-left">
+                <div class="pts-switch-content-left pts-switch-content-left2">
                   <div class="precio-contenedor">
                     <span class="price-unit">$</span>
                     <span id="precio-base-2" class="precio-dinamico">20999</span>
@@ -696,57 +706,58 @@
                   <span class="price-tenure">Por mes</span>
                 </div>
               </div>
-            
+
               <ul class="list-unstyled mb-4">
-                <li>✔ Fibra óptica</li>
-                <li>✔ 100 canales en HD</li>
-                <li>✔ Instalación sin cargo</li>
-            
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>+ de 1000 canales</span>
+                </li>
                 <!-- Adicionales con switches -->
                 <li class="text-start d-flex justify-content-between align-items-center">
-                  <span>✔ HBO +$3000</span>
+                  <span>HBO +$3000</span>
                   <label class="switch">
                     <input type="checkbox" class="adicional" data-precio="3000" data-target="2">
                     <span class="slider"></span>
                   </label>
                 </li>
                 <li class="text-start d-flex justify-content-between align-items-center">
-                  <span>✔ Deportes en vivo +$3000</span>
+                  <span>Deportes en vivo +$3000</span>
                   <label class="switch">
                     <input type="checkbox" class="adicional" data-precio="3000" data-target="2">
                     <span class="slider"></span>
                   </label>
                 </li>
                 <li class="text-start d-flex justify-content-between align-items-center">
-                  <span>✔ Películas +$3000</span>
+                  <span>Películas +$3000</span>
                   <label class="switch">
                     <input type="checkbox" class="adicional" data-precio="3000" data-target="2">
                     <span class="slider"></span>
                   </label>
                 </li>
                 <li class="text-start d-flex justify-content-between align-items-center">
-                  <span>✔ Series +$3000</span>
+                  <span>Series +$3000</span>
                   <label class="switch">
                     <input type="checkbox" class="adicional" data-precio="3000" data-target="2">
                     <span class="slider"></span>
                   </label>
                 </li>
               </ul>
-            
+
               <a href="#contacto" class="btn-tv">Contratar</a>
+              <br>
+              <a href="#" class="btn-tv">Más información</a>
             </div>
-            
+
           </div>
-          
-    
+
+
           <!-- Plan 3 -->
           <div class="col-md-4 mb-4">
             <div class="card h-100 shadow card-custom-rounded text-center p-4">
               <h3 class="plan-titulo mb-3">100 Mbps + Sensa TV</h3>
-            
+
               <!-- Precio dinámico -->
               <div class="pricing-price contenedorPrecio1">
-                <div class="pts-switch-content-left">
+                <div class="pts-switch-content-left pts-switch-content-left2">
                   <div class="precio-contenedor">
                     <span class="price-unit">$</span>
                     <span id="precio-base-3" class="precio-dinamico">20999</span>
@@ -754,51 +765,52 @@
                   <span class="price-tenure">Por mes</span>
                 </div>
               </div>
-            
+
               <ul class="list-unstyled mb-4">
-                <li>✔ Fibra óptica</li>
-                <li>✔ 100 canales en HD</li>
-                <li>✔ Instalación sin cargo</li>
-            
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>+ de 1000 canales</span>
+                </li>
                 <!-- Adicionales con switches -->
                 <li class="text-start d-flex justify-content-between align-items-center">
-                  <span>✔ HBO +$3000</span>
+                  <span>HBO +$3000</span>
                   <label class="switch">
                     <input type="checkbox" class="adicional" data-precio="3000" data-target="3">
                     <span class="slider"></span>
                   </label>
                 </li>
                 <li class="text-start d-flex justify-content-between align-items-center">
-                  <span>✔ Deportes en vivo +$3000</span>
+                  <span>Deportes en vivo +$3000</span>
                   <label class="switch">
                     <input type="checkbox" class="adicional" data-precio="3000" data-target="3">
                     <span class="slider"></span>
                   </label>
                 </li>
                 <li class="text-start d-flex justify-content-between align-items-center">
-                  <span>✔ Películas +$3000</span>
+                  <span>Películas +$3000</span>
                   <label class="switch">
                     <input type="checkbox" class="adicional" data-precio="3000" data-target="3">
                     <span class="slider"></span>
                   </label>
                 </li>
                 <li class="text-start d-flex justify-content-between align-items-center">
-                  <span>✔ Series +$3000</span>
+                  <span>Series +$3000</span>
                   <label class="switch">
                     <input type="checkbox" class="adicional" data-precio="3000" data-target="3">
                     <span class="slider"></span>
                   </label>
                 </li>
               </ul>
-            
+
               <a href="#contacto" class="btn-tv">Contratar</a>
+              <br>
+              <a href="#" class="btn-tv">Más información</a>
             </div>
-            
+
           </div>
         </div>
       </div>
     </section>
-    
+
 
 
     <!-- Beneficios 1
@@ -973,7 +985,7 @@
         <div class="col-lg-8 col-md-6 d-none d-md-block px-0">
           <div class="gmapClass">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.3708844379425!2d-59.14144811011122!3d-37.310041500184184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95912026456142db%3A0x4211da708442e913!2sNigro%20575%2C%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1720190036467!5m2!1ses!2sar"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.6854401819126!2d-59.13746165576282!3d-37.31004159670897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95912026456142db%3A0x4211da708442e913!2sNigro%20575%2C%20B7000%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1743391766445!5m2!1ses!2sar"
               width="600" height="320" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
@@ -986,7 +998,7 @@
             <div style="font-size: 17px; line-height: 1.7;">
               <address style="line-height: 1.7;">
                 <strong>Buenos Aires, Argentina</strong><br>
-                Nigro 585<br>
+                Nigro 575<br>
                 Tandil<br>
               </address>
 
@@ -1060,7 +1072,7 @@
       </div>
     </section>
   </div>
-  
+
 
   <!-- #contact 
   <div class="content-wrap pb-0 conteinerInfoFinal">
@@ -1204,7 +1216,7 @@
           </div>
 
           <div class="col-12 col-lg-auto text-center text-lg-right">
-             <!--
+            <!--
             <div class="copyrights-menu copyright-links clearfix">
               <a href="#">Home</a>/<a href="#">Nuestra red</a>/<a href="#">Planes</a>/<a href="#">FAQS</a>/<a
                 href="#">Contacto</a>
@@ -1229,25 +1241,25 @@
 	============================================= -->
   <script>
     const switches = document.querySelectorAll('.adicional');
-  
+
     const preciosBase = {
       1: 20999,
       2: 20999,
       3: 20999
     };
-  
+
     switches.forEach((sw) => {
       sw.addEventListener('change', () => {
         const target = sw.dataset.target;
         const all = document.querySelectorAll(`.adicional[data-target="${target}"]`);
         let total = preciosBase[target];
-  
+
         all.forEach((el) => {
           if (el.checked) {
             total += parseInt(el.dataset.precio);
           }
         });
-  
+
         const precioElem = document.getElementById(`precio-base-${target}`);
         if (precioElem) {
           precioElem.textContent = total;
@@ -1255,8 +1267,8 @@
       });
     });
   </script>
-  
-  
+
+
   <script>
     function verificarCobertura() {
       const inputContainer = document.getElementById('inputContainer');
