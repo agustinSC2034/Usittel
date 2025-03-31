@@ -119,6 +119,37 @@ html, body {
 	padding-right: 10%;
 }
 
+/*TV*/
+.card-custom-rounded {
+	border-radius: 25px;
+  }
+
+  .btn-tv {
+	background-color: #10a484; /* Cambialo al color que quieras */
+	color: #fff;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 25px;
+	transition: background-color 0.3s ease;
+  }
+  
+  .btn-tv:hover {
+	background-color: #000000; /* Versión más oscura para hover */
+	color: white;
+  }
+
+  .plan-titulo {
+	font-size: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #212529;
+  }
+
+
+
+  
+  
+  
 
 /*mesh home*/
 
@@ -772,6 +803,7 @@ input[type="number"]:focus {
 	justify-items: center;
 	justify-content: center;
 }
+
 
 
 
@@ -1537,8 +1569,6 @@ input[type="number"]:focus {
 		align-items: center;
 		text-align: center;
 	}
-
-	.contenedorPrecioA {}
 }
 
 
@@ -5412,7 +5442,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	font-weight: 400;
 	color: #666;
 	letter-spacing: 0;
-	font-family: 'Lato', sans-serif;
+	: 'Lato', sans-serif;
 }
 
 .sub-menu-container .menu-item:hover>.menu-link {
@@ -6661,7 +6691,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	color: #333;
 	font-weight: 700;
 	margin-top: 0 !important;
-	font-family: 'Poppins', sans-serif;
+	: 'Poppins', sans-serif;
 	letter-spacing: 2px;
 }
 
