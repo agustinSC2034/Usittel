@@ -626,61 +626,174 @@
     
         <div class="row">
           <!-- Plan 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow card-custom-rounded text-center p-4">
-              <h3 class="plan-titulo mb-3">100 Mbps + Sensa TV</h3>
-              <div class="pricing-price contenedorPrecio1">
-                <div class="pts-switch-content-left">
-                  <span class="price-unit">&dollar;</span>20999<span class="price-tenure">Por mes</span>
+          <div class="card h-100 shadow card-custom-rounded text-center p-4">
+            <h3 class="plan-titulo mb-3">100 Mbps + Sensa TV</h3>
+          
+            <!-- Precio dinámico -->
+            <div class="pricing-price contenedorPrecio1">
+              <div class="pts-switch-content-left">
+                <div class="precio-contenedor">
+                  <span class="price-unit">$</span>
+                  <span id="precio-base-1" class="precio-dinamico">20999</span>
                 </div>
+                <span class="price-tenure">Por mes</span>
               </div>
-              
-              <ul class="list-unstyled mb-4">
-                <li>✔ Fibra óptica</li>
-                <li>✔ 80 canales en HD</li>
-                <li>✔ Instalación sin cargo</li>
-              </ul>
-              <a href="#contacto" class="btn-tv">Contratar</a>
             </div>
+          
+            <ul class="list-unstyled mb-4">
+              <li>✔ Fibra óptica</li>
+              <li>✔ 100 canales en HD</li>
+              <li>✔ Instalación sin cargo</li>
+          
+              <!-- Adicionales con switches -->
+              <li class="text-start d-flex justify-content-between align-items-center">
+                <span>✔ HBO +$3000</span>
+                <label class="switch">
+                  <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
+                  <span class="slider"></span>
+                </label>
+              </li>
+              <li class="text-start d-flex justify-content-between align-items-center">
+                <span>✔ Deportes en vivo +$3000</span>
+                <label class="switch">
+                  <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
+                  <span class="slider"></span>
+                </label>
+              </li>
+              <li class="text-start d-flex justify-content-between align-items-center">
+                <span>✔ Películas +$3000</span>
+                <label class="switch">
+                  <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
+                  <span class="slider"></span>
+                </label>
+              </li>
+              <li class="text-start d-flex justify-content-between align-items-center">
+                <span>✔ Series +$3000</span>
+                <label class="switch">
+                  <input type="checkbox" class="adicional" data-precio="3000" data-target="1">
+                  <span class="slider"></span>
+                </label>
+              </li>
+            </ul>
+          
+            <a href="#contacto" class="btn-tv">Contratar</a>
           </div>
+          
+          
     
           <!-- Plan 2 -->
           <div class="col-md-4 mb-4">
             <div class="card h-100 shadow card-custom-rounded text-center p-4">
-              <h3 class="plan-titulo mb-3">300 Mbps + Sensa TV</h3>
+              <h3 class="plan-titulo mb-3">100 Mbps + Sensa TV</h3>
+            
+              <!-- Precio dinámico -->
               <div class="pricing-price contenedorPrecio1">
                 <div class="pts-switch-content-left">
-                  <span class="price-unit">&dollar;</span>20999<span class="price-tenure">Por mes</span>
+                  <div class="precio-contenedor">
+                    <span class="price-unit">$</span>
+                    <span id="precio-base-2" class="precio-dinamico">20999</span>
+                  </div>
+                  <span class="price-tenure">Por mes</span>
                 </div>
               </div>
-              
+            
               <ul class="list-unstyled mb-4">
-                <li>✔ Ultra velocidad</li>
-                <li>✔ 120 canales en HD</li>
-                <li>✔ Streaming incluido</li>
+                <li>✔ Fibra óptica</li>
+                <li>✔ 100 canales en HD</li>
+                <li>✔ Instalación sin cargo</li>
+            
+                <!-- Adicionales con switches -->
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>✔ HBO +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="2">
+                    <span class="slider"></span>
+                  </label>
+                </li>
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>✔ Deportes en vivo +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="2">
+                    <span class="slider"></span>
+                  </label>
+                </li>
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>✔ Películas +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="2">
+                    <span class="slider"></span>
+                  </label>
+                </li>
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>✔ Series +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="2">
+                    <span class="slider"></span>
+                  </label>
+                </li>
               </ul>
+            
               <a href="#contacto" class="btn-tv">Contratar</a>
             </div>
+            
           </div>
           
     
           <!-- Plan 3 -->
           <div class="col-md-4 mb-4">
             <div class="card h-100 shadow card-custom-rounded text-center p-4">
-              <h3 class="plan-titulo mb-3">500 Mbps + Sensa TV</h3>
+              <h3 class="plan-titulo mb-3">100 Mbps + Sensa TV</h3>
+            
+              <!-- Precio dinámico -->
               <div class="pricing-price contenedorPrecio1">
                 <div class="pts-switch-content-left">
-                  <span class="price-unit">&dollar;</span>20999<span class="price-tenure">Por mes</span>
+                  <div class="precio-contenedor">
+                    <span class="price-unit">$</span>
+                    <span id="precio-base-3" class="precio-dinamico">20999</span>
+                  </div>
+                  <span class="price-tenure">Por mes</span>
                 </div>
               </div>
-              
+            
               <ul class="list-unstyled mb-4">
-                <li>✔ Canales premium</li>
-                <li>✔ Streaming exclusivos</li>
-                <li>✔ Máxima velocidad</li>
+                <li>✔ Fibra óptica</li>
+                <li>✔ 100 canales en HD</li>
+                <li>✔ Instalación sin cargo</li>
+            
+                <!-- Adicionales con switches -->
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>✔ HBO +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="3">
+                    <span class="slider"></span>
+                  </label>
+                </li>
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>✔ Deportes en vivo +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="3">
+                    <span class="slider"></span>
+                  </label>
+                </li>
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>✔ Películas +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="3">
+                    <span class="slider"></span>
+                  </label>
+                </li>
+                <li class="text-start d-flex justify-content-between align-items-center">
+                  <span>✔ Series +$3000</span>
+                  <label class="switch">
+                    <input type="checkbox" class="adicional" data-precio="3000" data-target="3">
+                    <span class="slider"></span>
+                  </label>
+                </li>
               </ul>
+            
               <a href="#contacto" class="btn-tv">Contratar</a>
             </div>
+            
           </div>
         </div>
       </div>
@@ -1114,6 +1227,36 @@
   <a class="floating-button" href="https://wa.me/5492494060345" target="_blank" rel="noopener noreferrer"></a>
   <!-- JavaScripts
 	============================================= -->
+  <script>
+    const switches = document.querySelectorAll('.adicional');
+  
+    const preciosBase = {
+      1: 20999,
+      2: 20999,
+      3: 20999
+    };
+  
+    switches.forEach((sw) => {
+      sw.addEventListener('change', () => {
+        const target = sw.dataset.target;
+        const all = document.querySelectorAll(`.adicional[data-target="${target}"]`);
+        let total = preciosBase[target];
+  
+        all.forEach((el) => {
+          if (el.checked) {
+            total += parseInt(el.dataset.precio);
+          }
+        });
+  
+        const precioElem = document.getElementById(`precio-base-${target}`);
+        if (precioElem) {
+          precioElem.textContent = total;
+        }
+      });
+    });
+  </script>
+  
+  
   <script>
     function verificarCobertura() {
       const inputContainer = document.getElementById('inputContainer');

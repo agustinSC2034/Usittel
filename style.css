@@ -145,7 +145,124 @@ html, body {
 	color: #212529;
   }
 
+  .adicional {
+  margin-right: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
 
+.precio-monto-ajustado {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.pts-switch-content-left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .price-unit {
+	font-size: 24px;
+	line-height: 1;
+  }
+  
+  .precio-dinamico {
+	font-size: 48px !important;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	font-family: inherit;
+  }
+  
+  .price-tenure {
+	font-size: 16px;
+	color: #666;
+	margin-top: 5px;
+  }
+
+  .pts-switch-content-left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .precio-contenedor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+  }
+  
+  .price-unit {
+	font-size: 40px;
+	font-weight: 700;
+	color: #000;
+  }
+  
+  .precio-dinamico {
+	font-size: 48px !important;
+	font-weight: 700;
+	color: #000;
+  }
+  
+  .price-tenure {
+	font-size: 16px;
+	color: #666;
+	margin-top: 5px;
+  }
+  
+  /* Switch estilo moderno */
+  .switch {
+	position: relative;
+	display: inline-block;
+	width: 48px;
+	height: 24px;
+  }
+  
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.4s;
+	border-radius: 34px;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	transition: 0.4s;
+	border-radius: 50%;
+  }
+  
+  .switch input:checked + .slider {
+	background-color: #10a484;
+  }
+  
+  .switch input:checked + .slider:before {
+	transform: translateX(24px);
+  }
+  
+  
 
   
   
