@@ -294,7 +294,66 @@ html, body {
 	font-size: 14px;
 	text-align: left;
   }
+
   
+  /*PAGINA TV Individual*/
+  .banner-sensa {
+	background-image: url('ruta-a-imagen-banner-tv.jpg');
+	background-size: cover;
+	background-position: center;
+  }
+  
+  .features-sensa i {
+	transition: color 0.3s;
+  }
+  
+  .features-sensa i:hover {
+	color: #0d6efd;
+  }
+  
+  .android-tv img {
+	max-width: 80%;
+  }
+
+  .btn-tv-large {
+	background-color: #10a484;
+	color: white;
+	border-radius: 30px;
+	padding: 12px 30px;
+	font-size: 18px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-tv-large:hover {
+	background-color: #000;
+	color: #fff;
+	transform: translateY(-3px);
+  }
+  
+  .como-usar-sensa .card-custom-rounded {
+	transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .como-usar-sensa .card-custom-rounded:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 12px 24px rgba(16, 164, 132, 0.3);
+  }
+
+  
+  .cta-sensa {
+	background: linear-gradient(135deg, #10a484 0%, #0b6e58 100%);
+  }
+  
+  .cta-sensa .btn-light {
+	transition: transform 0.3s ease;
+	border-radius: 30px;
+  }
+  
+  .cta-sensa .btn-light:hover {
+	transform: translateY(-3px);
+  }
+  
+    /*PAGINA TV Individual*/
   
   
 
