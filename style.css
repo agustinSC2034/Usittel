@@ -354,6 +354,20 @@ html, body {
   }
   
     /*PAGINA TV Individual*/
+
+
+
+/*ALCANCE DE SERVICIOS NUEVO*/  
+.card h4 {
+	font-size: 20px;
+	font-weight: 600;
+  }
+  
+  .btn-outline-success:hover {
+	background-color: #10a484;
+	color: #fff;
+	border-color: #10a484;
+  }
   
   
 
