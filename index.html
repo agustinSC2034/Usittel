@@ -92,7 +92,6 @@
 
                   </div>
                 </li>
-
                 <li class="menu-item">
                   <a style="font-size: 14px;" class="menu-link" href="#slider">
                     <div>Home</div>
@@ -1239,61 +1238,66 @@
 
   </div>
   <a class="floating-button" href="https://wa.me/5492494060345" target="_blank" rel="noopener noreferrer"></a>
+
   <!-- JavaScripts
 	============================================= -->
+  <script src="script.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/plugins.min.js"></script>
+  
   <!-- TV -->
   <script>
-   const switches = document.querySelectorAll('.adicional');
+    const switches = document.querySelectorAll('.adicional');
 
-const preciosBase = {
-  1: 20999,
-  2: 20999,
-  3: 20999
-};
+    const preciosBase = {
+      1: 20999,
+      2: 20999,
+      3: 20999
+    };
 
-switches.forEach((sw) => {
-  sw.addEventListener('change', () => {
-    const target = sw.dataset.target;
-    const all = document.querySelectorAll(`.adicional[data-target="${target}"]`);
-    let total = preciosBase[target];
-    let adicionales = [];
+    switches.forEach((sw) => {
+      sw.addEventListener('change', () => {
+        const target = sw.dataset.target;
+        const all = document.querySelectorAll(`.adicional[data-target="${target}"]`);
+        let total = preciosBase[target];
+        let adicionales = [];
 
-    all.forEach((el) => {
-      if (el.checked) {
-        total += parseInt(el.dataset.precio);
-        adicionales.push(el.parentElement.previousElementSibling.textContent.trim());
-      }
+        all.forEach((el) => {
+          if (el.checked) {
+            total += parseInt(el.dataset.precio);
+            adicionales.push(el.parentElement.previousElementSibling.textContent.trim());
+          }
+        });
+
+        const precioElem = document.getElementById(`precio-base-${target}`);
+        if (precioElem) {
+          precioElem.textContent = total;
+        }
+
+        const resumen = document.getElementById(`resumen-plan-${target}`);
+        resumen.innerHTML = adicionales.length
+          ? `<strong>Adicionales:</strong><br>${adicionales.join('<br>')}`
+          : '';
+      });
     });
-
-    const precioElem = document.getElementById(`precio-base-${target}`);
-    if (precioElem) {
-      precioElem.textContent = total;
-    }
-
-    const resumen = document.getElementById(`resumen-plan-${target}`);
-    resumen.innerHTML = adicionales.length 
-      ? `<strong>Adicionales:</strong><br>${adicionales.join('<br>')}`
-      : '';
-  });
-});
 
 
     document.addEventListener("DOMContentLoaded", () => {
-  const faders = document.querySelectorAll(".fade-in-section");
+      const faders = document.querySelectorAll(".fade-in-section");
 
-  const appearOptions = { threshold: 0.2 };
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
+      const appearOptions = { threshold: 0.2 };
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+
+      faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+      });
     });
-  }, appearOptions);
-
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-  });
-});
 
   </script>
   <!-- FIN TV -->
@@ -1330,9 +1334,7 @@ switches.forEach((sw) => {
       document.getElementById('inputNumero').value = ''; // Borra el contenido del input
     }
   </script>
-  <script src="js/jquery.js"></script>
-  <script src="js/plugins.min.js"></script>
-  <script src="script.js"></script>
+  
   <!-- Footer Scripts
 	============================================= -->
   <script src="js/functions.js"></script>

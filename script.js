@@ -1,4 +1,4 @@
-mesh.html// carrousel logica
+// carrousel logica
 
 let currentSlideIndex = 0;
 let slideInterval;
