@@ -8,6 +8,14 @@ html, body {
     overflow-x: hidden;
 }
 
+.features-sensa .fa-solid {
+	transition: transform 0.3s ease;
+  }
+  
+  .features-sensa .fa-solid:hover {
+	transform: scale(1.1);
+  }
+  
 
 
 /*Fibra*/

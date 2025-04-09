@@ -35,7 +35,10 @@
   <link rel="stylesheet" href="css/custom.css" type="text/css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/colors.php?color=267DF4" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Font Awesome (sin integrity) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -201,6 +204,7 @@
   </div>
 <section class="banner-sensa text-white py-5">
   <div class="container text-center">
+    <br><br>
     <h1 class="display-4">TV Digital con Sensa</h1>
     <p class="lead">Más de 100 canales en vivo y miles de contenidos On Demand.</p>
   </div>
@@ -220,24 +224,33 @@
 <section class="features-sensa py-5">
   <div class="container">
     <div class="row text-center">
+      
+      <!-- Canales en vivo -->
       <div class="col-md-4">
-        <i class="fa-solid fa-tv fa-3x text-success mb-3"></i>
+        <i class="fa-solid fa-tv fa-3x mb-3" style="color:#e74c3c;"></i>
         <h3>Canales en vivo</h3>
         <p>+ de 100 canales disponibles 24/7</p>
       </div>
+
+      <!-- Contenidos On Demand -->
       <div class="col-md-4">
-        <i class="fa-solid fa-film fa-3x text-success mb-3"></i>
+        <i class="fa-solid fa-film fa-3x mb-3" style="color:#e74c3c;"></i>
         <h3>Contenidos On Demand</h3>
         <p>Más de 6000 horas con estrenos diarios</p>
       </div>
+
+      <!-- Multidispositivo -->
       <div class="col-md-4">
-        <i class="fa-solid fa-film fa-3x text-success mb-3"></i>
+        <i class="fa-solid fa-mobile-alt fa-3x mb-3" style="color:#e74c3c;"></i>
         <h3>Multidispositivo</h3>
         <p>Disponible en Android, iOS, PC, Android TV, Chromecast y Amazon Fire TV</p>
       </div>
+
     </div>
   </div>
 </section>
+
+
 
 <!-- Imagen destacada Android TV -->
 <section class="android-tv py-5 bg-light">
