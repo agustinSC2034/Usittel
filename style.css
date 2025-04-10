@@ -849,13 +849,33 @@ body {
 	overflow-x: hidden;
 }
 
+.pricing-box {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pricing-box:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+
+  .card-custom-rounded {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-custom-rounded:hover {
+	transform: scale(1.03);
+	box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+  
+
 /*Fin codigo lista desplegable*/
 
 .estiloContainerMayor {
 	display: flex;
 	margin: auto;
 	justify-content: center;
-	width: 90%;
+	width: 95%;
 	height: auto;
 }
 
