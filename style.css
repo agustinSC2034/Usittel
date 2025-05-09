@@ -176,7 +176,18 @@ html, body {
 
 /*TV*/
 
+.fade-block {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
 
+  .fade-out {
+    opacity: 0;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
 
 .card-custom-rounded {
 	border-radius: 25px;
