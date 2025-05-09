@@ -317,10 +317,18 @@
                       </div>
                     </div>
 
-                    <div class="mapa-container" style="border-radius: 30px;">
-                      <img src="img/nuevasimg/IMG NUEVA TANDIL.png" alt="" class="imagenUsina"
-                        style="border-radius: 30px; height: 100%;">
+                    <div class="mapa-container" style="border-radius: 30px; overflow: hidden; height: 480px;">
+                      <iframe
+                        src="https://www.google.com/maps/d/u/2/embed?mid=1FMLCCOIV2gZocoCOxwsKogDrerarGwY&ehbc=2E312F&noprof=1"
+                        width="100%"
+                        height="100%"
+                        style="border: 0; border-radius: 30px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                      </iframe>
                     </div>
+                    
                   </div>
                 </div>
               </div>
@@ -1324,39 +1332,6 @@
 
   </script>
   <!-- FIN TV -->
-
-
-  <script>
-    function verificarCobertura() {
-      const inputContainer = document.getElementById('inputContainer');
-      const titulo = document.getElementById('titulo');
-      const botonVerificar = document.getElementById('botonVerificar');
-
-      const numeroIngresado = document.getElementById('inputNumero').value;
-
-      if (numeroIngresado === '111111' || numeroIngresado === '222222' || numeroIngresado === '333333') {
-        titulo.innerText = '¡Felicitaciones! Estás en la zona de cobertura.';
-      } else {
-        titulo.innerText = 'No estás en la zona de cobertura.';
-      }
-
-      // Oculta el contenedor del input y muestra el botón de volver
-      inputContainer.style.display = 'none';
-      botonVerificar.innerHTML = '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="volverAtras()">Volver</button>';
-    }
-
-    function volverAtras() {
-      const inputContainer = document.getElementById('inputContainer');
-      const titulo = document.getElementById('titulo');
-      const botonVerificar = document.getElementById('botonVerificar');
-
-      // Muestra nuevamente el contenedor del input y restaura el contenido original
-      inputContainer.style.display = 'block';
-      titulo.innerText = '¿Estás en zona de usittel?';
-      botonVerificar.innerHTML = '<button class="button button-large button-rounded text-capitalize ls0" style="border-radius: 23px" onclick="verificarCobertura()">Verificar</button>';
-      document.getElementById('inputNumero').value = ''; // Borra el contenido del input
-    }
-  </script>
 
   <!-- Footer Scripts
 	============================================= -->
