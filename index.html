@@ -638,7 +638,9 @@
     </div>
 
     <section id="tv" class="seccion seccion-tv">
+
       <div class="contenedor">
+        <br><br>
         <h2>USITTEL TV</h2>
         <p class="texto-tv">
           Contratá <strong>USITTEL TV</strong> desde tan solo <strong>$13.999</strong> y tené hasta <strong>6 dispositivos distintos</strong> con la más completa grilla de canales y en la más alta calidad.
@@ -648,6 +650,7 @@
           <a href="https://wa.me/5492494000000" target="_blank" class="btn btn-tv">Contactanos</a>
           <a href="tv.html" target="_blank" class="btn btn-tv">Más información TV</a>
         </div>
+        <br><br>
       </div>
     </section>
     
@@ -1084,63 +1087,6 @@
   <script src="script.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/plugins.min.js"></script>
-
-  <!-- TV -->
-  <script>
-    const switches = document.querySelectorAll('.adicional');
-
-    const preciosBase = {
-      1: 34498,
-      2: 32398,
-      3: 30741,
-    };
-
-    switches.forEach((sw) => {
-      sw.addEventListener('change', () => {
-        const target = sw.dataset.target;
-        const all = document.querySelectorAll(`.adicional[data-target="${target}"]`);
-        let total = preciosBase[target];
-        let adicionales = [];
-
-        all.forEach((el) => {
-          if (el.checked) {
-            total += parseInt(el.dataset.precio);
-            adicionales.push(el.parentElement.previousElementSibling.textContent.trim());
-          }
-        });
-
-        const precioElem = document.getElementById(`precio-base-${target}`);
-        if (precioElem) {
-          precioElem.textContent = total;
-        }
-
-        const resumen = document.getElementById(`resumen-plan-${target}`);
-        resumen.innerHTML = adicionales.length
-          ? `<strong>Adicionales:</strong><br>${adicionales.join('<br>')}`
-          : '';
-      });
-    });
-
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const faders = document.querySelectorAll(".fade-in-section");
-
-      const appearOptions = { threshold: 0.2 };
-      const appearOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        });
-      }, appearOptions);
-
-      faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-      });
-    });
-
-  </script>
-  <!-- FIN TV -->
 
   <!-- Footer Scripts
 	============================================= -->
