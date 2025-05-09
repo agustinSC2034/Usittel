@@ -127,7 +127,57 @@ html, body {
 	padding-right: 10%;
 }
 
+
+
+/*TV ONLY HOME*/
+.seccion-tv {
+	padding: 60px 20px;
+	background-color: #f8f8f8; /* Podés ajustar el fondo si querés destacarlo */
+	text-align: center;
+  }
+  
+  .seccion-tv .texto-tv {
+	font-size: 1.2rem;
+	max-width: 700px;
+	margin: 0 auto 30px;
+	color: #333;
+  }
+  
+  .btn-tv {
+	background-color: #0072ce; /* Color primario de Usittel */
+	color: white;
+	padding: 12px 24px;
+	border-radius: 6px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: background-color 0.3s;
+  }
+  
+  .btn-tv:hover {
+	background-color: #005fa3;
+  }
+
+  .botones-tv {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+  }
+  
+  @media (min-width: 600px) {
+	.botones-tv {
+	  flex-direction: row;
+	}
+  }
+  
+  
+
 /*TV*/
+
+
+
 .card-custom-rounded {
 	border-radius: 25px;
   }
