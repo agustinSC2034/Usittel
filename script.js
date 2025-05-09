@@ -197,6 +197,7 @@ function verificarCobertura() {
   const numWP = document.getElementById("numWP");
   const inputDireccion = document.getElementById("inputDireccion").value;
   const inputNumero = document.getElementById("inputNumero").value;
+  const botonVerificar = document.getElementById("botonVerificar");
 
   if (inputDireccion === "" || inputNumero === "") {
     if (inputDireccion === "") {
