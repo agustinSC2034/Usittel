@@ -38,6 +38,10 @@
   <link rel="stylesheet" href="css/colors.php?color=267DF4" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+4psCEnWGnTg+KyL+W4MRq3Z0EvS0Dsc0+U4e/QmU=" crossorigin="" />
+
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <!-- Document Title
@@ -318,9 +322,9 @@
                     </div>
 
                     <div class="mapa-container" style="border-radius: 30px;">
-                      <img src="img/nuevasimg/IMG NUEVA TANDIL.png" alt="" class="imagenUsina"
-                        style="border-radius: 30px; height: 100%;">
+                      <div id="mapaLeaflet" style="width: 100%; height: 400px; border-radius: 30px;"></div>
                     </div>
+                    
                   </div>
                 </div>
               </div>
@@ -1373,6 +1377,58 @@
       });
     });
   </script>
+
+  <!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1jGY8MfGe3G4Zr+0BJk3pP2Gz+O2ifKXU6a9gZ9k=" crossorigin=""></script>
+
+<!-- Script de mapa con geolocalización por dirección -->
+<script>
+  // Inicializamos el mapa centrado en Tandil
+  var mapa = L.map('mapaLeaflet').setView([-37.3216, -59.1332], 13); // Coordenadas Tandil
+
+  // Capa base con OpenStreetMap
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap',
+  }).addTo(mapa);
+
+  let marcador;
+
+  function verificarCobertura() {
+    const calle = document.getElementById("inputDireccion").value;
+    const numero = document.getElementById("inputNumero").value;
+    const direccionCompleta = calle + " " + numero + ", Tandil, Buenos Aires, Argentina";
+
+    if (!calle || !numero) {
+      alert("Por favor completá ambos campos.");
+      return;
+    }
+
+    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(direccionCompleta)}`)
+      .then(response => response.json())
+      .then(data => {
+        if (data.length > 0) {
+          const lat = data[0].lat;
+          const lon = data[0].lon;
+
+          if (marcador) {
+            mapa.removeLayer(marcador);
+          }
+
+          marcador = L.marker([lat, lon]).addTo(mapa)
+            .bindPopup(`<b>Dirección:</b><br>${direccionCompleta}`).openPopup();
+
+          mapa.setView([lat, lon], 16);
+        } else {
+          alert("No se encontró esa dirección. Probá con otra.");
+        }
+      })
+      .catch(error => {
+        console.error("Error al buscar la dirección:", error);
+        alert("Hubo un problema al buscar tu dirección.");
+      });
+  }
+</script>
+
 </body>
 
 </html>
