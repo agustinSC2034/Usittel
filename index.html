@@ -13,6 +13,8 @@
     rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
   <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="banner.css" type="text/css" />
+
   <link rel="stylesheet" href="css/dark.css" type="text/css" />
   <!-- Media Agency Demo Specific Stylesheet -->
   <link rel="stylesheet" href="demos/app-landing/app-landing.css" type="text/css" />
@@ -197,41 +199,49 @@
     <a target="_blank" href="https://wa.me/5492494060345" class="floating-button">+/a>-->
 
 
-      <section class="banner-flash-sale text-white py-5">
-        <div class="container text-center">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-10">
-              <h2 class="mb-3">
-                <img src="img/super_sale/internet_logo_blanco.png" alt="internet" style="height: 32px; margin-right: 10px;">
-                ¡EN LA SEMANA DE INTERNET!
-              </h2>
-              <h1 class="fw-bold mb-3">
-                <img src="img/super_sale/usittel_logo_blanco.png" alt="usittel" style="height: 40px; margin-bottom: 5px;">
-                te trae un increíble 
-                <img src="img/super_sale/flash_sale_logo.png" alt="flash sale" style="height: 48px; vertical-align: middle;">
-              </h1>
-              <h3 class="mb-4">TODOS NUESTROS SERVICIOS</h3>
-              <h2 class="text-warning fw-bold mb-4">¡50% OFF por 6 meses!</h2>
-              <p class="mb-2 fs-5">¿Qué esperás? <strong>escribinos...</strong></p>
-              <p class="fs-4">
-                <img src="img/super_sale/emoji_sale.png" alt="emoji" style="height: 40px; vertical-align: middle;">
-                <a href="https://wa.me/5492494060345" target="_blank" class="btn btn-light btn-lg ms-3">
-                  <i class="fab fa-whatsapp"></i> +54 9 249 406 0345
-                </a>
-              </p>
-              <div class="mt-4">
-                <small class="d-block text-light opacity-75" style="font-size: 0.8rem;">
-                  Promoción válida para nuevos clientes que contraten entre el 12 y el 18 de mayo de 2025. Aplican condiciones. No incluye adicionales como Pack Fútbol o Universal+.
-                </small>
-                <img src="img/super_sale/usina_logo_blanco.png" alt="usina" style="height: 35px; margin-top: 10px;">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
+
+
 
     <section id="content" class="sectionMaestra">
+
+      <!-- Contenido del banner -->
+      <section id="banner-isp" class="py-5 position-relative overflow-hidden">
+        <div id="tsparticles" class="particles-bg"></div>
+        <div class="container text-center text-white position-relative banner-content">
+          <img src="img/super_sale/usittel_logo_blanco.png" class="logo-usittel fade-in delay-4 mb-2" alt="Usittel" />
+          <img src="img/super_sale/flash_sale_logo.png" class="flash-logo fade-in delay-4 mb-2" alt="Flash Sale" />
+          <br><br>
+          <h2 class="fade-in delay-7 text-white">
+            <span class="d-block" style="color: white;" style="color: white; font-size: 18px;">¡POR LA SEMANA DE INTERNET!</span>
+            <span class="d-block"style="color: white;" style="color: white; font-size: 18px;">TODOS NUESTROS SERVICIOS CUENTAN CON</span>
+            <span class="d-block mt-4 display-5 fw-bold" style="color: white; font-size: 40px;">
+              50% OFF por 6 meses! <img src="img/super_sale/carita_explota.gif" class="emoji-icon ms-2" alt="Emoji animado" style="max-height: 100px;" />
+            </span>
+            </span>
+          </h2>
+          <p class="lead fade-in delay-8" style="color: white;">¿Qué esperás? <strong>Escribinos...</strong></p>
+          <p class="lead fade-in delay-9 mb-4" style="color: white;">
+            <a href="https://api.whatsapp.com/send/?phone=5492494060345&text&type=phone_number&app_absent=0">
+              <span style="background-color: rgba(0,0,0,0.3); padding: 4px 10px; border-radius: 8px;">
+                +54 9 249 406 0345 <i class="fab fa-whatsapp ms-2"></i>
+              </span>
+            </a>
+          </p>
+          
+          <img src="img/super_sale/usina_logo_blanco.png" class="logo-usina mt-3 fade-in delay-9" alt="Usina" />
+          <p class="condiciones mt-3 fade-in delay-10" style="color: white;">
+            Promoción válida para nuevos clientes, que sean personas físicas que contraten el servicio de USITTEL para
+            sus hogares (servicio residencial), exclusiva para la semana del 12 al 18 de mayo del 2025. La bonificación
+            detallada será sobre el precio de lista vigente al momento de emitirse la factura correspondiente y durante
+            los siguientes 6 meses. A partir del mes siete (7) el cliente deberá abonar el precio de lista total sin
+            bonificaciones vigentes en ese momento. El precio de lista del Servicio de USITTEL podrá sufrir
+            modificaciones durante el plazo de contratación del servicio, conforme a la normativa vigente. No incluye
+            suscripciones adicionales de USITTEL TV como Pack Fútbol, Universal+, etc.
+          </p>
+        </div>
+      </section>
+
+
 
       <div class="content-wrap contenedorProximamente">
         <div class="tituloPlanes">
@@ -676,7 +686,8 @@
         <br><br>
         <h2>USITTEL TV</h2>
         <p class="texto-tv">
-          Contratá <strong>USITTEL TV</strong> desde tan solo <strong>$13.999</strong> y usalo en hasta <strong>6 dispositivos distintos</strong> con la más completa grilla de canales y en la más alta calidad.
+          Contratá <strong>USITTEL TV</strong> desde tan solo <strong>$13.999</strong> y usalo en hasta <strong>6
+            dispositivos distintos</strong> con la más completa grilla de canales y en la más alta calidad.
           No dejes de escribirnos que tenemos ofertas y promociones exclusivas para vos.
         </p>
         <div class="botones-tv">
@@ -686,7 +697,7 @@
         <br><br>
       </div>
     </section>
-    
+
 
 
 
@@ -1136,6 +1147,49 @@
       });
     });
   </script>
+
+  <!-- tsParticles CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: false,
+      background: { color: "transparent" },
+      particles: {
+        number: { value: 45 },
+        color: { value: "#00ffc3" },
+        links: {
+          enable: true,
+          color: "#00ffc3",
+          distance: 130,
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          outModes: "bounce",
+        },
+        size: {
+          value: { min: 1, max: 3 },
+        },
+        opacity: {
+          value: { min: 0.2, max: 0.5 },
+        },
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: "repulse" }
+        },
+        modes: {
+          repulse: { distance: 70 }
+        }
+      },
+      detectRetina: true,
+    });
+  </script>
+
+
 </body>
 
 </html>

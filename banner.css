@@ -1,0 +1,151 @@
+#banner-isp {
+    background: linear-gradient(135deg, #006d59, #003d66);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    padding: 40px 10px;
+  }
+  
+  .banner-content {
+    z-index: 1;
+    position: relative;
+    max-width: 860px;
+    margin: auto;
+  }
+  
+  .icono-banner,
+  .logo-usittel,
+  .flash-logo,
+  .emoji-icon,
+  .logo-usina {
+    max-height: 55px;
+    height: auto;
+  }
+  
+  .logo-usina {
+    max-height: 80px;
+  }
+  
+  .condiciones {
+    font-size: 0.6rem;
+    opacity: 0.85;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Animaciones de entrada */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.9s ease-out forwards;
+  }
+  
+  .delay-1 { animation-delay: 0.15s; }
+  .delay-2 { animation-delay: 0.3s; }
+  .delay-3 { animation-delay: 0.45s; }
+  .delay-4 { animation-delay: 0.6s; }
+  .delay-5 { animation-delay: 0.75s; }
+  .delay-6 { animation-delay: 0.9s; }
+  .delay-7 { animation-delay: 1.05s; }
+  .delay-8 { animation-delay: 1.2s; }
+  .delay-9 { animation-delay: 1.35s; }
+  .delay-10 { animation-delay: 1.5s; }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Efecto especial de brillo para el texto de promoción */
+  h2 strong {
+    position: relative;
+    display: inline-block;
+    animation: glowText 2.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glowText {
+    0% {
+      text-shadow: 0 0 4px #fff, 0 0 10px #00ffc3, 0 0 20px #00ffc3;
+    }
+    100% {
+      text-shadow: 0 0 2px #fff, 0 0 4px #00ffc3, 0 0 8px #00ffc3;
+    }
+  }
+  
+  .particles-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  
+  .banner-content a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .banner-content a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px #00ffc3;
+  }
+  
+  
+  .icono-banner,
+  .logo-usittel,
+  .flash-logo,
+  .emoji-icon,
+  .logo-usina {
+    max-height: 70px;
+    height: auto;
+  }
+  
+  .logo-usina {
+    max-height: 100px;
+  }
+  
+  .condiciones {
+    font-size: 0.65rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Animaciones */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .delay-1 { animation-delay: 0.2s; }
+  .delay-2 { animation-delay: 0.4s; }
+  .delay-3 { animation-delay: 0.6s; }
+  .delay-4 { animation-delay: 0.8s; }
+  .delay-5 { animation-delay: 1s; }
+  .delay-6 { animation-delay: 1.2s; }
+  .delay-7 { animation-delay: 1.4s; }
+  .delay-8 { animation-delay: 1.6s; }
+  .delay-9 { animation-delay: 1.8s; }
+  .delay-10 { animation-delay: 2s; }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .banner-content a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .banner-content a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px #00ffc3;
+  }
+  
