@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilla de Canales - USITTEL TV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Lato', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            /* Colores azul y verde de Usittel */
+            background: linear-gradient(145deg, #005c97 0%, #36a88b 100%);
+            color: #ffffff;
+        }
+        .header-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .logo-usittel {
+            width: 180px; /* Ajustado para el logo de Usittel */
+        }
+        .section-title {
+            padding: 1rem 2rem;
+            /* Tonos azules para el título de sección */
+            background-color: #e3f2fd;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #0d47a1;
+            border-bottom: 1px solid #d1d5db;
+            border-top: 1px solid #d1d5db;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        th, td {
+            padding: 0.75rem 2rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+            vertical-align: middle;
+        }
+        .col-number {
+            width: 15%;
+        }
+        .col-name {
+            width: 60%;
+        }
+        .col-pack {
+            width: 25%;
+        }
+        td {
+            color: #4b5563;
+        }
+        .channel-number {
+            font-weight: 700;
+            /* Color azul de Usittel */
+            color: #005c97;
+            text-align: center;
+        }
+        .channel-pack {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.25rem 0.5rem;
+            border-radius: 99px;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .pack-basico {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+        .pack-premium {
+            background-color: #fef9c3;
+            color: #854d0e;
+        }
+        .footer-note, .sub-note {
+            padding: 1.5rem 2rem;
+            background-color: #f9fafb;
+            font-size: 0.8rem;
+            text-align: center;
+            color: #6b7280;
+            border-top: 1px solid #d1d5db;
+        }
+        .sub-note {
+            padding: 1rem 2rem;
+            background-color: #fffbe6;
+            color: #92400e;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Encabezado General -->
+        <header class="header">
+            <h1 class="header-title">Grilla de Señales</h1>
+            <img src="https://usittel.com.ar/img/nuevasimg/usittel_logo_sinFondo.png" alt="Logo USITTEL" class="logo-usittel">
+        </header>
+
+        <!-- Canales: AIRE nacionales -->
+        <h2 class="section-title">AIRE Nacionales</h2>
+        <table>
+            <colgroup><col class="col-number"><col class="col-name"><col class="col-pack"></colgroup>
+            <tbody>
+                <tr><td class="channel-number">110</td><td>TV Pública</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">120</td><td>América 2</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">130</td><td>Canal 13</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">140</td><td>Canal 9</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">150</td><td>Telefe</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">160</td><td>TN</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">165</td><td>CNN</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">166</td><td>CNN Internacional</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">170</td><td>C5N</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">174</td><td>A24</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">180</td><td>Canal 26</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">190</td><td>Crónica</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">192</td><td>Multivisión Federal</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">195</td><td>NET TV</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">196</td><td>Canal E</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">197</td><td>Bravo TV</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">200</td><td>La Nación +</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">204</td><td>Ciudad Magazine</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">210</td><td>Encuentro</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+            </tbody>
+        </table>
+
+        <!-- Canales: Deportes -->
+        <h2 class="section-title">Deportes</h2>
+        <table>
+            <colgroup><col class="col-number"><col class="col-name"><col class="col-pack"></colgroup>
+            <tbody>
+                <tr><td class="channel-number">215</td><td>America Sports</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">220</td><td>Deportv</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">225</td><td>Golf Channel</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">230</td><td>TYC Sports</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">240</td><td>ESPN</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">250</td><td>ESPN 2</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">260</td><td>ESPN 3</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">270</td><td>ESPN Extra</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">280</td><td>Fox Sports</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">290</td><td>Fox Sports 2</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">300</td><td>Fox Sports 3</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">305</td><td>El Garage</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">306</td><td>Discovery Turbo</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">307</td><td>PX Sports</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">310</td><td>TNT Sports</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">320</td><td>ESPN Premium</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+            </tbody>
+        </table>
+        
+        <!-- Canales: Infantiles & Premium -->
+        <h2 class="section-title">Infantiles & Premium</h2>
+        <table>
+            <colgroup><col class="col-number"><col class="col-name"><col class="col-pack"></colgroup>
+            <tbody>
+                <tr><td class="channel-number">330</td><td>Paka Paka</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">334</td><td>Baby TV</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">335</td><td>Nick JR</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">336</td><td>ZooMoo</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">340</td><td>Discovery Kids</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">360</td><td>Disney JR</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">370</td><td>Disney Channel</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">380</td><td>Cartoon Network</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">382</td><td>Nickelodeon</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">385</td><td>Cartoonito</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">388</td><td>Tooncast</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">389</td><td>Canal Infantil</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">390</td><td>HBO</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">400</td><td>HBO 2</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">405</td><td>HBO Plus</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">410</td><td>HBO Family</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">420</td><td>HBO Signature</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">430</td><td>HBO Mundi</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">440</td><td>HBO Pop</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">450</td><td>HBO Xtreme</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">460</td><td>Universal Premiere</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">470</td><td>Universal Crime</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">480</td><td>Universal Comedy</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">490</td><td>Universal Cinema</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">500</td><td>Universal Reality</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+            </tbody>
+        </table>
+
+        <!-- Canales: Cine y Series -->
+        <h2 class="section-title">Cine y Series</h2>
+        <table>
+            <colgroup><col class="col-number"><col class="col-name"><col class="col-pack"></colgroup>
+            <tbody>
+                <tr><td class="channel-number">510</td><td>CineAR</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">512</td><td>Volver</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">520</td><td>Cinemax</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">525</td><td>Europa Europa</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">530</td><td>Space</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">535</td><td>Film & Arts</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">540</td><td>Cinecanal</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">545</td><td>Golden</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">547</td><td>Golden Edge</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">550</td><td>TNT</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">555</td><td>I-Sat</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">560</td><td>FX</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">561</td><td>Cine Premium</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">562</td><td>Cine Hispano</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">563</td><td>Cine Familiar</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">564</td><td>Morbido TV</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">570</td><td>Comedy Central</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">580</td><td>Star Channel</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">590</td><td>Warner</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">600</td><td>Sony</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">610</td><td>AXN</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">614</td><td>SYFY</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">620</td><td>TNT Series</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">630</td><td>AMC</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">640</td><td>Universal TV</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">645</td><td>Studio Universal</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">650</td><td>DHE</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">655</td><td>Paramount</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">665</td><td>TCM</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">666</td><td>Eurochannel</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">667</td><td>DePelícula</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+            </tbody>
+        </table>
+
+        <!-- Canales: Documentales y Estilo de Vida -->
+        <h2 class="section-title">Documentales y Estilo de Vida</h2>
+        <table>
+            <colgroup><col class="col-number"><col class="col-name"><col class="col-pack"></colgroup>
+            <tbody>
+                <tr><td class="channel-number">670</td><td>El Gourmet</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">680</td><td>Food Network</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">685</td><td>HGTV</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">690</td><td>Mas Chic</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">700</td><td>Glitz</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">710</td><td>Home & Health</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">711</td><td>E! Entertainment</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">714</td><td>Lifetime</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">720</td><td>A&E</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">730</td><td>TRUTV</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">740</td><td>ID</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">750</td><td>Discovery Theater</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">755</td><td>Discovery Science</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">760</td><td>Discovery World</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">770</td><td>Nat Geo</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">780</td><td>Animal Planet</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">781</td><td>Love Nature</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">788</td><td>Sun Channel</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">790</td><td>Discovery Channel</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">795</td><td>TLC HD</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">800</td><td>History</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">810</td><td>History 2</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">820</td><td>Canal Rural</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+            </tbody>
+        </table>
+
+        <!-- Canales: Música y Novelas -->
+        <h2 class="section-title">Música y Novelas</h2>
+        <table>
+            <colgroup><col class="col-number"><col class="col-name"><col class="col-pack"></colgroup>
+            <tbody>
+                <tr><td class="channel-number">828</td><td>Quiero</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">830</td><td>HTV</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">831</td><td>Mi Música Romántica</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">832</td><td>Mi Música Reggaeton</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">833</td><td>Mi Música Hit</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">834</td><td>Mi Música K Pop</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">840</td><td>MTV Live</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">845</td><td>MTV</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">846</td><td>Much Music</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">847</td><td>Telehit</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">865</td><td>TNT Novelas</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">866</td><td>Novelisima</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">867</td><td>Telenovelas</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+            </tbody>
+        </table>
+
+        <!-- Canales: Internacionales y Otros -->
+        <h2 class="section-title">Internacionales y Otros</h2>
+        <table>
+            <colgroup><col class="col-number"><col class="col-name"><col class="col-pack"></colgroup>
+            <tbody>
+                <tr><td class="channel-number">869</td><td>vePLUS</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">870</td><td>TVE</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">871</td><td>Telemundo</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">872</td><td>RAI</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">873</td><td>France24</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">874</td><td>DW Noticias</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">875</td><td>Las Estrellas</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">878</td><td>TV Chile</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">890</td><td>EWTN</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">891</td><td>Radio María</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">892</td><td>Canal Luz</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">894</td><td>Maranatha</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+                <tr><td class="channel-number">900</td><td>Playboy</td><td><span class="channel-pack pack-premium">PREMIUM</span></td></tr>
+                <tr><td class="channel-number">1000</td><td>Sensa</td><td><span class="channel-pack pack-basico">BÁSICO</span></td></tr>
+            </tbody>
+        </table>
+        
+        <!-- Canales: Locales y Regionales -->
+        <h2 class="section-title">Locales y Regionales</h2>
+        <table>
+            <colgroup><col class="col-number"><col class="col-name"><col class="col-pack"></colgroup>
+            <tbody>
+                <tr><td class="channel-number">2</td><td>TVCO | Gral. Pico</td><td>La Pampa</td></tr>
+                <tr><td class="channel-number">3</td><td>CPETV | Coop. Santa Rosa</td><td>La Pampa</td></tr>
+                <tr><td class="channel-number">4</td><td>CEPATV | Punta Alta</td><td>Buenos Aires</td></tr>
+                <tr><td class="channel-number">10</td><td>Patagonia TV Tour | El Calafate</td><td>Santa Cruz</td></tr>
+                <tr><td class="channel-number">11</td><td>CLYFER | Rojas</td><td>Buenos Aires</td></tr>
+                <tr><td class="channel-number">12</td><td>CETV | Gral. Deheza</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">13</td><td>COONET | Brinkmann</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">14</td><td>Nexos MC | Alcira Gigena</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">15</td><td>Río TV | Río Primero</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">16</td><td>COVITEVE | Villa del Rosario</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">17</td><td>Luque TV | Luque</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">18</td><td>COVISAR | Santa Rosa de Río Primero</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">19</td><td>TempleTV | Santiago Temple</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">20</td><td>TV Coop | J. Posse</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">21</td><td>Canal Coop | Colonia Caroya</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">22</td><td>Canal 12 | Posadas</td><td>Misiones</td></tr>
+                <tr><td class="channel-number">23</td><td>T5 Satelital | Corrientes</td><td>Corrientes</td></tr>
+                <tr><td class="channel-number">24</td><td>Canal Cooperativo | Alicia</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">25</td><td>CEOSCA TV | Camilo Aldao</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">28</td><td>Teleco Zonal Ucacha</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">29</td><td>CoopPlus tv | Porteña</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">30</td><td>Canal 3 | Tacural</td><td>Santa Fe</td></tr>
+                <tr><td class="channel-number">31</td><td>RTV Canal 2 Golcable | San Andrés de Giles</td><td>Buenos Aires</td></tr>
+                <tr><td class="channel-number">34</td><td>Fullvision | Funes</td><td>Santa Fe</td></tr>
+                <tr><td class="channel-number">35</td><td>Canal 2 TV Cooperativa | Pueblo San Jose</td><td>Buenos Aires</td></tr>
+                <tr><td class="channel-number">36</td><td>Canal 11 | Maria Juana</td><td>Santa Fe</td></tr>
+                <tr><td class="channel-number">37</td><td>Canal 4 | Pigüé</td><td>Buenos Aires</td></tr>
+                <tr><td class="channel-number">39</td><td>El Seis TV | Bariloche</td><td>Río Negro</td></tr>
+                <tr><td class="channel-number">46</td><td>Canal 3 | Arroyito</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">47</td><td>Canal Local | Río Tercero</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">48</td><td>Canal Freyre</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">49</td><td>Canal 2 | Almafuerte</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">50</td><td>C50 | Morteros</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">51</td><td>CEGRO tv | General Roca</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">52</td><td>Chaco TV</td><td>Chaco</td></tr>
+                <tr><td class="channel-number">53</td><td>Canal 11 | Oliva</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">54</td><td>Vive</td><td>Santa Fe</td></tr>
+                <tr><td class="channel-number">71</td><td>CECSAGAL TV | General Alvear</td><td>Mendoza</td></tr>
+                <tr><td class="channel-number">79</td><td>Coopetel TV | El Bolsón</td><td>Mendoza</td></tr>
+                <tr><td class="channel-number">100</td><td>Vivencias | Monte Buey</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">102</td><td>Unidos TV | Bell Ville</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">103</td><td>El Tres | Rosario</td><td>Santa Fe</td></tr>
+                <tr><td class="channel-number">104</td><td>Telefe | Rosario</td><td>Santa Fe</td></tr>
+                <tr><td class="channel-number">105</td><td>Telefe | Santa Fe</td><td>Santa Fe</td></tr>
+                <tr><td class="channel-number">106</td><td>Canal 12 | Córdoba</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">107</td><td>Canal 10 | Córdoba</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">108</td><td>Telefe | Córdoba</td><td>Córdoba</td></tr>
+                <tr><td class="channel-number">109</td><td>Telediario Digital | Río Cuarto</td><td>Córdoba</td></tr>
+            </tbody>
+        </table>
+        <div class="sub-note">
+             <p><strong>Nota:</strong> Los canales provinciales oficiales (repetidoras de los canales de aire) están limitados a que sean distribuidos dentro de la misma provincia.</p>
+        </div>
+
+
+        <div class="footer-note">
+            <strong>IMPORTANTE:</strong> Usted verá solamente las señales y el contenido VOD correspondiente al plan contratado. La grilla puede estar sujeta a modificaciones.
+        </div>
+    </div>
+
+</body>
+</html>
